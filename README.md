@@ -17,7 +17,7 @@ Aman Singh (amansjot)
 
 ## About MoviePedia
 
-MoviePedia is the best place to curate and find specialized lists of your favorite movies!
+MoviePedia is the best place to curate and find specialized lists of your favorite movies! On our site, visitors can select their favorite movies from our masterlist and drag-and-drop into their own personalized Watchlists, Movies by Genre, and more! 
 
 ## Contact the Team
 
