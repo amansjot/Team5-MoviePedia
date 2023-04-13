@@ -1,0 +1,20 @@
+
+> moviepedia@0.1.0 test
+> react-scripts test --coverage
+
+PASS src/App.test.tsx
+  ✓ renders learn react link (53 ms)
+
+--------------------|---------|----------|---------|---------|-------------------
+File                | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+--------------------|---------|----------|---------|---------|-------------------
+All files           |    8.33 |        0 |   33.33 |    8.33 |                   
+ App.tsx            |     100 |      100 |     100 |     100 |                   
+ index.tsx          |       0 |      100 |     100 |       0 | 7-19              
+ reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
+--------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        2.387 s
+Ran all test suites.
