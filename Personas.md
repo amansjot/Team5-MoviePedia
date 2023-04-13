@@ -33,6 +33,34 @@ Who Are They: Forgetful Person
 What Do They Want: Be able to track the movies they've seen before
 
 
-What Is Their Main Barrier: Would need to manually wrtite down all the movies they have seen, no current interface which tracks this across streaming platforms 
+What Is Their Main Barrier: Would need to manually wrtie down all the movies they have seen, no current interface which tracks this across streaming platforms 
 
 
+## User 5
+Who Are They: Admin wanting to help user
+
+
+What Do They Want: Be able to add users for them
+
+
+What Is Their Main Barrier: Would not be able to add a user and disappoint customers if they need help with becoming a user. 
+
+
+## User 6
+Who Are They: 
+
+
+What Do They Want:
+
+
+What Is Their Main Barrier: 
+
+
+## User 7
+Who Are They: 
+
+
+What Do They Want:
+
+
+What Is Their Main Barrier: 
