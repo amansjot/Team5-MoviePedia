@@ -1,0 +1,220 @@
+{
+    "BLANK_QUESTIONS": [
+        {
+            "id": 1,
+            "name": "Question 1",
+            "body": "",
+            "type": "multiple_choice_question",
+            "options": [],
+            "expected": "",
+            "points": 1,
+            "published": false
+        },
+        {
+            "id": 47,
+            "name": "My New Question",
+            "body": "",
+            "type": "multiple_choice_question",
+            "options": [],
+            "expected": "",
+            "points": 1,
+            "published": false
+        },
+        {
+            "id": 2,
+            "name": "Question 2",
+            "body": "",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "",
+            "points": 1,
+            "published": false
+        }
+    ],
+    "SIMPLE_QUESTIONS": [
+        {
+            "id": 1,
+            "name": "Addition",
+            "body": "What is 2+2?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "4",
+            "points": 1,
+            "published": true
+        },
+        {
+            "id": 2,
+            "name": "Letters",
+            "body": "What is the last letter of the English alphabet?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "Z",
+            "points": 1,
+            "published": false
+        },
+        {
+            "id": 5,
+            "name": "Colors",
+            "body": "Which of these is a color?",
+            "type": "multiple_choice_question",
+            "options": ["red", "apple", "firetruck"],
+            "expected": "red",
+            "points": 1,
+            "published": true
+        },
+        {
+            "id": 9,
+            "name": "Shapes",
+            "body": "What shape can you make with one line?",
+            "type": "multiple_choice_question",
+            "options": ["square", "triangle", "circle"],
+            "expected": "circle",
+            "points": 2,
+            "published": false
+        }
+    ],
+    "TRIVIA_QUESTIONS": [
+        {
+            "id": 1,
+            "name": "Mascot",
+            "body": "What is the name of the UD Mascot?",
+            "type": "multiple_choice_question",
+            "options": ["Bluey", "YoUDee", "Charles the Wonder Dog"],
+            "expected": "YoUDee",
+            "points": 7,
+            "published": false
+        },
+        {
+            "id": 2,
+            "name": "Motto",
+            "body": "What is the University of Delaware's motto?",
+            "type": "multiple_choice_question",
+            "options": [
+                "Knowledge is the light of the mind",
+                "Just U Do it",
+                "Nothing, what's the motto with you?"
+            ],
+            "expected": "Knowledge is the light of the mind",
+            "points": 3,
+            "published": false
+        },
+        {
+            "id": 3,
+            "name": "Goats",
+            "body": "How many goats are there usually on the Green?",
+            "type": "multiple_choice_question",
+            "options": [
+                "Zero, why would there be goats on the green?",
+                "18420",
+                "Two"
+            ],
+            "expected": "Two",
+            "points": 10,
+            "published": false
+        }
+    ],
+    "EMPTY_QUESTIONS": [
+        {
+            "id": 1,
+            "name": "Empty 1",
+            "body": "This question is not empty, right?",
+            "type": "multiple_choice_question",
+            "options": ["correct", "it is", "not"],
+            "expected": "correct",
+            "points": 5,
+            "published": true
+        },
+        {
+            "id": 2,
+            "name": "Empty 2",
+            "body": "",
+            "type": "multiple_choice_question",
+            "options": ["this", "one", "is", "not", "empty", "either"],
+            "expected": "one",
+            "points": 5,
+            "published": true
+        },
+        {
+            "id": 3,
+            "name": "Empty 3",
+            "body": "This questions is not empty either!",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "",
+            "points": 5,
+            "published": true
+        },
+        {
+            "id": 4,
+            "name": "Empty 4",
+            "body": "",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "Even this one is not empty",
+            "points": 5,
+            "published": true
+        },
+        {
+            "id": 5,
+            "name": "Empty 5 (Actual)",
+            "body": "",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "",
+            "points": 5,
+            "published": false
+        }
+    ],
+    "SIMPLE_QUESTIONS_2": [
+        {
+            "id": 478,
+            "name": "Students",
+            "body": "How many students are taking CISC275 this semester?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "90",
+            "points": 53,
+            "published": true
+        },
+        {
+            "id": 1937,
+            "name": "Importance",
+            "body": "On a scale of 1 to 10, how important is this quiz for them?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "10",
+            "points": 47,
+            "published": true
+        },
+        {
+            "id": 479,
+            "name": "Sentience",
+            "body": "Is it technically possible for this quiz to become sentient?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "Yes",
+            "points": 40,
+            "published": true
+        },
+        {
+            "id": 777,
+            "name": "Danger",
+            "body": "If this quiz became sentient, would it pose a danger to others?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "Yes",
+            "points": 60,
+            "published": true
+        },
+        {
+            "id": 1937,
+            "name": "Listening",
+            "body": "Is this quiz listening to us right now?",
+            "type": "short_answer_question",
+            "options": [],
+            "expected": "Yes",
+            "points": 100,
+            "published": true
+        }
+    ]
+}
