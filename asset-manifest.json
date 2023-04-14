@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/MoviePedia/static/css/main.073c9b0a.css",
-    "main.js": "/MoviePedia/static/js/main.63a33568.js",
+    "main.js": "/MoviePedia/static/js/main.fa1c5ddf.js",
     "static/js/787.a9bbcd41.chunk.js": "/MoviePedia/static/js/787.a9bbcd41.chunk.js",
     "index.html": "/MoviePedia/index.html",
     "main.073c9b0a.css.map": "/MoviePedia/static/css/main.073c9b0a.css.map",
-    "main.63a33568.js.map": "/MoviePedia/static/js/main.63a33568.js.map",
+    "main.fa1c5ddf.js.map": "/MoviePedia/static/js/main.fa1c5ddf.js.map",
     "787.a9bbcd41.chunk.js.map": "/MoviePedia/static/js/787.a9bbcd41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.63a33568.js"
+    "static/js/main.fa1c5ddf.js"
   ]
 }
