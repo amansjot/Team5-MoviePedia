@@ -2,6 +2,9 @@ import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import { Center, Container, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/react";
+import { CreateList } from "./components/CreateList";
+import { WatchList } from "./components/WatchList";
 
 function App() {
     return (
@@ -17,6 +20,10 @@ function App() {
                 <b>Group Members: </b>
                 Heni Patel
             </Container>
+            <div>
+                <CreateList></CreateList>
+                <WatchList></WatchList>
+            </div>
         </div>
     );
 }
