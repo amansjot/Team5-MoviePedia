@@ -18,7 +18,7 @@ function App() {
             </Heading>
             <Container>
                 <b>Group Members: </b>
-                Heni Patel
+                Heni Patel, Sakhee Desai, Aman Singh, Priya Salako, Julia ONeill
             </Container>
             <div>
                 <CreateList></CreateList>
