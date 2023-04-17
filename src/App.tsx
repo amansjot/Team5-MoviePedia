@@ -5,7 +5,6 @@ import { Center, Container, Heading, ListItem, UnorderedList } from "@chakra-ui/
 import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/CreateList";
 import { WatchList } from "./components/WatchList";
-import { isLineBreak } from "typescript";
 
 function App() {
     return (
