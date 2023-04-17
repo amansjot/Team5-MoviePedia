@@ -87,17 +87,18 @@ FAIL src/components/CreateList.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   18.75 |        0 |      60 |   18.75 |                   
+All files            |   17.64 |        0 |      50 |   17.64 |                   
  src                 |    7.14 |        0 |   33.33 |    7.14 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |     100 |      100 |     100 |     100 |                   
+ src/components      |   66.66 |      100 |   66.66 |   66.66 |                   
   CreateList.tsx     |     100 |      100 |     100 |     100 |                   
+  DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   WatchList.tsx      |     100 |      100 |     100 |     100 |                   
 ---------------------|---------|----------|---------|---------|-------------------
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.124 s
+Time:        2.571 s
 Ran all test suites.
