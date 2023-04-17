@@ -34,7 +34,7 @@ FAIL src/App.test.tsx
             [36m<b>[39m
               [0mGroup Members: [0m
             [36m</b>[39m
-            [0mHeni Patel[0m
+            [0mHeni Patel, Sakhee Desai, Aman Singh, Priya Salako, Julia ONeill[0m
           [36m</div>[39m
           [36m<div>[39m
             [36m<div>[39m
@@ -100,5 +100,5 @@ All files            |   17.64 |        0 |      50 |   17.64 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.571 s
+Time:        2.395 s
 Ran all test suites.
