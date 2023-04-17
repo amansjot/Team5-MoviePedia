@@ -57,7 +57,130 @@ FAIL src/App.test.tsx
           [36m<br />[39m
           [36m<div>[39m
             [36m<div>[39m
-              [0mCreate a List[0m
+              [36m<h1>[39m
+                [0mCreate A List [0m
+              [36m</h1>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-1ky8x8j"[39m
+              [36m>[39m
+                [36m<div>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mMinions[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mToy Story[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mToy Story 2[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mToy Story 3[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mCars[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mAladin[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTangled[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mFrozen[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mWreck-It Ralph[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd[0m
+                      [0m [0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mMoana[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<div>[39m
+                  [36m<div>[39m
+                    [36m<strong>[39m
+                      [0mMy List:[0m
+                    [36m</strong>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mClear List[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+              [36m</div>[39m
             [36m</div>[39m
             [36m<div>[39m
               [0mWatchList[0m
@@ -106,18 +229,18 @@ FAIL src/components/CreateList.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   17.64 |        0 |      50 |   17.64 |                   
+All files            |      28 |        0 |   36.36 |      28 |                   
  src                 |    7.14 |        0 |   33.33 |    7.14 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   66.66 |      100 |   66.66 |   66.66 |                   
-  CreateList.tsx     |     100 |      100 |     100 |     100 |                   
+ src/components      |   54.54 |      100 |    37.5 |   54.54 |                   
+  CreateList.tsx     |   55.55 |      100 |   33.33 |   55.55 | 22-26,38-47       
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   WatchList.tsx      |     100 |      100 |     100 |     100 |                   
 ---------------------|---------|----------|---------|---------|-------------------
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.213 s
+Time:        3.382 s
 Ran all test suites.
