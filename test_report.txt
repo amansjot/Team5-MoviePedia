@@ -28,14 +28,33 @@ FAIL src/App.test.tsx
               [0mMoviePedia[0m
             [36m</p>[39m
           [36m</h2>[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"chakra-container css-0"[39m
-          [36m>[39m
+          [36m<div>[39m
             [36m<b>[39m
               [0mGroup Members: [0m
             [36m</b>[39m
-            [0mHeni Patel, Sakhee Desai, Aman Singh, Priya Salako, Julia ONeill[0m
+            [36m<div[39m
+              [33mstyle[39m=[32m"width: 100px; margin: 0px auto;"[39m
+            [36m>[39m
+              [36m<ul>[39m
+                [36m<li>[39m
+                  [0mHeni Patel[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mSakhee Desai[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mAman Singh[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mPriya Salako[0m
+                [36m</li>[39m
+                [36m<li>[39m
+                  [0mJulia O‘Neill[0m
+                [36m</li>[39m
+              [36m</ul>[39m
+            [36m</div>[39m
           [36m</div>[39m
+          [36m<br />[39m
           [36m<div>[39m
             [36m<div>[39m
               [0mCreate a List[0m
@@ -100,5 +119,5 @@ All files            |   17.64 |        0 |      50 |   17.64 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.516 s
+Time:        3.213 s
 Ran all test suites.
