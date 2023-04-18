@@ -7,7 +7,7 @@ const MOVIES = [
     "Toy Story 2",
     "Toy Story 3",
     "Cars",
-    "Aladin",
+    "Aladdin",
     "Tangled",
     "Frozen",
     "Wreck-It Ralph",
@@ -19,7 +19,10 @@ export function CreateList(): JSX.Element {
     const [userList, setuserList] = useState<string[]>([]);
 
     function addMovieToList(newMovie: string) {
-        setuserList([...userList, newMovie]);
+        if (!userList.includes(newMovie)){
+            setuserList([...userList, newMovie]);
+
+        }
     }
 
     function clearList() {
