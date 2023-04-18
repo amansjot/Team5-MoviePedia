@@ -122,7 +122,7 @@ FAIL src/App.test.tsx
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
-                        [0mAladin[0m
+                        [0mAladdin[0m
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
@@ -229,13 +229,13 @@ FAIL src/components/CreateList.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   25.92 |        0 |   30.76 |   25.92 |                   
+All files            |      25 |        0 |   30.76 |      25 |                   
  src                 |    7.14 |        0 |   33.33 |    7.14 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   46.15 |      100 |      30 |   46.15 |                   
-  CreateList.tsx     |   55.55 |      100 |   33.33 |   55.55 | 22-26,38-47       
+ src/components      |   42.85 |        0 |      30 |   42.85 |                   
+  CreateList.tsx     |      50 |        0 |   33.33 |      50 | 22-29,41-50       
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   Movie.tsx          |       0 |      100 |       0 |       0 | 6                 
   WatchList.tsx      |     100 |      100 |     100 |     100 |                   
@@ -244,5 +244,5 @@ All files            |   25.92 |        0 |   30.76 |   25.92 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.591 s
+Time:        2.714 s
 Ran all test suites.
