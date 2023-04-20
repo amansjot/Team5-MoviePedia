@@ -16,10 +16,19 @@ function App() {
                 </Center>
                 <p>MoviePedia</p>
             </Heading>
-            <Container>
+            <div>
                 <b>Group Members: </b>
-                Heni Patel
-            </Container>
+                <div style={{ width: "100px", margin: "0 auto" }}>
+                    <ul>
+                        <li>Heni Patel</li>
+                        <li>Sakhee Desai</li>
+                        <li>Aman Singh</li>
+                        <li>Priya Salako</li>
+                        <li>Julia O&lsquo;Neill</li>
+                    </ul>
+                </div>
+            </div>
+            <br/>
             <div>
                 <CreateList></CreateList>
                 <WatchList></WatchList>
