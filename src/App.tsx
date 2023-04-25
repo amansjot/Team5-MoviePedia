@@ -11,8 +11,7 @@ function App() {
         <div className="App">
             <Heading mb={10}>
                 <Center>
-                    <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/200/external-film-cinema-kiranshastry-lineal-kiranshastry-3.png" alt="Clapboard Logo"/>
-                    {/* src={logo} */}
+                    <img src="/logo512.png" width="150" alt="Clapboard Logo"/>
                 </Center>
                 <p>MoviePedia</p>
             </Heading>
