@@ -11,7 +11,7 @@ function App() {
         <div className="App">
             <Heading mb={10}>
                 <Center>
-                    <img src="/logo512.png" width="150" alt="Clapboard Logo"/>
+                    <img src="logo512.png" width="150" alt="Clapboard Logo"/>
                 </Center>
                 <p>MoviePedia</p>
             </Heading>
