@@ -237,13 +237,13 @@ All files            |      25 |        0 |   30.76 |      25 |
  src/components      |   42.85 |        0 |      30 |   42.85 |                   
   CreateList.tsx     |      50 |        0 |   33.33 |      50 | 22-29,41-50       
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
+  Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
   Movie.tsx          |       0 |        0 |       0 |       0 |                   
-  Super.tsx          |       0 |      100 |       0 |       0 | 4                 
   WatchList.tsx      |     100 |      100 |     100 |     100 |                   
   hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
 ---------------------|---------|----------|---------|---------|-------------------
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.664 s
+Time:        3.741 s
 Ran all test suites.
