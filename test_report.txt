@@ -20,7 +20,7 @@ FAIL src/App.test.tsx
               [33mclass[39m=[32m"css-gmuwbf"[39m
             [36m>[39m
               [36m<img[39m
-                [33malt[39m=[32m"logo"[39m
+                [33malt[39m=[32m"Clapboard Logo"[39m
                 [33msrc[39m=[32m"https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/200/external-film-cinema-kiranshastry-lineal-kiranshastry-3.png"[39m
               [36m/>[39m
             [36m</div>[39m
@@ -244,5 +244,5 @@ All files            |   25.92 |        0 |   33.33 |   25.92 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.668 s
+Time:        2.742 s
 Ran all test suites.
