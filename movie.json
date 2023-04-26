@@ -1,0 +1,405 @@
+{
+    "MOVIES": [
+        {
+            "name":"Minions",
+            "poster": "https://www.themoviedb.org/t/p/original/dr02BdCNAUPVU07aOodwPYv6HCf.jpg",   
+            "year": 2015,
+            "actors": ["Sandra Bullock", "Jon Hamm", "Michael Keaton", "Allison Janney", "Steve Coogan"],
+            "plot": "Evolving from single-celled yellow organisms at the dawn of time, Minions live to serve, but find themselves working for a continual series of unsuccessful masters.",
+            "director": "Kyle Balda",
+            "genre": ["Animation", "Comedy"],
+            "rating":0
+        },
+        {
+            "name":"Toy Story",
+            "poster": "https://m.media-amazon.com/images/I/71aBLaC4TzL.jpg",   
+            "year": 1995,
+            "actors": ["Tom Hanks", "Tim Allen", "Don Rickles", "Jim Varney", "Wallace Shawn"],
+            "plot": "A cowboy doll is profoundly threatened and jealous when a new spaceman action figure supplants him as top toy in a boy's bedroom.",
+            "director": "John Lasseter",
+            "genre": ["Animation", "Comedy"],
+            "rating":0
+        },
+        {
+            "name":"E.T. the Extra-Terrestrial",
+            "poster": "https://m.media-amazon.com/images/I/71bIPWfTGJL.jpg",   
+            "year": 1982,
+            "actors": ["Dee Wallace", "Henry Thomas", "Peter Coyote", "Robert MacNaughton", "Drew Barrymore"],
+            "plot": "A troubled child summons the courage to help a friendly alien escape from Earth and return to his home planet.",
+            "director": "Steven Spielberg",
+            "genre": ["Sci-Fi"],
+            "rating":0
+        },
+        {
+            "name":"Aliens",
+            "poster": "https://i.etsystatic.com/22034154/r/il/df7298/3424167639/il_570xN.3424167639_kjci.jpg",   
+            "year": 1979,
+            "actors": ["Tom Skerritt", "Sigourney Weaver", "Veronica Cartwright", "Harry Dean Stanton", "John Hurt"],
+            "plot": "The crew of a commercial spacecraft encounter a deadly lifeform after investigating an unknown transmission.",
+            "director": "Ridley Scott",
+            "genre": ["Horror", "Sci-Fi"],
+            "rating":0
+        },
+        {
+            "name":"Cars",
+            "poster": "https://m.media-amazon.com/images/I/51AjQC4UPUL._AC_UF894,1000_QL80_.jpg",   
+            "year": 2006,
+            "actors": ["Owen Wilson", "Paul Newman", "Bonnie Hunt", "Larry the Cable Guy", "Cheech Marin"],
+            "plot": "On the way to the biggest race of his life, a hotshot rookie race car gets stranded in a rundown town, and learns that winning isn't everything in life.",
+            "director": "John Lasseter",
+            "genre": ["Animation", "Comedy"],
+            "rating":0
+        },
+        {
+            "name":"Aladdin",
+            "poster": "https://m.media-amazon.com/images/I/71j30jbtxaL.jpg",   
+            "year": 1992,
+            "actors": ["Scott Weinger", "Robin Williams", "Linda Larkin", "Jonathan Freeman", "Gilbert Gottfried"],
+            "plot": "A kind-hearted street urchin and a power-hungry Grand Vizier vie for a magic lamp that has the power to make their deepest wishes come true",
+            "director": "John Musker",
+            "genre": ["Animation", "Musical", "Comedy", "Fantasy"],
+            "rating":0
+        },
+        {
+            "name":"Phantom of the Opera",
+            "poster": "https://i.ebayimg.com/images/g/cg0AAMXQ-BZQ9wI4/s-l500.jpg",   
+            "year": 2004,
+            "actors": ["Gerard Butler", "Emmy Rossum", "Patrick Wilson", "Miranda Richardson", "Minnie Driver"],
+            "plot": "A young soprano becomes the obsession of a disfigured and murderous musical genius who lives beneath the Paris Opéra House.",
+            "director": "Joel Schumacher",
+            "genre": ["Musical", "Drama", "Romance"],
+            "rating":0
+        },
+        {
+            "name":"The Martian",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTc2MTQ3MDA1Nl5BMl5BanBnXkFtZTgwODA3OTI4NjE@._V1_.jpg",   
+            "year": 2015,
+            "actors": ["Matt Damon", "Jessica Chastain", "Kristen Wig", "Jeff Daniels", "Michael Peña"],
+            "plot": "An astronaut becomes stranded on Mars after his team assume him dead, and must rely on his ingenuity to find a way to signal to Earth that he is alive and can survive until a potential rescue.",
+            "director": "Ridley Scott",
+            "genre": ["Sci-Fi", "Fiction"],
+            "rating":0
+        },
+        {
+            "name":"Wreck-It Ralph",
+            "poster": "https://m.media-amazon.com/images/I/81Fmw8dvpBL.jpg",   
+            "year": 2012,
+            "actors": ["John C. Reilly", "Sarah Silverman", "Jack McBrayer", "Jane Lynch", "Alan Tudyk"],
+            "plot": "A video game villain wants to be a hero and sets out to fulfill his dream, but his quest brings havoc to the whole arcade where he lives.",
+            "director": "Rich Moore",
+            "genre": ["Animation","Comedy"],
+            "rating":0
+        },
+        {
+            "name":"Moana",
+            "poster": "https://m.media-amazon.com/images/I/814zOZDqtOL._AC_SY879_.jpg",   
+            "year": 2016,
+            "actors": ["Auli'i Cravalho", "Dwayne Johnson", "Rachel House", "Temuera Morrison", "Jemaine Clement"],
+            "plot": "In Ancient Polynesia, when a terrible curse incurred by the Demigod Maui reaches Moana's island, she answers the Ocean's call to seek out the Demigod to set things right.",
+            "director": "John Musker",
+            "genre": ["Animation","Action", "Musical", "Fantasy"],
+            "rating":0
+        },
+        {
+            "name":"Dumb and Dumber",
+            "poster": "https://i.etsystatic.com/41088122/r/il/ce1273/4687554306/il_1588xN.4687554306_6n7x.jpg",   
+            "year": 1994,
+            "actors": ["Jim Carrey", "Jeff Daniels", "Lauren Holly", "Karen Duffy", "Mike Starr"],
+            "plot": "After a woman leaves a briefcase at the airport terminal, a dumb limo driver and his dumber friend set out on a hilarious cross-country road trip to Aspen to return it.",
+            "director": "Peter Farrelly",
+            "genre": ["Comedy"],
+            "rating":0
+        },
+        {
+            "name":"Avatar",
+            "poster": "https://m.media-amazon.com/images/I/41Jn3yhSLkL._AC_UF894,1000_QL80_.jpg",   
+            "year": 2009,
+            "actors": ["Sam Worthington", "Zoe Saldana", "Stephen Lang" ,"Michelle Rodriguez" ,"Sigourney Weaver"],
+            "plot": "A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
+            "director": "James Cameron",
+            "genre": ["Sci-Fi"],
+            "rating":0
+        },
+        {
+            "name":"Ratatouille",
+            "poster": "https://m.media-amazon.com/images/I/51bOQKCq1ZL._AC_UF894,1000_QL80_.jpg",   
+            "year": 2007,
+            "actors": ["Patton Oswalt", "Ian Holm", "Lou Romano", "Brad Garrett", "Peter O'Toole"],
+            "plot": "A rat who can cook makes an unusual alliance with a young kitchen worker at a famous Paris restaurant.",
+            "director": "Brad Bird",
+            "genre": ["Animation","Comedy", "Drama"],
+            "rating":0
+        },
+        {
+            "name":"Men in Black",
+            "poster": "https://upload.wikimedia.org/wikipedia/en/f/fb/Men_in_Black_Poster.jpg",   
+            "year": 1997,
+            "actors": ["Tommy Lee Jones", "Will Smith", "Linda Fiorentino", "Vincent D'Onofrio", "Rip Torn"],
+            "plot": "A police officer joins a secret organization that polices and monitors extraterrestrial interactions on Earth.",
+            "director": "Barry Sonnenfeld",
+            "genre": ["Action", "Comedy"],
+            "rating":0
+        },
+        {
+            "name":"The Hangover",
+            "poster": "https://upload.wikimedia.org/wikipedia/en/b/b9/Hangoverposter09.jpg",   
+            "year": 2009,
+            "actors": ["Bradley Cooper", "Zach Galifianakis", "Ed Helms", "Heather Graham", "Justin Bartha"],
+            "plot": "buddies wake up from a bachelor party in Las Vegas, with no memory of the previous night and the bachelor missing. They make their way around the city in order to find their friend before his wedding",
+            "director": "Todd Phillips",
+            "genre": ["Comedy"],
+            "rating":0
+        },
+        {
+            "name":"Monsters Inc",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTY1NTI0ODUyOF5BMl5BanBnXkFtZTgwNTEyNjQ0MDE@._V1_.jpg",   
+            "year": 2001,
+            "actors": ["John Goodman", "Billy Crystal", "Steve Buscemi", "James Coburn", "Jennifer Tilly"],
+            "plot": "In order to power the city, monsters have to scare children so that they scream. However, the children are toxic to the monsters, and after a child gets through, two monsters realize things may not be what they think.",
+            "director": "Peter Docter",
+            "genre": ["Animation", "Comedy"],
+            "rating":0
+        },
+        {
+            "name":"The Dark Knight",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg",   
+            "year": 2008,
+            "actors": ["Christian Bale", "Michael Caine", "Heath Ledger", "Gary Oldman", "Aaron Eckhart"],
+            "plot": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+            "director": "Christopher Nolan",
+            "genre": ["Action", "Superhero"],
+            "rating":0
+        },
+        {
+            "name":"The Princess Bride",
+            "poster": "https://lumiere-a.akamaihd.net/v1/images/p_princessbride_19348_769a80b9.jpeg?region=0%2C0%2C540%2C810",   
+            "year": 1987,
+            "actors": ["Cary Elwes", "Robin Wright", "Mandy Patinkin", "Chris Sarandon", "Christopher Guest"],
+            "plot": "A bedridden boy's grandfather reads him the story of a farmboy-turned-pirate who encounters numerous obstacles, enemies and allies in his quest to be reunited with his true love.",
+            "director": "Rob Reiner",
+            "genre": ["Comedy", "Fantasy", "Adventure"],
+            "rating":0
+        },
+        {
+            "name":"How to Train Your Dragon",
+            "poster": "https://cdn.shopify.com/s/files/1/0747/3829/products/HP2979_1c5fcd05-1086-485f-99e1-571924b2c7d8_1024x1024.jpg?v=1571445094",   
+            "year": 2010,
+            "actors": ["Jay Baruchel", "Gerard Butler", "Craig Ferguson", "America Ferrera", "Jonah Hill"],
+            "plot": "A hapless young Viking who aspires to hunt dragons becomes the unlikely friend of a young dragon himself, and learns there may be more to the creatures than he assumed.",
+            "director": "Chris Sanders",
+            "genre": ["Animation", "Action","Fantasy"],
+            "rating":0
+        },
+        {
+            "name":"The Hunger Games: Catching Fire",
+            "poster": "https://m.media-amazon.com/images/I/71Vu2hpNfPL.jpg",   
+            "year": 2013,
+            "actors": ["Jennifer Lawrence", "Josh Hutcherson", "Liam Hemsworth", "Woody Harrelson", "Elizabeth Banks"],
+            "plot": "Katniss Everdeen and Peeta Mellark become targets of the Capitol after their victory in the 74th Hunger Games sparks a rebellion in the Districts of Panem.",
+            "director": "Francis Lawrence",
+            "genre": ["Dystopian", "Sci-Fi", "Fiction", "Action"],
+            "rating":0
+        },
+        {
+            "name":"Black Swan",
+            "poster": "https://upload.wikimedia.org/wikipedia/en/6/68/Black_Swan_poster.jpg",   
+            "year": 2010,
+            "actors": ["Natalie Portman", "Vincent Cassel", "Mila Kunis", "Barbara Hershey", "Winona Ryder"],
+            "plot": "A committed dancer struggles to maintain her sanity after winning the lead role in a production of Tchaikovsky's "Swan Lake".",
+            "director": "Darren Aronofsky",
+            "genre": ["Psychological", "Thriller"],
+            "rating":0
+        },
+        {
+            "name":"Us",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZTliNWJhM2YtNDc1MC00YTk1LWE2MGYtZmE4M2Y5ODdlNzQzXkEyXkFqcGdeQXVyMzY0MTE3NzU@._V1_.jpg",   
+            "year": 2019,
+            "actors": ["Lupita Nyong'o", "Winston Duke", "Elisabeth Moss", "Tim Heidecker", "Evan Alex"],
+            "plot": "A family's serene beach vacation turns to chaos when their doppelgängers appear and begin to terrorize them.",
+            "director": "Jordan Peele",
+            "genre":["Psychological", "Horror"],
+            "rating":0
+        },
+        {
+            "name":"Jujutsu Kaisen 0",
+            "poster": "https://images.bonanzastatic.com/afu/images/fbd9/a60d/d1fb_11250263442/G_394_.jpg",   
+            "year": 2021,
+            "actors": ["Megumi Ogata", "Kana Hanazawa", "Mikako Komatsu", "Koki Uchiyama", "Tomokazu Seki"],
+            "plot": "Yuta Okkotsu, a high schooler who gains control of an extremely powerful Cursed Spirit and gets enrolled in the Tokyo Prefectural Jujutsu High School by Jujutsu Sorcerers to help him control his power and keep an eye on him.",
+            "director": "Sunghoo Park",
+            "genre": ["Animation", "Fantasy"],
+            "rating":0
+        },
+        {
+            "name":"Pride and Prejudice",
+            "poster": "https://m.media-amazon.com/images/I/61L7KEkLbSL._AC_SX679_.jpg",   
+            "year": 2005,
+            "actors": ["Keira Knightly", "Matthew Macfadyen", "Brenda Blethyn", "Donald Sutherland", "Tom Hollander"],
+            "plot": "Sparks fly when spirited Elizabeth Bennet meets single, rich, and proud Mr. Darcy. But Mr. Darcy reluctantly finds himself falling in love with a woman beneath his class. Can each overcome their own pride and prejudice?",
+            "director": "Jow Wright",
+            "genre": ["Romance", "Drama"],
+            "rating":0
+        },
+        {
+            "name":"Bullet Train",
+            "poster": "https://m.media-amazon.com/images/I/81Insz9s5PL._AC_SY879_.jpg",   
+            "year": 2022,
+            "actors": ["Brad Pitt", "Joey King", "Aaron Taylor-Johnson", "Brian Tyree Henry", "Andrew Koji"],
+            "plot": "Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common.",
+            "director": "David Leitch",
+            "genre": ["Action", "Comedy"],
+            "rating":0
+        },
+        {
+            "name":"Crazy Rich Asians",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTYxNDMyOTAxN15BMl5BanBnXkFtZTgwMDg1ODYzNTM@._V1_.jpg",   
+            "year": 2018,
+            "actors": ["Constance Wu", "Henry Golding", "Gemma Chan", "Lisa Lu", "Awkwafina"],
+            "plot": "This contemporary romantic comedy, based on a global bestseller, follows native New Yorker Rachel Chu to Singapore to meet her boyfriend's family.",
+            "director": "Jon M. Chu",
+            "genre": ["Romance", "Comedy","Drama"],
+            "rating":0
+        },
+        {
+            "name":"Get Out",
+            "poster": "https://m.media-amazon.com/images/I/91G9ewuNN9L._AC_UF894,1000_QL80_.jpg",   
+            "year": 2017,
+            "actors": ["Daniel Kaluuya", "Allison Williams", "Bradley Whitford", "Caleb Landry Jones", "Stephen Root"],
+            "plot": "A young African-American visits his White girlfriend's parents for the weekend, where his simmering uneasiness about their reception of him eventually reaches a boiling point.",
+            "director": "Jordan Peele",
+            "genre": ["Psychological", "Horror"],
+            "rating":0
+        },
+        {
+            "name":"The Exorcist",
+            "poster": "https://m.media-amazon.com/images/I/41lNS7WyJuL._AC_.jpg",   
+            "year": 1973,
+            "actors": ["Ellen Burstyn", "Max von Sydow", "Lee J. Cobb", "Kitty Winn", "Jack MacGowran"],
+            "plot": "When a teenage girl is possessed by a mysterious entity, her mother seeks the help of two priests to save her daughter.",
+            "director": "William Friedkin",
+            "genre": ["Horror"],
+            "rating":0
+        },
+        {
+            "name":"Black Panther",
+            "poster": "https://m.media-amazon.com/images/I/A1PaCX4oXjL.jpg",   
+            "year": 2018,
+            "actors": ["Chadwick Boseman", "Michael B. Jordan", "Lupita Nyong'o", "Danai Gurira", "Martin Freeman"],
+            "plot": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and must confront a challenger from his country's past.",
+            "director": "Ryan Coogler",
+            "genre": ["Superhero", "Action"],
+            "rating":0
+        },
+        {
+            "name":"The Princess Diaries",
+            "poster": "https://i.ebayimg.com/images/g/yRsAAOSwICZhlx-o/s-l1600.jpg",   
+            "year": 2001,
+            "actors": ["Anne Hathaway", "Héctor Elizondo", "Heather Matarazzo", "Julie Andrews", "Mandy Moore"],
+            "plot": "Mia Thermopolis has just found out that she is the heir apparent to the throne of Genovia. With her friends Lilly and Michael Moscovitz in tow, she tries to navigate through the rest of her sixteenth year.",
+            "director": "Garry Marshall",
+            "genre": ["Coming-of-Age", "Comedy"],
+            "rating":0
+        },
+        {
+            "name":"5cm Per Second",
+            "poster": "https://m.media-amazon.com/images/M/MV5BODJhZDU1MDYtMDQ0NS00N2JmLWI2ZDAtMGNmN2RmNWJhNzQ5L2ltYWdlXkEyXkFqcGdeQXVyNjY1OTY4MTk@._V1_.jpg",   
+            "year": 2007,
+            "actors": ["Yoshimi Kondou", "Kenji Mizuhashi", "Risa Mizuno", "Satomi Hanamura", "Ayaka Onoue"],
+            "plot": "Told in three interconnected segments, we follow a young man named Takaki through his life as cruel winters, cold technology, and finally, adult obligations and responsibility converge to test the delicate petals of love.",
+            "director": "Makoto Shinkai",
+            "genre": ["Romance", "Animation", "Drama"],
+            "rating":0
+        },
+        {
+            "name":"27 Dresses",
+            "poster": "https://img.buzzfeed.com/buzzfeed-static/static/2021-02/16/4/asset/11f80baa7296/sub-buzz-6111-1613450287-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto",   
+            "year": 2008,
+            "actors": ["Katherine Heigl", "James Marsden", "Malin Åkerman", "Judy Greer", "Edwards Burns"],
+            "plot": "After serving as a bridesmaid 27 times, a young woman wrestles with the idea of standing by her sister's side as her sibling marries the man she's secretly in love with.",
+            "director": "Anne Fletcher",
+            "genre": ["Romance", "Comedy"],
+            "rating":0
+        },
+        {
+            "name":"Inception",
+            "poster": "https://m.media-amazon.com/images/I/5103Iag9c9L._AC_.jpg",   
+            "year": 2010,
+            "actors": ["Leonardo DiCaprio", "Ken Watanabe", "Joseph Gordon-Levitt", "Marion Cotillard", "Elliot Page"],
+            "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.",
+            "director": "Christopher Nolan",
+            "genre": ["Sci-Fi", "Action"],
+            "rating":0
+        },
+        {
+            "name":"Dreamgirls",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTY1MzIwNDQyNl5BMl5BanBnXkFtZTcwNDEwNzYyMw@@._V1_.jpg",   
+            "year": 2006,
+            "actors": ["Jamie Foxx", "Beyoncé Knowles", "Eddie Murphy", "Danny Glover", "Anika Noni Rose"],
+            "plot": "A trio of black female soul singers cross over to the pop charts in the early 1960s, facing their own personal struggles along the way.",
+            "director": "Bill Condon",
+            "genre": ["Musical","Drama"],
+            "rating":0
+        },
+        {
+            "name":"The Fast and The Furious",
+            "poster": "https://i.ebayimg.com/images/g/v7AAAOSwstxVCESm/s-l1600.jpg",   
+            "year": 2009,
+            "actors": ["Vin Diesel", "Paul Walker", "Michelle Rodriguez", "Jordana Brewster", "Matt Schulze"],
+            "plot": "Los Angeles police officer Brian O'Conner must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy.",
+            "director": "Rob Cohen",
+            "genre": ["Action"],
+            "rating":0
+        },
+        {
+            "name":"Let it Shine",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTU3Mjg2NDA1Ml5BMl5BanBnXkFtZTgwMDk4NjAxMzE@._V1_FMjpg_UX1000_.jpg",   
+            "year": 2012,
+            "actors": ["Tyler James Williams", "Coco Jones", "Trevor Jackson", "Brandon Mychal Smith", "Dawnn Lewis"],
+            "plot": "A teenage rapper must use his musical talent to battle his nemesis and win the girl of his dreams.",
+            "director": "Paul Hoen",
+            "genre": ["Musical"],
+            "rating":0
+        },
+        {
+            "name":"Iron Man",
+            "poster": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/3998dd3fa7e628e415e9805b960bec61_480x.progressive.jpg?v=1573592743",   
+            "year": 2008,
+            "actors": ["Robert Downey Jr.", "Terrence Howard", "Jeff Bridges", "Gwyneth Paltrow", "Leslie Bibb"],
+            "plot": "After being held captive in an Afghan cave, billionaire engineer Tony Stark creates a unique weaponized suit of armor to fight evil.",
+            "director": "Jon Favreau",
+            "genre": ["Superhero"],
+            "rating":0
+        },
+        {
+            "name":"Breakfast at Tiffanys",
+            "poster": "https://m.media-amazon.com/images/I/61r3RbC0m+L._AC_SY879_.jpg",   
+            "year": 1961,
+            "actors": ["Audrey Hepburn", "George Peppard", "Patricia Neal", "Buddy Ebsen", "Martin Balsam"],
+            "plot": "A young New York socialite becomes interested in a young man who has moved into her apartment building, but her past threatens to get in the way.",
+            "director": "Blake Edwards",
+            "genre": ["Romance","Comedy"],
+            "rating":0
+        },
+        {
+            "name":"Little Women",
+            "poster": "https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",   
+            "year": 2019,
+            "actors": ["Saoirse Ronan", "Emma Watson", "Florence Pugh","Timothée Chalamet", "Laura Dern"],
+            "plot": "Jo March reflects back and forth on her life, telling the beloved story of the March sisters - four young women, each determined to live life on her own terms.",
+            "director": "Greta Gerwig",
+            "genre": ["Coming-of-Age", "Drama"],
+            "rating":0
+        },
+        {
+            "name":"It",
+            "poster": "https://m.media-amazon.com/images/I/81Q2fgQpBrL._AC_SY879_.jpg",   
+            "year": 2017,
+            "actors": ["Bill Skarsgård", "Jaeden Martell", "Finn Wolfhard", "Jack Dylan Grazer", "Wyatt Oleff"],
+            "plot": "In the summer of 1989, a group of bullied kids band together to destroy a shape-shifting monster, which disguises itself as a clown and preys on the children of Derry, their small Maine town.",
+            "director": "Andy Muschietti",
+            "genre": ["Supernatural", "Horror"],
+            "rating":0
+        }
+    ]
+ }
+ 
