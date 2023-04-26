@@ -227,6 +227,17 @@ FAIL src/components/CreateList.test.tsx
           at Array.map (<anonymous>)
       at Emittery.emit (node_modules/emittery/index.js:258:23)
 
+FAIL src/components/Hidden.test.tsx
+  ● Test suite failed to run
+
+    Your test suite must contain at least one test.
+
+      at onResult (node_modules/@jest/core/build/TestScheduler.js:175:18)
+      at node_modules/@jest/core/build/TestScheduler.js:316:17
+      at node_modules/emittery/index.js:260:13
+          at Array.map (<anonymous>)
+      at Emittery.emit (node_modules/emittery/index.js:258:23)
+
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
@@ -242,8 +253,8 @@ All files            |   25.92 |        0 |   33.33 |   25.92 |
   Movie.tsx          |       0 |        0 |       0 |       0 |                   
   WatchList.tsx      |     100 |      100 |     100 |     100 |                   
 ---------------------|---------|----------|---------|---------|-------------------
-Test Suites: 3 failed, 3 total
+Test Suites: 4 failed, 4 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        2.573 s
+Time:        4.255 s
 Ran all test suites.
