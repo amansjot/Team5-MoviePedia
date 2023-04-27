@@ -30,6 +30,9 @@ FAIL src/App.test.tsx
             [36m</p>[39m
           [36m</h2>[39m
           [36m<div>[39m
+            [36m<b>[39m
+              [0mGroup Members: Sakhee Desai, Julia O‘Neill, Heni Patel, Priya Salako, Aman Singh[0m
+            [36m</b>[39m
             [36m<div[39m
               [33mclass[39m=[32m"css-gmuwbf"[39m
             [36m>[39m
@@ -135,25 +138,7 @@ FAIL src/App.test.tsx
             [36m</b>[39m
             [36m<div[39m
               [33mstyle[39m=[32m"width: 100px; margin: 0px auto;"[39m
-            [36m>[39m
-              [36m<ul>[39m
-                [36m<li>[39m
-                  [0mHeni Patel[0m
-                [36m</li>[39m
-                [36m<li>[39m
-                  [0mSakhee Desai[0m
-                [36m</li>[39m
-                [36m<li>[39m
-                  [0mAman Singh[0m
-                [36m</li>[39m
-                [36m<li>[39m
-                  [0mPriya Salako[0m
-                [36m</li>[39m
-                [36m<li>[39m
-                  [0mJulia O‘Neill[0m
-                [36m</li>[39m
-              [36m</ul>[39m
-            [36m</div>[39m
+            [36m/>[39m
           [36m</div>[39m
           [36m<br />[39m
           [36m<div>[39m
@@ -167,8 +152,7 @@ FAIL src/App.test.tsx
                 [36m<div>[39m
                   [36m<div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -177,8 +161,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -187,8 +170,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -197,8 +179,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -207,8 +188,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -217,8 +197,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -227,8 +206,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -237,8 +215,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -247,8 +224,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -257,8 +233,99 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd[0m
-                      [0m [0m
+                      [0mAdd To Main[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mMoana[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mMinions[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mToy Story[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mToy Story 2[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mToy Story 3[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mCars[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mAladdin[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mTangled[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mFrozen[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
+                      [36m<button[39m
+                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                        [33mtype[39m=[32m"button"[39m
+                      [36m>[39m
+                        [0mWreck-It Ralph[0m
+                      [36m</button>[39m
+                    [36m</div>[39m
+                    [36m<div>[39m
+                      [0mAdd To Genre List[0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -271,7 +338,18 @@ FAIL src/App.test.tsx
                 [36m<div>[39m
                   [36m<div>[39m
                     [36m<strong>[39m
-                      [0mMy List:[0m
+                      [0mMy Main List:[0m
+                    [36m</strong>[39m
+                    [36m<button[39m
+                      [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                      [33mtype[39m=[32m"button"[39m
+                    [36m>[39m
+                      [0mClear List[0m
+                    [36m</button>[39m
+                  [36m</div>[39m
+                  [36m<div>[39m
+                    [36m<strong>[39m
+                      [0mMy Genre List:[0m
                     [36m</strong>[39m
                     [36m<button[39m
                       [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
@@ -341,21 +419,22 @@ FAIL src/components/Hidden.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   31.03 |        0 |   38.46 |   31.03 |                   
+All files            |   29.72 |        0 |   33.33 |   29.72 |                   
  src                 |    7.14 |        0 |   33.33 |    7.14 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   53.33 |        0 |      40 |   53.33 |                   
-  CreateList.tsx     |      50 |        0 |   33.33 |      50 | 22-29,41-50       
+ src/components      |   43.47 |        0 |   33.33 |   43.47 |                   
+  CreateList.tsx     |   41.17 |        0 |   27.27 |   41.17 | 26-44,56,64-80    
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
-  Movie.tsx          |       0 |        0 |       0 |       0 |                   
+  Movie.ts           |       0 |        0 |       0 |       0 |                   
+  Movies.ts          |       0 |      100 |     100 |       0 | 3                 
   RoleSelect.tsx     |     100 |      100 |     100 |     100 |                   
   WatchList.tsx      |     100 |      100 |     100 |     100 |                   
 ---------------------|---------|----------|---------|---------|-------------------
 Test Suites: 4 failed, 4 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.157 s
+Time:        3.552 s
 Ran all test suites.
