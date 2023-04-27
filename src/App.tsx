@@ -4,7 +4,7 @@ import "./App.css";
 import { Center, Container, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/CreateList";
-import { WatchList } from "./components/WatchList";
+import {WatchList} from "./components/WatchList";
 
 function App() {
     return (
@@ -23,13 +23,15 @@ function App() {
                         <li>Sakhee Desai</li>
                         <li>Aman Singh</li>
                         <li>Priya Salako</li>
-                        <li>Julia O&lsquo;Neill</li>
+                        <li>Julia ONeill</li>
                     </ul>
                 </div>
             </div>
             <br/>
             <div>
+                <div></div>
                 <CreateList></CreateList>
+                <h1></h1>
                 <WatchList></WatchList>
             </div>
         </div>
