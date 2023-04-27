@@ -16,15 +16,8 @@ function App() {
                 <p>MoviePedia</p>
             </Heading>
             <div>
-                <b>Group Members: </b>
+                <b>Group Members: Sakhee Desai, Julia O&lsquo;Neill, Heni Patel, Priya Salako, Aman Singh</b>
                 <div style={{ width: "100px", margin: "0 auto" }}>
-                    <ul>
-                        <li>Heni Patel</li>
-                        <li>Sakhee Desai</li>
-                        <li>Aman Singh</li>
-                        <li>Priya Salako</li>
-                        <li>Julia O&lsquo;Neill</li>
-                    </ul>
                 </div>
             </div>
             <br/>

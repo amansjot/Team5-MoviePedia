@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Button, SimpleGrid } from "@chakra-ui/react";
+import {Movie} from "./Movie";
+
 
 const MOVIES = [
     "Minions",
@@ -14,19 +16,32 @@ const MOVIES = [
     "Moana",
 ];
 
+
 export function CreateList(): JSX.Element {
     const [allOptions] = useState<string[]>(MOVIES);
-    const [userList, setuserList] = useState<string[]>([]);
+    const [usermainList, setusermainList] = useState<string[]>([]);
+    const [userlistbyGenre, setuserGenreList] = useState<string[]>([]);
 
-    function addMovieToList(newMovie: string) {
-        if (!userList.includes(newMovie)){
-            setuserList([...userList, newMovie]);
+    function addMovieTomainList(newMovie: string) {
+        if (!usermainList.includes(newMovie)){
+            setusermainList([...usermainList, newMovie]);
 
         }
     }
 
-    function clearList() {
-        setuserList([]);
+    function clearmainList() {
+        setusermainList([]);
+    }
+
+    function addMovieTogenreList(newMovie: string) {
+        if (!userlistbyGenre.includes(newMovie)){
+            setuserGenreList([...userlistbyGenre, newMovie]);
+
+        }
+    }
+
+    function cleargenreList() {
+        setuserGenreList([]);
     }
 
     return (
@@ -37,19 +52,34 @@ export function CreateList(): JSX.Element {
                     <div>
                         {allOptions.map((option: string) => (
                             <div key={option}>
-                Add{" "}
-                                <Button onClick={() => addMovieToList(option)}>{option}</Button>
+                Add To Main
+                                <Button onClick={() => addMovieTomainList(option)}>{option}</Button>
+                            </div>
+                        ))}
+                    </div>
+                    <div>
+                        {allOptions.map((option: string) => (
+                            <div key={option}>
+                Add To Genre List
+                                <Button onClick={() => addMovieTogenreList(option)}>{option}</Button>
                             </div>
                         ))}
                     </div>
                 </div>
                 <div>
                     <div>
-                        <strong>My List:</strong>
-                        {userList.map((movie: string) => (
+                        <strong>My Main List:</strong>
+                        {usermainList.map((movie: string) => (
                             <li key={movie}>{movie}</li>
                         ))}
-                        <Button onClick={clearList}>Clear List</Button>
+                        <Button onClick={clearmainList}>Clear List</Button>
+                    </div>
+                    <div>
+                        <strong>My Genre List:</strong>
+                        {userlistbyGenre.map((movie: string) => (
+                            <li key={movie}>{movie}</li>
+                        ))}
+                        <Button onClick={cleargenreList}>Clear List</Button>
                     </div>
                 </div>
             </SimpleGrid>
