@@ -30,6 +30,106 @@ FAIL src/App.test.tsx
             [36m</p>[39m
           [36m</h2>[39m
           [36m<div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"css-gmuwbf"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [36m<h3[39m
+                  [33mclass[39m=[32m"chakra-heading css-0"[39m
+                [36m>[39m
+                  [0mChange Role[0m
+                [36m</h3>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-radio-group css-0"[39m
+                  [33mrole[39m=[32m"radiogroup"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"chakra-stack css-x9juev"[39m
+                  [36m>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"chakra-radio css-1nqw95c"[39m
+                      [33mdata-checked[39m=[32m""[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mchecked[39m=[32m""[39m
+                        [33mclass[39m=[32m"chakra-radio__input"[39m
+                        [33mid[39m=[32m"radio-:r1:"[39m
+                        [33mname[39m=[32m"radio-:r0:"[39m
+                        [33mstyle[39m=[32m"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"Super"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"chakra-radio__control css-ssalds"[39m
+                        [33mdata-checked[39m=[32m""[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
+                        [33mdata-checked[39m=[32m""[39m
+                      [36m>[39m
+                        [0mSuper[0m
+                      [36m</span>[39m
+                    [36m</label>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"chakra-radio css-1nqw95c"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"chakra-radio__input"[39m
+                        [33mid[39m=[32m"radio-:r2:"[39m
+                        [33mname[39m=[32m"radio-:r0:"[39m
+                        [33mstyle[39m=[32m"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"Admin"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"chakra-radio__control css-ssalds"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
+                      [36m>[39m
+                        [0mAdmin[0m
+                      [36m</span>[39m
+                    [36m</label>[39m
+                    [36m<label[39m
+                      [33mclass[39m=[32m"chakra-radio css-1nqw95c"[39m
+                    [36m>[39m
+                      [36m<input[39m
+                        [33mclass[39m=[32m"chakra-radio__input"[39m
+                        [33mid[39m=[32m"radio-:r3:"[39m
+                        [33mname[39m=[32m"radio-:r0:"[39m
+                        [33mstyle[39m=[32m"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"[39m
+                        [33mtype[39m=[32m"radio"[39m
+                        [33mvalue[39m=[32m"User"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33maria-hidden[39m=[32m"true"[39m
+                        [33mclass[39m=[32m"chakra-radio__control css-ssalds"[39m
+                      [36m/>[39m
+                      [36m<span[39m
+                        [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
+                      [36m>[39m
+                        [0mUser[0m
+                      [36m</span>[39m
+                    [36m</label>[39m
+                  [36m</div>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+                [36m<div>[39m
+                  [0mYour Role: [0m
+                  [36m<span[39m
+                    [33mdata-testid[39m=[32m"colored-box"[39m
+                  [36m>[39m
+                    [0mSuper[0m
+                  [36m</span>[39m
+                [36m</div>[39m
+                [36m<br />[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+          [36m<br />[39m
+          [36m<div>[39m
             [36m<b>[39m
               [0mGroup Members: [0m
             [36m</b>[39m
@@ -241,20 +341,21 @@ FAIL src/components/Hidden.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   25.92 |        0 |   33.33 |   25.92 |                   
+All files            |   31.03 |        0 |   38.46 |   31.03 |                   
  src                 |    7.14 |        0 |   33.33 |    7.14 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   46.15 |        0 |   33.33 |   46.15 |                   
+ src/components      |   53.33 |        0 |      40 |   53.33 |                   
   CreateList.tsx     |      50 |        0 |   33.33 |      50 | 22-29,41-50       
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
   Movie.tsx          |       0 |        0 |       0 |       0 |                   
+  RoleSelect.tsx     |     100 |      100 |     100 |     100 |                   
   WatchList.tsx      |     100 |      100 |     100 |     100 |                   
 ---------------------|---------|----------|---------|---------|-------------------
 Test Suites: 4 failed, 4 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.255 s
+Time:        3.157 s
 Ran all test suites.
