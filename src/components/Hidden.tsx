@@ -2,6 +2,6 @@ import React, { useState } from "react";
 
 export function hidden(): JSX.Element {
     return(
-        <div>Hidden Hello </div>
+        <div>Hidden Hello New</div>
     );
 }
