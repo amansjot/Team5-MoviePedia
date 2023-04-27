@@ -5,6 +5,7 @@ import { Center, Container, Heading, ListItem, UnorderedList } from "@chakra-ui/
 import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/CreateList";
 import { WatchList } from "./components/WatchList";
+import { RoleSelect } from "./components/RoleSelect";
 
 function App() {
     return (
@@ -17,6 +18,13 @@ function App() {
             </Heading>
             <div>
                 <b>Group Members: Sakhee Desai, Julia O&lsquo;Neill, Heni Patel, Priya Salako, Aman Singh</b>
+                <Center>
+                    <RoleSelect></RoleSelect>
+                </Center>
+            </div>
+            <br/>
+            <div>
+                <b>Group Members: </b>
                 <div style={{ width: "100px", margin: "0 auto" }}>
                 </div>
             </div>
