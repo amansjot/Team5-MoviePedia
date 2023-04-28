@@ -25,7 +25,7 @@ export function WatchList(): JSX.Element {
    
    
     return(
-        <Card align="center" w="50vh" h="105vh" overflow="hidden" variant ="elevated">
+        <Card p="4vh" align="center" w="50vh" h="105vh" overflow="hidden" variant ="elevated">
             <Box h="8vh" w="50vh" bg="white">
                 <CardHeader>
                     <span>{listName}</span>

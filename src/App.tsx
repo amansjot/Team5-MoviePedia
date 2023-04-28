@@ -5,6 +5,8 @@ import { Center, Container, Heading, ListItem, UnorderedList } from "@chakra-ui/
 import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/CreateList";
 import {WatchList} from "./components/WatchList";
+import { TestingMovies } from "./components/TestingMovies";
+
 
 function App() {
     return (
@@ -29,8 +31,10 @@ function App() {
             </div>
             <br/>
             <div>
-                <div></div>
                 <CreateList></CreateList>
+                <div>
+                    <TestingMovies></TestingMovies>
+                </div>
                 <h1></h1>
                 <WatchList></WatchList>
             </div>
