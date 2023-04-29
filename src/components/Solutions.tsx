@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FormControl, FormLabel, Input, Select } from "@chakra-ui/react";
+import { FormControl, FormLabel, Heading, Input, Select } from "@chakra-ui/react";
 
 export function Solutions(): JSX.Element {
     const [answer, setAnswer] = useState<string>("");
@@ -26,7 +26,8 @@ export function Solutions(): JSX.Element {
 
     return (
         <div>
-            <h3> HAKS - Advice </h3>
+            <Heading size="lg">Unsure what to do in an emergency situation? No worries!</Heading>
+            <br/>
             <FormControl>
                 <FormLabel>What Kind of Alert Did You Recieve? </FormLabel>
                 <Select placeholder='Select type' onChange={(event) => solution(event)}>
@@ -40,6 +41,7 @@ export function Solutions(): JSX.Element {
                 <FormLabel> What Kind of Alert Did You Recieve?</FormLabel>
                 <Input type = 'genre' value = {answer} onChange = {updateAnswer}/>
             </FormControl> */}
+            <br/>
             <div> {soln} </div>
         </div>
     );

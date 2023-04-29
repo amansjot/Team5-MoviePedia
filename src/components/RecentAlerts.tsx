@@ -5,7 +5,10 @@ export function RecentAlerts(): JSX.Element {
     return (
         
         <div>
+            <div>Stay up to date on the most recent alerts in the area, with descriptions and help embedded in each.</div>
+            <br/>
             <Card
+                m={2}
                 direction={{ base: "column", sm: "row" }}
                 overflow='hidden'
                 variant='outline'
@@ -30,6 +33,7 @@ export function RecentAlerts(): JSX.Element {
             </Card>
 
             <Card
+                m={2}
                 direction={{ base: "column", sm: "row" }}
                 overflow='hidden'
                 variant='outline'
@@ -54,6 +58,7 @@ export function RecentAlerts(): JSX.Element {
             </Card>
 
             <Card
+                m={2}
                 direction={{ base: "column", sm: "row" }}
                 overflow='hidden'
                 variant='outline'
