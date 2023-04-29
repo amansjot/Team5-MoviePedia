@@ -20,7 +20,6 @@ const MOVIES = [
 export function CreateList(): JSX.Element {
     const [allOptions] = useState<string[]>(MOVIES);
     const [usermainList, setusermainList] = useState<string[]>([]);
-    const [userlistbyGenre, setuserGenreList] = useState<string[]>([]);
 
     function addMovieTomainList(newMovie: string) {
         if (!usermainList.includes(newMovie)){
@@ -33,16 +32,6 @@ export function CreateList(): JSX.Element {
         setusermainList([]);
     }
 
-    function addMovieTogenreList(newMovie: string) {
-        if (!userlistbyGenre.includes(newMovie)){
-            setuserGenreList([...userlistbyGenre, newMovie]);
-
-        }
-    }
-
-    function cleargenreList() {
-        setuserGenreList([]);
-    }
 
     return (
         <div>
@@ -57,14 +46,6 @@ export function CreateList(): JSX.Element {
                             </div>
                         ))}
                     </div>
-                    <div>
-                        {allOptions.map((option: string) => (
-                            <div key={option}>
-                Add To Genre List
-                                <Button onClick={() => addMovieTogenreList(option)}>{option}</Button>
-                            </div>
-                        ))}
-                    </div>
                 </div>
                 <div>
                     <div>
@@ -73,13 +54,6 @@ export function CreateList(): JSX.Element {
                             <li key={movie}>{movie}</li>
                         ))}
                         <Button onClick={clearmainList}>Clear List</Button>
-                    </div>
-                    <div>
-                        <strong>My Genre List:</strong>
-                        {userlistbyGenre.map((movie: string) => (
-                            <li key={movie}>{movie}</li>
-                        ))}
-                        <Button onClick={cleargenreList}>Clear List</Button>
                     </div>
                 </div>
             </SimpleGrid>

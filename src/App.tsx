@@ -7,6 +7,7 @@ import { CreateList } from "./components/CreateList";
 import { WatchList } from "./components/WatchList";
 import { RoleSelect } from "./components/RoleSelect";
 import {BlueButton} from "./components/BlueButton";
+import {Solutions} from "./components/Solutions";
 
 function App() {
     return (
@@ -24,14 +25,10 @@ function App() {
                 </Center>
             </div>
             <br/>
-            <div>
-                <b>Group Members: </b>
-                <div style={{ width: "100px", margin: "0 auto" }}>
-                </div>
-            </div>
             <br/>
             <div>
                 <BlueButton></BlueButton>
+                <Solutions></Solutions>
                 <CreateList></CreateList>
                 <WatchList></WatchList>
             </div>
