@@ -11,7 +11,7 @@ Aman Singh
 
 Kambria Rogalski
 
-## About the [NAME] 
+## About [NAME] 
 
 [] is a website which works with the University of Delaware Alerts System and UDPD to offer a virtual version of the "Blue Light System" with a mobile Blue Button that calls cops to the current location, tracks where your phone goes so cops can follow your trajectory, and also sends a UD alert! The alerts are also modified from the original system to include off-campus events and some level of solutions. 
 
