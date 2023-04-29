@@ -1,21 +1,20 @@
-# Welcome to MoviePedia!
+# Welcome to [NAME]!
 
 
-## Team Members (Group 5)
+## Team Members (HAKS)
 
-Sakhee Desai (sakheed)
+Sakhee Desai
 
-Julia O’Neill (jmoneill15)
+Heni Patel
 
-Heni Patel (henin123)
+Aman Singh
 
-Priya Salako (psalako)
+Kambria Rogalski
 
-Aman Singh (amansjot)
+## About [NAME] 
 
-## About MoviePedia
+[] is a website which works with the University of Delaware Alerts System and UDPD to offer a virtual version of the "Blue Light System" with a mobile Blue Button that calls cops to the current location, tracks where your phone goes so cops can follow your trajectory, and also sends a UD alert! The alerts are also modified from the original system to include off-campus events and some level of solutions. 
 
-MoviePedia is the best place to curate and find specialized lists of your favorite movies! On our site, visitors can select their favorite movies from our masterlist and drag-and-drop into their own personalized Watchlists, Movies by Genre, and more! 
 
 ## Contact the Team
 
