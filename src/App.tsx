@@ -15,10 +15,10 @@ function App() {
                 <Center>
                     <img src="logo512.png" width="150" alt="Clapboard Logo"/>
                 </Center>
-                <p>MoviePedia</p>
+                <p>HAKSafety</p>
             </Heading>
             <div>
-                <b>Group Members: Sakhee Desai, Heni Patel, Priya Salako, Aman Singh, Kambria Rogalski </b>
+                <b>Group Members: Sakhee Desai, Heni Patel, Aman Singh, Kambria Rogalski </b>
                 <Center>
                     <RoleSelect></RoleSelect>
                 </Center>
