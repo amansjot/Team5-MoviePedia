@@ -6,6 +6,7 @@ import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/CreateList";
 import { WatchList } from "./components/WatchList";
 import { RoleSelect } from "./components/RoleSelect";
+import {BlueButton} from "./components/BlueButton";
 
 function App() {
     return (
@@ -30,6 +31,7 @@ function App() {
             </div>
             <br/>
             <div>
+                <BlueButton></BlueButton>
                 <CreateList></CreateList>
                 <WatchList></WatchList>
             </div>
