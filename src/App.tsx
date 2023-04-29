@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+import new_logo from "./logo.svg";
 import "./App.css";
 import { Center, Container, Heading, ListItem, UnorderedList } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
@@ -14,23 +14,23 @@ function App() {
         <div className="App">
             <Heading mb={10}>
                 <Center>
-                    <img src="logo512.png" width="150" alt="Clapboard Logo"/>
+                    <img src="logo.png" width="150" alt="Hackathon Logo"/>
                 </Center>
                 <p>HAKSafety</p>
             </Heading>
             <div>
                 <b>Group Members: Sakhee Desai, Heni Patel, Aman Singh, Kambria Rogalski </b>
-                <Center>
-                    <RoleSelect></RoleSelect>
-                </Center>
             </div>
             <br/>
             <br/>
             <div>
-                <BlueButton></BlueButton>
-                <Solutions></Solutions>
-                <CreateList></CreateList>
-                <WatchList></WatchList>
+                <Center>
+                    <BlueButton></BlueButton>
+                </Center>
+                <Center> 
+                    <Solutions></Solutions>
+                </Center>
+
             </div>
         </div>
     );
