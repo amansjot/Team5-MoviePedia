@@ -12,13 +12,15 @@ export function RecentAlerts(): JSX.Element {
                 direction={{ base: "column", sm: "row" }}
                 overflow='hidden'
                 variant='outline'
-                style={{"width": "90vw"}}
+                style={{"width": "90vw", "border": "2px solid #ccc"}}
             >
-                <img
-                    src='https://images.unsplash.com/photo-1581955957646-b5a446b6100a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80'
-                    alt='Gun'
-                    style={{"width": "100px"}}
-                />
+                <a href="https://tinyurl.com/haksafetymap1" target="_blank" style={{"width": "365px", "height": "140px"}} rel="noreferrer">
+                    <img
+                        src='map1.png'
+                        alt='Map 1'
+                        style={{"width": "140px", "height": "140px", "borderRight": "2px solid #ccc"}}
+                    />
+                </a>
 
                 <Stack>
                     <CardBody>
@@ -37,13 +39,15 @@ export function RecentAlerts(): JSX.Element {
                 direction={{ base: "column", sm: "row" }}
                 overflow='hidden'
                 variant='outline'
-                style={{"width": "90vw"}}
+                style={{"width": "90vw", "border": "2px solid #ccc"}}
             >
-                <img
-                    src='https://images.unsplash.com/photo-1453592256941-41c97c1d396a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1891&q=80'
-                    alt='Just Say No'
-                    style={{"width": "100px"}}
-                />
+                <a href="https://tinyurl.com/haksafetymap2" target="_blank" style={{"width": "345px", "height": "140px"}} rel="noreferrer">
+                    <img
+                        src='map2.png'
+                        alt='Map 2'
+                        style={{"width": "140px", "height": "140px", "borderRight": "2px solid #ccc"}}
+                    />
+                </a>
 
                 <Stack>
                     <CardBody>
@@ -62,13 +66,15 @@ export function RecentAlerts(): JSX.Element {
                 direction={{ base: "column", sm: "row" }}
                 overflow='hidden'
                 variant='outline'
-                style={{"width": "90vw"}}
+                style={{"width": "90vw", "border": "2px solid #ccc"}}
             >
-                <img
-                    src='https://plus.unsplash.com/premium_photo-1664303499312-917c50e4047b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80'
-                    alt='Hurrciane'
-                    style={{"width": "100px"}}
-                />
+                <a href="https://tinyurl.com/haksafetymap3" target="_blank" style={{"width": "255px", "height": "140px"}} rel="noreferrer">
+                    <img
+                        src='map3.png'
+                        alt='Map 3'
+                        style={{"width": "140px", "height": "140px", "borderRight": "2px solid #ccc"}}
+                    />
+                </a>
 
                 <Stack>
                     <CardBody>

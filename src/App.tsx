@@ -47,8 +47,19 @@ function App() {
             </Tabs>
             <Divider orientation='horizontal' borderWidth={3}  borderColor = "#2055A1"/>
             <div style={{"backgroundColor": "#bee3f8", "padding": "30px 0 40px 0"}}>                
+                <div><b>Important Numbers:</b>
+                    <div>UD Police Department: 302-831-2222</div>
+                    <div>Police Department: 911</div>
+                    <div>Suicide and Crisis Lifeline: 988</div>
+                    <div>UD Student Health: 302-831-2226</div>
+                    <div>S.O.S Helpline: 302-831-1001 press 1</div>
+                    <div>Student Health: (302) 831-3457</div>
+                    <div>Non-Emergency: 302-831-2117</div>
+                </div>
+                <br/>
                 <b>HAKSafety 2023</b><br/>
                 <div>HenHacks UD</div><br/>
+                <b>Team Members</b><br/>
                 Heni Patel, Aman Singh, Kambria Rogalski, Sakhee Desai
             </div>
         </div>
