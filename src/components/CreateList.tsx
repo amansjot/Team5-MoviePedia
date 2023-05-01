@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, SimpleGrid } from "@chakra-ui/react";
+import { Button, Heading, SimpleGrid } from "@chakra-ui/react";
 import {Movie} from "./Movie";
 
 
@@ -46,13 +46,13 @@ export function CreateList(): JSX.Element {
 
     return (
         <div>
-            <h1>Create A List </h1>
+            <Heading size="lg">Create A List </Heading>
             <SimpleGrid columns={2} spacing={10}>
                 <div>
                     <div>
                         {allOptions.map((option: string) => (
                             <div key={option}>
-                Add To Main
+                Add To Main&nbsp;&nbsp;&nbsp;&nbsp;
                                 <Button onClick={() => addMovieTomainList(option)}>{option}</Button>
                             </div>
                         ))}
@@ -60,7 +60,7 @@ export function CreateList(): JSX.Element {
                     <div>
                         {allOptions.map((option: string) => (
                             <div key={option}>
-                Add To Genre List
+                Add To Genre List&nbsp;&nbsp;&nbsp;&nbsp;
                                 <Button onClick={() => addMovieTogenreList(option)}>{option}</Button>
                             </div>
                         ))}
@@ -74,6 +74,7 @@ export function CreateList(): JSX.Element {
                         ))}
                         <Button onClick={clearmainList}>Clear List</Button>
                     </div>
+                    <br/>
                     <div>
                         <strong>My Genre List:</strong>
                         {userlistbyGenre.map((movie: string) => (
