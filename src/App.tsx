@@ -20,7 +20,7 @@ function App() {
                 <p>MoviePedia</p>
             </Heading>
             <div>
-                <b>Group Members: Sakhee Desai, Julia O&lsquo;Neill, Heni Patel, Priya Salako, Aman Singh</b>
+                {/* <b>Group Members: Sakhee Desai, Julia O&lsquo;Neill, Heni Patel, Priya Salako, Aman Singh</b> */}
                 <Center>
                     <div>
                         <Heading as='h3' size="md">Change Role</Heading>
@@ -46,6 +46,7 @@ function App() {
             <div>
                 <b>Group Members: </b>
                 <div style={{ width: "100px", margin: "0 auto" }}>
+                Sakhee Desai<br/>Julia O&lsquo;Neill<br/>Heni Patel<br/>Priya Salako<br/>Aman Singh
                 </div>
             </div>
             <br/>
