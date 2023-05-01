@@ -30,7 +30,7 @@ function App() {
             </div>
             <br/>
             <div>
-                <CreateList></CreateList>
+                {/* <CreateList></CreateList> */}
                 <WatchList></WatchList>
             </div>
         </div>

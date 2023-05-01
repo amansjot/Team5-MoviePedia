@@ -19,8 +19,8 @@ import movies from "./movie.json";
 
 
 export function CreateList(): JSX.Element {
-    const {masterlist}: Record<string, Movie[]> = movies as Record<string, Movie[]>;
-    const [allOptions] = useState<Movie[]>(masterlist);
+    const {ml}: Record<string, Movie[]> = movies as Record<string, Movie[]>;
+    const [masterlist] = Object.entries(ml).map(a); 
     const [usermainList, setusermainList] = useState<Movie[]>([]);
     const [userlistbyGenre, setuserGenreList] = useState<Movie[]>([]);
 
@@ -59,7 +59,7 @@ export function CreateList(): JSX.Element {
                             </div>
                         ))}
                     </div>
-                    <div>
+                    {/* <div>
                         {allOptions.map((option: Movie) => (
                             <div key={option.name}>
                 Add To Genre List
@@ -82,7 +82,7 @@ export function CreateList(): JSX.Element {
                             <li key={movie.name}>{movie.name}</li>
                         ))}
                         <Button onClick={cleargenreList}>Clear List</Button>
-                    </div>
+                    </div> */}
                 </div>
             </SimpleGrid>
         </div>
