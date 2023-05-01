@@ -13,6 +13,9 @@ FAIL src/App.test.tsx
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
         [36m>[39m
+          [36m<div>[39m
+            [0mUser[0m
+          [36m</div>[39m
           [36m<h2[39m
             [33mclass[39m=[32m"chakra-heading css-1r2f04i"[39m
           [36m>[39m
@@ -51,10 +54,8 @@ FAIL src/App.test.tsx
                   [36m>[39m
                     [36m<label[39m
                       [33mclass[39m=[32m"chakra-radio css-1nqw95c"[39m
-                      [33mdata-checked[39m=[32m""[39m
                     [36m>[39m
                       [36m<input[39m
-                        [33mchecked[39m=[32m""[39m
                         [33mclass[39m=[32m"chakra-radio__input"[39m
                         [33mid[39m=[32m"radio-:r1:"[39m
                         [33mname[39m=[32m"radio-:r0:"[39m
@@ -65,11 +66,9 @@ FAIL src/App.test.tsx
                       [36m<span[39m
                         [33maria-hidden[39m=[32m"true"[39m
                         [33mclass[39m=[32m"chakra-radio__control css-ssalds"[39m
-                        [33mdata-checked[39m=[32m""[39m
                       [36m/>[39m
                       [36m<span[39m
                         [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
-                        [33mdata-checked[39m=[32m""[39m
                       [36m>[39m
                         [0mSuper[0m
                       [36m</span>[39m
@@ -97,8 +96,10 @@ FAIL src/App.test.tsx
                     [36m</label>[39m
                     [36m<label[39m
                       [33mclass[39m=[32m"chakra-radio css-1nqw95c"[39m
+                      [33mdata-checked[39m=[32m""[39m
                     [36m>[39m
                       [36m<input[39m
+                        [33mchecked[39m=[32m""[39m
                         [33mclass[39m=[32m"chakra-radio__input"[39m
                         [33mid[39m=[32m"radio-:r3:"[39m
                         [33mname[39m=[32m"radio-:r0:"[39m
@@ -109,9 +110,11 @@ FAIL src/App.test.tsx
                       [36m<span[39m
                         [33maria-hidden[39m=[32m"true"[39m
                         [33mclass[39m=[32m"chakra-radio__control css-ssalds"[39m
+                        [33mdata-checked[39m=[32m""[39m
                       [36m/>[39m
                       [36m<span[39m
                         [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
+                        [33mdata-checked[39m=[32m""[39m
                       [36m>[39m
                         [0mUser[0m
                       [36m</span>[39m
@@ -124,7 +127,7 @@ FAIL src/App.test.tsx
                   [36m<span[39m
                     [33mdata-testid[39m=[32m"colored-box"[39m
                   [36m>[39m
-                    [0mSuper[0m
+                    [0mUser[0m
                   [36m</span>[39m
                 [36m</div>[39m
                 [36m<br />[39m
@@ -419,22 +422,22 @@ FAIL src/components/Hidden.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   29.72 |        0 |   33.33 |   29.72 |                   
- src                 |    7.14 |        0 |   33.33 |    7.14 |                   
+All files            |   26.31 |        0 |   27.77 |   26.31 |                   
+ src                 |   13.33 |        0 |   33.33 |   13.33 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   43.47 |        0 |   33.33 |   43.47 |                   
+ src/components      |   34.78 |        0 |   26.66 |   34.78 |                   
   CreateList.tsx     |   41.17 |        0 |   27.27 |   41.17 | 26-44,56,64-80    
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
   Movie.ts           |       0 |        0 |       0 |       0 |                   
   Movies.ts          |       0 |      100 |     100 |       0 | 3                 
-  RoleSelect.tsx     |     100 |      100 |     100 |     100 |                   
+  RoleSelect.tsx     |       0 |      100 |       0 |       0 | 5-7               
   WatchList.tsx      |     100 |      100 |     100 |     100 |                   
 ---------------------|---------|----------|---------|---------|-------------------
 Test Suites: 4 failed, 4 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.343 s
+Time:        4.682 s
 Ran all test suites.
