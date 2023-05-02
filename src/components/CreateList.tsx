@@ -23,6 +23,7 @@ export function CreateList(): JSX.Element {
     const masterlist = ml.map(a=>({
         name:a.name, poster:a.poster, year:a.year, actors:a.actors, plot:a.plot, director:a.director, genre:a.genre, rating:a.rating
     }));
+    const [allOptions] = useState<Movie[]>(masterlist);
     const [usermainList, setusermainList] = useState<Movie[]>([]);
     const [userlistbyGenre, setuserGenreList] = useState<Movie[]>([]);
     "";
@@ -61,7 +62,7 @@ export function CreateList(): JSX.Element {
                             </div>
                         ))}
                     </div>
-                    {/* <div>
+                    <div>
                         {allOptions.map((option: Movie) => (
                             <div key={option.name}>
                 Add To Genre List
@@ -84,7 +85,7 @@ export function CreateList(): JSX.Element {
                             <li key={movie.name}>{movie.name}</li>
                         ))}
                         <Button onClick={cleargenreList}>Clear List</Button>
-                    </div> */}
+                    </div>
                 </div>
             </SimpleGrid>
         </div>
