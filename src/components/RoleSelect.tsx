@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Heading, Radio, RadioGroup, Stack } from "@chakra-ui/react";
 
 export function RoleSelect(): JSX.Element {
-    const [selectedRole, setRole] = useState<string>("Super");
+    const [selectedRole, setRole] = useState<string>("User");
 
     return (
         <div>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, SimpleGrid } from "@chakra-ui/react";
+import { Button, Heading, SimpleGrid } from "@chakra-ui/react";
 import {Movie} from "./Movie";
 import movies from "./movie.json";
 
@@ -51,13 +51,13 @@ export function CreateList(): JSX.Element {
 
     return (
         <div>
-            <h1>Create A List </h1>
+            <Heading size="lg">Create A List </Heading>
             <SimpleGrid columns={2} spacing={10}>
                 <div>
                     <div>
                         {allOptions.map((option: Movie) => (
                             <div key={option.name}>
-                Add To Main
+                Add To Main&nbsp;&nbsp;&nbsp;&nbsp;
                                 <Button onClick={() => addMovieTomainList(option)}>{option.name}</Button>
                             </div>
                         ))}
@@ -86,6 +86,7 @@ export function CreateList(): JSX.Element {
                         ))}
                         <Button onClick={cleargenreList}>Clear List</Button>
                     </div>
+                    <br/>
                 </div>
             </SimpleGrid>
         </div>
