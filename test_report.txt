@@ -3,6 +3,65 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
+  ● Console
+
+    console.error
+      Warning: validateDOMNesting(...): <div> cannot appear as a descendant of <p>.
+          at div
+          at p
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Text2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:871:53)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at CardBody2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/card/dist/index.js:77:11)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Card2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/card/dist/index.js:50:57)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at TestingMovies
+          at div
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at validateDOMNesting (node_modules/react-dom/cjs/react-dom.development.js:10849:7)
+      at createInstance (node_modules/react-dom/cjs/react-dom.development.js:10930:5)
+      at completeWork (node_modules/react-dom/cjs/react-dom.development.js:22187:28)
+      at completeUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26593:16)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26568:5)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
   ● renders learn react link
 
     TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
@@ -170,231 +229,7 @@ FAIL src/App.test.tsx
                         [33mtype[39m=[32m"button"[39m
                       [36m>[39m
                         [0mMinions[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mToy Story[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mToy Story 2[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mToy Story 3[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mCars[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mAladdin[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mTangled[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mFrozen[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mWreck-It Ralph[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mMoana[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                  [36m</div>[39m
-                [36m</div>[39m
-                [36m<div>[39m
-                  [36m<div>[39m
-                    [36m<strong>[39m
-                      [0mMy Main List:[0m
-                    [36m</strong>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                      [33mtype[39m=[32m"button"[39m
-                    [36m>[39m
-                      [0mClear List[0m
-                    [36m</button>[39m
-                  [36m</div>[39m
-                  [36m<br />[39m
-                [36m</div>[39m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<br />[39m
-            [36m<div>[39m
-              [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-0"[39m
-              [36m>[39m
-                [0mPersonalized Lists [0m
-              [36m</h2>[39m
-              [36m<br />[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"chakra-form-control css-0"[39m
-                [33mrole[39m=[32m"group"[39m
-              [36m>[39m
-                [36m<label[39m
-                  [33mclass[39m=[32m"chakra-form__label css-uvho5g"[39m
-                  [33mfor[39m=[32m"field-:r4:"[39m
-                  [33mid[39m=[32m"field-:r4:-label"[39m
-                [36m>[39m
-                  [0mChoose a genre to create a list for: [0m
-                [36m</label>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"chakra-select__wrapper css-42b2qy"[39m
-                [36m>[39m
-                  [36m<select[39m
-                    [33mclass[39m=[32m"chakra-select css-1ik61og"[39m
-                    [33mid[39m=[32m"field-:r4:"[39m
-                  [36m>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m""[39m
-                    [36m>[39m
-                      [0mSelect type[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"horror"[39m
-                    [36m>[39m
-                      [0mHorror[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"comedy"[39m
-                    [36m>[39m
-                      [0mComedy[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"rom-com"[39m
-                    [36m>[39m
-                      [0mRom-Com[0m
-                    [36m</option>[39m
-                    [36m<option[39m
-                      [33mvalue[39m=[32m"action"[39m
-                    [36m>[39m
-                      [0mAction[0m
-                    [36m</option>[39m
-                  [36m</select>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"chakra-select__icon-wrapper css-162mkon"[39m
-                  [36m>[39m
-                    [36m<svg[39m
-                      [33maria-hidden[39m=[32m"true"[39m
-                      [33mclass[39m=[32m"chakra-select__icon"[39m
-                      [33mfocusable[39m=[32m"false"[39m
-                      [33mrole[39m=[32m"presentation"[39m
-                      [33mstyle[39m=[32m"width: 1em; height: 1em; color: currentColor;"[39m
-                      [33mviewBox[39m=[32m"0 0 24 24"[39m
-                    [36m>[39m
-                      [36m<path[39m
-                        [33md[39m=[32m"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"[39m
-                        [33mfill[39m=[32m"currentColor"[39m
-                      [36m/>[39m
-                    [36m</svg>[39m
-                  [36m</div>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-              [36m<br />[39m
-              [36m<div>[39m
-                [0m [0m
-                [0m [0m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<br />[39m
-            [36m<hr[39m
-              [33maria-orientation[39m=[32m"horizontal"[39m
-              [33mclass[39m=[32m"chakra-divider css-58eizg"[39m
-            [36m/>[39m
-            [36m<br />[39m
-            [36m<h2[39m
-              [33mclass[39m=[32m"chakra-heading css-0"[39m
-            [36m>[39m
-              [0mWatch List[0m
-            [36m</h2>[39m
-          [36m</div>[39m
-          [36m<br />[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"chakra-stack css-lxc1al"[39m
-          [36m>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"chakra-stack css-n21gh5"[39m
-            [36m>[39m
-              [36m<b>[39m
-                [0mGroup Members[0m
-              [36m</b>[39m
-              [36m<div[39m
-                [33mstyle[39m=[32m"width: 100px; margin: 0px auto;"[39m
-              [36m>[39m
-                [0mSakhee Desai[0m
-                [36m<br />[39m
-                [0mJulia O‘Neill[0m
-                [36m<br />[39m
-                [0mHeni Patel[0m
-                [36m<br />[39m
-                [0mPriya Salako[0m
-                [36m<br />[39m
-                [0mAman Singh[0m
-              [36m</div>[39m
-            [36m</div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"chakra-stack css-n21gh5"[39m
-            [36m>[39m
-              [36m<div>[39m
-                [0mMoviePedia 2023[0m
-              [36m</div>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
+       ...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -435,12 +270,12 @@ FAIL src/components/Hidden.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   23.72 |        0 |   21.73 |   24.56 |                   
+All files            |   42.37 |        0 |   43.47 |    42.1 |                   
  src                 |   13.33 |        0 |   33.33 |   13.33 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   27.27 |        0 |      20 |   28.57 |                   
+ src/components      |   52.27 |        0 |      45 |   52.38 |                   
   CreateList.tsx     |   54.54 |        0 |   33.33 |   54.54 | 26-33,45-54       
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                   
@@ -448,13 +283,13 @@ All files            |   23.72 |        0 |   21.73 |   24.56 |
   Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
   Movie.ts           |       0 |        0 |       0 |       0 |                   
   Movies.ts          |       0 |      100 |     100 |       0 | 3                 
+  MoviesList.tsx     |     100 |      100 |     100 |     100 |                   
   RoleSelect.tsx     |       0 |      100 |       0 |       0 | 5-7               
-  TestingMovies.tsx  |       0 |      100 |       0 |       0 | 13-37             
+  TestingMovies.tsx  |    90.9 |      100 |   83.33 |      90 | 20                
   WatchList.tsx      |      75 |      100 |      50 |     100 |                   
-  movies.tsx         |       0 |      100 |     100 |       0 | 3                 
 ---------------------|---------|----------|---------|---------|-------------------
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.063 s
+Time:        3.272 s
 Ran all test suites.
