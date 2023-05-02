@@ -446,12 +446,12 @@ FAIL src/components/Hidden.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   27.27 |        0 |   31.25 |   27.27 |                   
+All files            |   21.42 |        0 |   22.72 |   21.81 |                   
  src                 |   13.33 |        0 |   33.33 |   13.33 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   34.48 |        0 |   30.76 |   34.48 |                   
+ src/components      |   24.39 |        0 |   21.05 |      25 |                   
   CreateList.tsx     |   54.54 |        0 |   33.33 |   54.54 | 26-33,45-54       
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   Genre.tsx          |      25 |        0 |   33.33 |      25 | 10-20,33          
@@ -459,10 +459,12 @@ All files            |   27.27 |        0 |   31.25 |   27.27 |
   Movie.ts           |       0 |        0 |       0 |       0 |                   
   Movies.ts          |       0 |      100 |     100 |       0 | 3                 
   RoleSelect.tsx     |       0 |      100 |       0 |       0 | 5-7               
+  Testingmovies.tsx  |       0 |      100 |       0 |       0 | 13-37             
   WatchList.tsx      |     100 |      100 |     100 |     100 |                   
+  movies.tsx         |       0 |      100 |     100 |       0 | 3                 
 ---------------------|---------|----------|---------|---------|-------------------
 Test Suites: 4 failed, 4 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.418 s
+Time:        4.835 s
 Ran all test suites.
