@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Team5-MoviePedia/static/css/main.073c9b0a.css",
-    "main.js": "/Team5-MoviePedia/static/js/main.923ffbeb.js",
+    "main.js": "/Team5-MoviePedia/static/js/main.e5e8fe0f.js",
     "static/js/787.a9bbcd41.chunk.js": "/Team5-MoviePedia/static/js/787.a9bbcd41.chunk.js",
     "index.html": "/Team5-MoviePedia/index.html",
     "main.073c9b0a.css.map": "/Team5-MoviePedia/static/css/main.073c9b0a.css.map",
-    "main.923ffbeb.js.map": "/Team5-MoviePedia/static/js/main.923ffbeb.js.map",
+    "main.e5e8fe0f.js.map": "/Team5-MoviePedia/static/js/main.e5e8fe0f.js.map",
     "787.a9bbcd41.chunk.js.map": "/Team5-MoviePedia/static/js/787.a9bbcd41.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.923ffbeb.js"
+    "static/js/main.e5e8fe0f.js"
   ]
 }

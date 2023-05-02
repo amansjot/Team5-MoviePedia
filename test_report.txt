@@ -254,98 +254,6 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                   [36m</div>[39m
-                  [36m<div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mMinions[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mToy Story[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mToy Story 2[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mToy Story 3[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mCars[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mAladdin[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mTangled[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mFrozen[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mWreck-It Ralph[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Genre List    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mMoana[0m
-                      [36m</button>[39m
-                    [36m</div>[39m
-                  [36m</div>[39m
                 [36m</div>[39m
                 [36m<div>[39m
                   [36m<div>[39m
@@ -360,18 +268,84 @@ FAIL src/App.test.tsx
                     [36m</button>[39m
                   [36m</div>[39m
                   [36m<br />[39m
-                  [36m<div>[39m
-                    [36m<strong>[39m
-                      [0mMy Genre List:[0m
-                    [36m</strong>[39m
-                    [36m<button[39m
-                      [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                      [33mtype[39m=[32m"button"[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<br />[39m
+            [36m<div>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"chakra-heading css-0"[39m
+              [36m>[39m
+                [0mPersonalized Lists [0m
+              [36m</h2>[39m
+              [36m<br />[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"chakra-form-control css-0"[39m
+                [33mrole[39m=[32m"group"[39m
+              [36m>[39m
+                [36m<label[39m
+                  [33mclass[39m=[32m"chakra-form__label css-uvho5g"[39m
+                  [33mfor[39m=[32m"field-:r4:"[39m
+                  [33mid[39m=[32m"field-:r4:-label"[39m
+                [36m>[39m
+                  [0mChoose a genre to create a list for: [0m
+                [36m</label>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-select__wrapper css-42b2qy"[39m
+                [36m>[39m
+                  [36m<select[39m
+                    [33mclass[39m=[32m"chakra-select css-1ik61og"[39m
+                    [33mid[39m=[32m"field-:r4:"[39m
+                  [36m>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m""[39m
                     [36m>[39m
-                      [0mClear List[0m
-                    [36m</button>[39m
+                      [0mSelect type[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"horror"[39m
+                    [36m>[39m
+                      [0mHorror[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"comedy"[39m
+                    [36m>[39m
+                      [0mComedy[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"rom-com"[39m
+                    [36m>[39m
+                      [0mRom-Com[0m
+                    [36m</option>[39m
+                    [36m<option[39m
+                      [33mvalue[39m=[32m"action"[39m
+                    [36m>[39m
+                      [0mAction[0m
+                    [36m</option>[39m
+                  [36m</select>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"chakra-select__icon-wrapper css-162mkon"[39m
+                  [36m>[39m
+                    [36m<svg[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"chakra-select__icon"[39m
+                      [33mfocusable[39m=[32m"false"[39m
+                      [33mrole[39m=[32m"presentation"[39m
+                      [33mstyle[39m=[32m"width: 1em; height: 1em; color: currentColor;"[39m
+                      [33mviewBox[39m=[32m"0 0 24 24"[39m
+                    [36m>[39m
+                      [36m<path[39m
+                        [33md[39m=[32m"M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"[39m
+                        [33mfill[39m=[32m"currentColor"[39m
+                      [36m/>[39m
+                    [36m</svg>[39m
                   [36m</div>[39m
                 [36m</div>[39m
+              [36m</div>[39m
+              [36m<br />[39m
+              [36m<div>[39m
+                [0m [0m
+                [0m [0m
               [36m</div>[39m
             [36m</div>[39m
             [36m<br />[39m
@@ -472,14 +446,15 @@ FAIL src/components/Hidden.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   26.31 |        0 |   27.77 |   26.31 |                   
+All files            |   27.27 |        0 |   31.25 |   27.27 |                   
  src                 |   13.33 |        0 |   33.33 |   13.33 |                   
   App.tsx            |     100 |      100 |     100 |     100 |                   
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   34.78 |        0 |   26.66 |   34.78 |                   
-  CreateList.tsx     |   41.17 |        0 |   27.27 |   41.17 | 26-44,56,64-81    
+ src/components      |   34.48 |        0 |   30.76 |   34.48 |                   
+  CreateList.tsx     |   54.54 |        0 |   33.33 |   54.54 | 26-33,45-54       
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
+  Genre.tsx          |      25 |        0 |   33.33 |      25 | 10-20,33          
   Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
   Movie.ts           |       0 |        0 |       0 |       0 |                   
   Movies.ts          |       0 |      100 |     100 |       0 | 3                 
@@ -489,5 +464,5 @@ All files            |   26.31 |        0 |   27.77 |   26.31 |
 Test Suites: 4 failed, 4 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.219 s
+Time:        3.418 s
 Ran all test suites.
