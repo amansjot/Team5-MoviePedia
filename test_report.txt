@@ -34,7 +34,6 @@ FAIL src/App.test.tsx
           at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
           at TestingMovies
           at div
-          at div
           at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
@@ -201,35 +200,34 @@ FAIL src/App.test.tsx
             [0mCentral Movie List[0m
           [36m</h2>[39m
           [36m<br />[39m
-          [36m<div>[39m
-            [0mmovies[0m
-          [36m</div>[39m
-          [36m<br />[39m
-          [36m<hr[39m
-            [33maria-orientation[39m=[32m"horizontal"[39m
-            [33mclass[39m=[32m"chakra-divider css-58eizg"[39m
-          [36m/>[39m
-          [36m<br />[39m
-          [36m<div>[39m
-            [36m<div>[39m
-              [36m<h2[39m
-                [33mclass[39m=[32m"chakra-heading css-0"[39m
-              [36m>[39m
-                [0mCreate A List [0m
-              [36m</h2>[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"css-1enedl5"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"chakra-card css-8c3dmf"[39m
+            [36m>[39m
               [36m<div[39m
-                [33mclass[39m=[32m"css-1ky8x8j"[39m
+                [33mclass[39m=[32m"chakra-card__header css-0"[39m
               [36m>[39m
-                [36m<div>[39m
-                  [36m<div>[39m
-                    [36m<div>[39m
-                      [0mAdd To Main    [0m
-                      [36m<button[39m
-                        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                        [33mtype[39m=[32m"button"[39m
-                      [36m>[39m
-                        [0mMinions[0m
-       ...
+                [36m<div[39m
+                  [33mclass[39m=[32m"css-0"[39m
+                [36m>[39m
+                  [36m<h2[39m
+                    [33mclass[39m=[32m"chakra-heading css-0"[39m
+                  [36m>[39m
+                    [0mMinions[0m
+                  [36m</h2>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-0"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-card__body css-0"[39m
+                [36m>[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"css-k008qs"[39m
+                  [...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -291,5 +289,5 @@ All files            |   42.37 |        0 |   43.47 |    42.1 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.272 s
+Time:        3.53 s
 Ran all test suites.
