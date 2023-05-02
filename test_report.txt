@@ -13,156 +13,158 @@ FAIL src/App.test.tsx
         [36m<div[39m
           [33mclass[39m=[32m"App"[39m
         [36m>[39m
-          [36m<div>[39m
-            [0mUser[0m
-          [36m</div>[39m
-          [36m<h2[39m
-            [33mclass[39m=[32m"chakra-heading css-1r2f04i"[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"chakra-stack css-tyga07"[39m
           [36m>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"css-gmuwbf"[39m
+              [33mclass[39m=[32m"chakra-stack css-84zodg"[39m
             [36m>[39m
               [36m<img[39m
                 [33malt[39m=[32m"Clapboard Logo"[39m
                 [33msrc[39m=[32m"logo512.png"[39m
-                [33mwidth[39m=[32m"150"[39m
+                [33mwidth[39m=[32m"50"[39m
               [36m/>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"chakra-heading css-yc55n3"[39m
+              [36m>[39m
+                [0mMoviePedia[0m
+              [36m</h2>[39m
             [36m</div>[39m
-            [36m<p>[39m
-              [0mMoviePedia[0m
-            [36m</p>[39m
-          [36m</h2>[39m
-          [36m<div>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"css-gmuwbf"[39m
+              [33mclass[39m=[32m"chakra-stack css-n21gh5"[39m
             [36m>[39m
-              [36m<div>[39m
-                [36m<h3[39m
-                  [33mclass[39m=[32m"chakra-heading css-0"[39m
+              [36m<h3[39m
+                [33mclass[39m=[32m"chakra-heading css-0"[39m
+              [36m>[39m
+                [36m<svg[39m
+                  [33mclass[39m=[32m"chakra-icon css-onkibi"[39m
+                  [33mfocusable[39m=[32m"false"[39m
+                  [33mviewBox[39m=[32m"0 0 24 24"[39m
                 [36m>[39m
-                  [0mChange Role[0m
-                [36m</h3>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"chakra-radio-group css-0"[39m
-                  [33mrole[39m=[32m"radiogroup"[39m
-                [36m>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"chakra-stack css-x9juev"[39m
+                  [36m<g[39m
+                    [33mfill[39m=[32m"currentColor"[39m
                   [36m>[39m
-                    [36m<label[39m
-                      [33mclass[39m=[32m"chakra-radio css-1nqw95c"[39m
+                    [36m<path[39m
+                      [33md[39m=[32m"M23.432,10.524C20.787,7.614,16.4,4.538,12,4.6,7.6,4.537,3.213,7.615.568,10.524a2.211,2.211,0,0,0,0,2.948C3.182,16.351,7.507,19.4,11.839,19.4h.308c4.347,0,8.671-3.049,11.288-5.929A2.21,2.21,0,0,0,23.432,10.524ZM7.4,12A4.6,4.6,0,1,1,12,16.6,4.6,4.6,0,0,1,7.4,12Z"[39m
+                    [36m/>[39m
+                    [36m<circle[39m
+                      [33mcx[39m=[32m"12"[39m
+                      [33mcy[39m=[32m"12"[39m
+                      [33mr[39m=[32m"2"[39m
+                    [36m/>[39m
+                  [36m</g>[39m
+                [36m</svg>[39m
+                [0m  Viewing as: [0m
+                [0mUser[0m
+              [36m</h3>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"chakra-radio-group css-0"[39m
+                [33mrole[39m=[32m"radiogroup"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-stack css-x9juev"[39m
+                [36m>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"chakra-radio css-8n41ww"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"chakra-radio__input"[39m
+                      [33mid[39m=[32m"radio-:r1:"[39m
+                      [33mname[39m=[32m"radio-:r0:"[39m
+                      [33mstyle[39m=[32m"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"Super"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"chakra-radio__control css-19txtjt"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
                     [36m>[39m
-                      [36m<input[39m
-                        [33mclass[39m=[32m"chakra-radio__input"[39m
-                        [33mid[39m=[32m"radio-:r1:"[39m
-                        [33mname[39m=[32m"radio-:r0:"[39m
-                        [33mstyle[39m=[32m"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"[39m
-                        [33mtype[39m=[32m"radio"[39m
-                        [33mvalue[39m=[32m"Super"[39m
-                      [36m/>[39m
-                      [36m<span[39m
-                        [33maria-hidden[39m=[32m"true"[39m
-                        [33mclass[39m=[32m"chakra-radio__control css-ssalds"[39m
-                      [36m/>[39m
-                      [36m<span[39m
-                        [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
-                      [36m>[39m
-                        [0mSuper[0m
-                      [36m</span>[39m
-                    [36m</label>[39m
-                    [36m<label[39m
-                      [33mclass[39m=[32m"chakra-radio css-1nqw95c"[39m
+                      [0mSuper[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"chakra-radio css-8n41ww"[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mclass[39m=[32m"chakra-radio__input"[39m
+                      [33mid[39m=[32m"radio-:r2:"[39m
+                      [33mname[39m=[32m"radio-:r0:"[39m
+                      [33mstyle[39m=[32m"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"Admin"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"chakra-radio__control css-19txtjt"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
                     [36m>[39m
-                      [36m<input[39m
-                        [33mclass[39m=[32m"chakra-radio__input"[39m
-                        [33mid[39m=[32m"radio-:r2:"[39m
-                        [33mname[39m=[32m"radio-:r0:"[39m
-                        [33mstyle[39m=[32m"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"[39m
-                        [33mtype[39m=[32m"radio"[39m
-                        [33mvalue[39m=[32m"Admin"[39m
-                      [36m/>[39m
-                      [36m<span[39m
-                        [33maria-hidden[39m=[32m"true"[39m
-                        [33mclass[39m=[32m"chakra-radio__control css-ssalds"[39m
-                      [36m/>[39m
-                      [36m<span[39m
-                        [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
-                      [36m>[39m
-                        [0mAdmin[0m
-                      [36m</span>[39m
-                    [36m</label>[39m
-                    [36m<label[39m
-                      [33mclass[39m=[32m"chakra-radio css-1nqw95c"[39m
+                      [0mAdmin[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
+                  [36m<label[39m
+                    [33mclass[39m=[32m"chakra-radio css-8n41ww"[39m
+                    [33mdata-checked[39m=[32m""[39m
+                  [36m>[39m
+                    [36m<input[39m
+                      [33mchecked[39m=[32m""[39m
+                      [33mclass[39m=[32m"chakra-radio__input"[39m
+                      [33mid[39m=[32m"radio-:r3:"[39m
+                      [33mname[39m=[32m"radio-:r0:"[39m
+                      [33mstyle[39m=[32m"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"[39m
+                      [33mtype[39m=[32m"radio"[39m
+                      [33mvalue[39m=[32m"User"[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33maria-hidden[39m=[32m"true"[39m
+                      [33mclass[39m=[32m"chakra-radio__control css-19txtjt"[39m
+                      [33mdata-checked[39m=[32m""[39m
+                    [36m/>[39m
+                    [36m<span[39m
+                      [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
                       [33mdata-checked[39m=[32m""[39m
                     [36m>[39m
-                      [36m<input[39m
-                        [33mchecked[39m=[32m""[39m
-                        [33mclass[39m=[32m"chakra-radio__input"[39m
-                        [33mid[39m=[32m"radio-:r3:"[39m
-                        [33mname[39m=[32m"radio-:r0:"[39m
-                        [33mstyle[39m=[32m"border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; width: 1px; margin: -1px; padding: 0px; overflow: hidden; white-space: nowrap; position: absolute;"[39m
-                        [33mtype[39m=[32m"radio"[39m
-                        [33mvalue[39m=[32m"User"[39m
-                      [36m/>[39m
-                      [36m<span[39m
-                        [33maria-hidden[39m=[32m"true"[39m
-                        [33mclass[39m=[32m"chakra-radio__control css-ssalds"[39m
-                        [33mdata-checked[39m=[32m""[39m
-                      [36m/>[39m
-                      [36m<span[39m
-                        [33mclass[39m=[32m"chakra-radio__label css-1y8kf23"[39m
-                        [33mdata-checked[39m=[32m""[39m
-                      [36m>[39m
-                        [0mUser[0m
-                      [36m</span>[39m
-                    [36m</label>[39m
-                  [36m</div>[39m
+                      [0mUser[0m
+                    [36m</span>[39m
+                  [36m</label>[39m
                 [36m</div>[39m
-                [36m<br />[39m
-                [36m<div>[39m
-                  [0mYour Role: [0m
-                  [36m<span[39m
-                    [33mdata-testid[39m=[32m"colored-box"[39m
-                  [36m>[39m
-                    [0mUser[0m
-                  [36m</span>[39m
-                [36m</div>[39m
-                [36m<br />[39m
               [36m</div>[39m
             [36m</div>[39m
           [36m</div>[39m
           [36m<br />[39m
+          [36m<h2[39m
+            [33mclass[39m=[32m"chakra-heading css-0"[39m
+          [36m>[39m
+            [0mCentral Movie List[0m
+          [36m</h2>[39m
+          [36m<br />[39m
           [36m<div>[39m
-            [36m<b>[39m
-              [0mGroup Members: [0m
-            [36m</b>[39m
-            [36m<div[39m
-              [33mstyle[39m=[32m"width: 100px; margin: 0px auto;"[39m
-            [36m>[39m
-              [0mSakhee Desai[0m
-              [36m<br />[39m
-              [0mJulia O‘Neill[0m
-              [36m<br />[39m
-              [0mHeni Patel[0m
-              [36m<br />[39m
-              [0mPriya Salako[0m
-              [36m<br />[39m
-              [0mAman Singh[0m
-            [36m</div>[39m
+            [0mmovies[0m
           [36m</div>[39m
+          [36m<br />[39m
+          [36m<hr[39m
+            [33maria-orientation[39m=[32m"horizontal"[39m
+            [33mclass[39m=[32m"chakra-divider css-58eizg"[39m
+          [36m/>[39m
           [36m<br />[39m
           [36m<div>[39m
             [36m<div>[39m
-              [36m<h1>[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"chakra-heading css-0"[39m
+              [36m>[39m
                 [0mCreate A List [0m
-              [36m</h1>[39m
+              [36m</h2>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"css-1ky8x8j"[39m
               [36m>[39m
                 [36m<div>[39m
                   [36m<div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -171,7 +173,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -180,7 +182,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -189,7 +191,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -198,7 +200,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -207,7 +209,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -216,7 +218,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -225,7 +227,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -234,7 +236,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -243,7 +245,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Main[0m
+                      [0mAdd To Main    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -254,7 +256,7 @@ FAIL src/App.test.tsx
                   [36m</div>[39m
                   [36m<div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -263,7 +265,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -272,7 +274,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -281,7 +283,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -290,7 +292,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -299,7 +301,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -308,7 +310,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -317,7 +319,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -326,7 +328,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -335,7 +337,7 @@ FAIL src/App.test.tsx
                       [36m</button>[39m
                     [36m</div>[39m
                     [36m<div>[39m
-                      [0mAdd To Genre List[0m
+                      [0mAdd To Genre List    [0m
                       [36m<button[39m
                         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
                         [33mtype[39m=[32m"button"[39m
@@ -357,6 +359,7 @@ FAIL src/App.test.tsx
                       [0mClear List[0m
                     [36m</button>[39m
                   [36m</div>[39m
+                  [36m<br />[39m
                   [36m<div>[39m
                     [36m<strong>[39m
                       [0mMy Genre List:[0m
@@ -371,8 +374,48 @@ FAIL src/App.test.tsx
                 [36m</div>[39m
               [36m</div>[39m
             [36m</div>[39m
-            [36m<div>[39m
-              [0mWatchList[0m
+            [36m<br />[39m
+            [36m<hr[39m
+              [33maria-orientation[39m=[32m"horizontal"[39m
+              [33mclass[39m=[32m"chakra-divider css-58eizg"[39m
+            [36m/>[39m
+            [36m<br />[39m
+            [36m<h2[39m
+              [33mclass[39m=[32m"chakra-heading css-0"[39m
+            [36m>[39m
+              [0mWatch List[0m
+            [36m</h2>[39m
+          [36m</div>[39m
+          [36m<br />[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"chakra-stack css-lxc1al"[39m
+          [36m>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"chakra-stack css-n21gh5"[39m
+            [36m>[39m
+              [36m<b>[39m
+                [0mGroup Members[0m
+              [36m</b>[39m
+              [36m<div[39m
+                [33mstyle[39m=[32m"width: 100px; margin: 0px auto;"[39m
+              [36m>[39m
+                [0mSakhee Desai[0m
+                [36m<br />[39m
+                [0mJulia O‘Neill[0m
+                [36m<br />[39m
+                [0mHeni Patel[0m
+                [36m<br />[39m
+                [0mPriya Salako[0m
+                [36m<br />[39m
+                [0mAman Singh[0m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"chakra-stack css-n21gh5"[39m
+            [36m>[39m
+              [36m<div>[39m
+                [0mMoviePedia 2023[0m
+              [36m</div>[39m
             [36m</div>[39m
           [36m</div>[39m
         [36m</div>[39m
@@ -435,7 +478,7 @@ All files            |   26.31 |        0 |   27.77 |   26.31 |
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
  src/components      |   34.78 |        0 |   26.66 |   34.78 |                   
-  CreateList.tsx     |   41.17 |        0 |   27.27 |   41.17 | 26-44,56,64-80    
+  CreateList.tsx     |   41.17 |        0 |   27.27 |   41.17 | 26-44,56,64-81    
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
   Movie.ts           |       0 |        0 |       0 |       0 |                   
@@ -446,5 +489,5 @@ All files            |   26.31 |        0 |   27.77 |   26.31 |
 Test Suites: 4 failed, 4 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.118 s
+Time:        4.219 s
 Ran all test suites.
