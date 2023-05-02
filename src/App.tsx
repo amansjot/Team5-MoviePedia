@@ -34,6 +34,7 @@ function App() {
             <br/>
             <Heading size="lg">Central Movie List</Heading>
             <br/>
+            <TestingMovies></TestingMovies>
             <div>
                 movies
             </div>
@@ -47,7 +48,7 @@ function App() {
                 <br/>
                 <Divider borderWidth="2px"></Divider>
                 <br/>
-                <TestingMovies></TestingMovies>
+                
                 <WatchList></WatchList>
             </div>
             <br/>
