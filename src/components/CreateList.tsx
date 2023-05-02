@@ -33,17 +33,6 @@ export function CreateList(): JSX.Element {
         setusermainList([]);
     }
 
-    function addMovieTogenreList(newMovie: string) {
-        if (!userlistbyGenre.includes(newMovie)){
-            setuserGenreList([...userlistbyGenre, newMovie]);
-
-        }
-    }
-
-    function cleargenreList() {
-        setuserGenreList([]);
-    }
-
     return (
         <div>
             <Heading size="lg">Create A List </Heading>
@@ -57,14 +46,6 @@ export function CreateList(): JSX.Element {
                             </div>
                         ))}
                     </div>
-                    <div>
-                        {allOptions.map((option: string) => (
-                            <div key={option}>
-                Add To Genre List&nbsp;&nbsp;&nbsp;&nbsp;
-                                <Button onClick={() => addMovieTogenreList(option)}>{option}</Button>
-                            </div>
-                        ))}
-                    </div>
                 </div>
                 <div>
                     <div>
@@ -75,13 +56,6 @@ export function CreateList(): JSX.Element {
                         <Button onClick={clearmainList}>Clear List</Button>
                     </div>
                     <br/>
-                    <div>
-                        <strong>My Genre List:</strong>
-                        {userlistbyGenre.map((movie: string) => (
-                            <li key={movie}>{movie}</li>
-                        ))}
-                        <Button onClick={cleargenreList}>Clear List</Button>
-                    </div>
                 </div>
             </SimpleGrid>
         </div>
