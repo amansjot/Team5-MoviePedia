@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Card, CardHeader, CardBody, CardFooter,Box, HStack,Flex,Text } from "@chakra-ui/react";
-import { Input } from "@chakra-ui/react";
-//import { useDrag, useDrop } from "react-dnd";
-import { DroppedMovie } from "./DroppedMovie";
+import { Heading } from "@chakra-ui/react";
+import React, { useState } from "react";
 
 
 export function WatchList(): JSX.Element {
@@ -25,16 +22,6 @@ export function WatchList(): JSX.Element {
    
    
     return(
-        <Card p="4vh" align="center" w="50vh" h="105vh" overflow="hidden" variant ="elevated">
-            <Box h="8vh" w="50vh" bg="white">
-                <CardHeader>
-                    <span>{listName}</span>
-                    <Input value={listName} onChange={listChange} placeholder='Enter List Name' size='xs' />
-                </CardHeader>
-            </Box>
-            <CardBody w="50vh" h="105vh" bg="white">
-            </CardBody>
-        </Card>
-        //<div>WatchList</div>
+        <Heading size="lg">Watch List</Heading>
     );
 }
