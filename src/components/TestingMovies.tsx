@@ -1,7 +1,7 @@
 import React from "react";
 import { Movie } from "./Movie";
-import movieData from "/Users/juliaoneill/Team5-MoviePedia/src/data/movie.json";
-import backupMovies from "/Users/juliaoneill/Team5-MoviePedia/src/data/movie.json";
+//import movieData from "/Users/juliaoneill/Team5-MoviePedia/src/data/movie.json";
+//import backupMovies from "/Users/juliaoneill/Team5-MoviePedia/src/data/movie.json";
 import { SimpleGrid, Card, CardBody,CardBodyProps,Text,CardHeader, Image, CardFooter, Box, Heading, Flex, Spacer } from "@chakra-ui/react";
 import { moviesList } from "./movies";
 
