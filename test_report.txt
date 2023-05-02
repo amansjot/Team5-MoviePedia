@@ -15,14 +15,17 @@ FAIL src/App.test.tsx
           at div
           at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
-          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at PopoverBody2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/popover/dist/index.js:415:30)
+          at section
+          at MotionComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/framer-motion/dist/framer-motion.cjs.js:421:30)
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at PopoverTransition2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/popover/dist/index.js:497:11)
           at div
           at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
-          at CardBody2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/card/dist/index.js:77:11)
-          at div
-          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
-          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at PopoverContent2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/popover/dist/index.js:516:13)
+          at Popover (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/popover/dist/index.js:355:56)
           at div
           at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
@@ -32,7 +35,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
           at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
-          at TestingMovies
+          at MovieCards
           at div
           at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
@@ -201,33 +204,33 @@ FAIL src/App.test.tsx
           [36m</h2>[39m
           [36m<br />[39m
           [36m<div[39m
-            [33mclass[39m=[32m"css-1enedl5"[39m
+            [33mclass[39m=[32m"css-1pmx3ne"[39m
           [36m>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"chakra-card css-8c3dmf"[39m
+              [33mclass[39m=[32m"chakra-card css-kezmmu"[39m
             [36m>[39m
               [36m<div[39m
                 [33mclass[39m=[32m"chakra-card__header css-0"[39m
               [36m>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"css-0"[39m
+                [36m<h2[39m
+                  [33mclass[39m=[32m"chakra-heading css-0"[39m
                 [36m>[39m
-                  [36m<h2[39m
-                    [33mclass[39m=[32m"chakra-heading css-0"[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"chakra-text css-0"[39m
                   [36m>[39m
-                    [0mMinions[0m
-                  [36m</h2>[39m
-                [36m</div>[39m
-              [36m</div>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"css-0"[39m
-              [36m>[39m
-                [36m<div[39m
-                  [33mclass[39m=[32m"chakra-card__body css-0"[39m
-                [36m>[39m
-                  [36m<div[39m
-                    [33mclass[39m=[32m"css-k008qs"[39m
-                  [...
+                    [36m<span>[39m
+                      [0mMinions[0m
+                    [36m</span>[39m
+                  [36m</p>[39m
+                  [36m<p[39m
+                    [33mclass[39m=[32m"chakra-text css-0"[39m
+                  [36m>[39m
+                    [36m<span>[39m
+                      [0m2015[0m
+                    [36m</span>[39m
+                  [36m</p>[39m
+                [36m</h2>[39m
+              [36m</d...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -280,14 +283,14 @@ All files            |   42.64 |        0 |   41.37 |   41.53 |
   Genre.tsx          |      25 |        0 |   33.33 |      25 | 10-20,33          
   Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
   Movie.ts           |       0 |        0 |       0 |       0 |                   
+  MovieCards.tsx     |    90.9 |      100 |   83.33 |      90 | 20                
   Movies.ts          |       0 |      100 |     100 |       0 | 3                 
   MoviesList.tsx     |     100 |      100 |     100 |     100 |                   
   RoleSelect.tsx     |       0 |      100 |       0 |       0 | 5-7               
-  TestingMovies.tsx  |    90.9 |      100 |   83.33 |      90 | 20                
   WatchList.tsx      |      75 |      100 |      50 |     100 |                   
 ---------------------|---------|----------|---------|---------|-------------------
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.328 s
+Time:        5.808 s
 Ran all test suites.
