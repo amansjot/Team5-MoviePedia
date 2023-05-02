@@ -8,7 +8,7 @@ import { WatchList } from "./components/WatchList";
 import { RoleSelect } from "./components/RoleSelect";
 import { ViewIcon } from "@chakra-ui/icons";
 import {Genre} from "./components/Genre";
-import { TestingMovies } from "./components/TestingMovies";
+import { MovieCards } from "./components/MovieCards";
 
 function App() {
     const [selectedRole, setRole] = useState<string>("User");
@@ -34,7 +34,7 @@ function App() {
             <br/>
             <Heading size="lg">Central Movie List</Heading>
             <br/>
-            <TestingMovies></TestingMovies>
+            <MovieCards></MovieCards>
             <div>
                 movies
             </div>
