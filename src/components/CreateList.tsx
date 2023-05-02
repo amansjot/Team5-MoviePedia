@@ -19,11 +19,15 @@ import movies from "./movie.json";
 
 
 export function CreateList(): JSX.Element {
-    const {ml}: Record<string, Movie[]> = movies as Record<string, Movie[]>;
-    const [masterlist] = Object.entries(ml).map(a); 
+    // const {ml}: Record<string, Movie[]> = movies as Record<string, Movie[]>;
+    // const [masterlist] = Object.keys(ml).map((a:Movie):Movie);
+    const ml = movies.MOVIES; 
+    const masterlist = ml.map(a=>({
+        name:a.name, poster:a.poster, year:a.year, actors:a.actors, plot:a.plot, director:a.director, genre:a.genre, rating:a.rating
+    }));
     const [usermainList, setusermainList] = useState<Movie[]>([]);
     const [userlistbyGenre, setuserGenreList] = useState<Movie[]>([]);
-
+    "";
     function addMovieTomainList(newMovie: Movie) {
         if (!usermainList.includes(newMovie)){
             setusermainList([...usermainList, newMovie]);
