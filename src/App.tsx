@@ -52,15 +52,12 @@ function App() {
                 <WatchList></WatchList>
             </div>
             <br/>
-            <HStack p={6} bg="blue.100" borderTop="2px solid black" justify="space-around">
+            <HStack p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
                 <Stack>
-                    <b>Group Members</b>
-                    <div style={{ width: "100px", margin: "0 auto" }}>
-                Sakhee Desai<br/>Julia O&lsquo;Neill<br/>Heni Patel<br/>Priya Salako<br/>Aman Singh
+                    <div><b>MoviePedia 2023</b></div>
+                    <div>
+                Sakhee Desai, Julia O&lsquo;Neill, Heni Patel, Priya Salako, Aman Singh
                     </div>
-                </Stack>
-                <Stack>
-                    <div>MoviePedia 2023</div>
                 </Stack>
             </HStack>
         </div>
