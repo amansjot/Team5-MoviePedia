@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, CardHeader, CardBody, CardFooter,Box, HStack,Flex,Text } from "@chakra-ui/react";
 import { Input } from "@chakra-ui/react";
-import { useDrag, useDrop } from "react-dnd";
+//import { useDrag, useDrop } from "react-dnd";
 import { DroppedMovie } from "./DroppedMovie";
 
 
