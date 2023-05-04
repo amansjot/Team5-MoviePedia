@@ -209,9 +209,9 @@ FAIL src/components/Hidden.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   36.45 |    13.04 |   38.88 |   35.48 |                   
- src                 |   13.33 |    33.33 |   33.33 |   13.33 |                   
-  App.tsx            |     100 |      100 |     100 |     100 |                   
+All files            |   35.71 |    13.04 |   37.83 |   34.73 |                   
+ src                 |   11.76 |    33.33 |      25 |   11.76 |                   
+  App.tsx            |      50 |      100 |      50 |      50 | 25-26             
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
  src/components      |   40.74 |       10 |   39.39 |   39.74 |                   
@@ -228,5 +228,5 @@ All files            |   36.45 |    13.04 |   38.88 |   35.48 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.098 s
+Time:        4.123 s
 Ran all test suites.
