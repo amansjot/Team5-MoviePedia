@@ -21,7 +21,10 @@ function App() {
                 </HStack>
                 <Stack>
                     <Heading as='h3' size="md"><ViewIcon/>&nbsp;&nbsp;Viewing as: {selectedRole}</Heading>
-                    <RadioGroup onChange={setRole} value={selectedRole}>
+                    <RadioGroup onChange={role => {
+                        localStorage.setItem("role", role);
+                        setRole(role);
+                    }} value={selectedRole}>
                         <Stack direction='row'>
                             <Radio borderColor="black" colorScheme='red' pr={4} value='Super'>Super</Radio>
                             <Radio borderColor="black" colorScheme='red' pr={4} value='Admin'>Admin</Radio>
