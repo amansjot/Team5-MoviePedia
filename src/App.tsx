@@ -5,13 +5,12 @@ import { Center, Container, Heading, ListItem, UnorderedList, Radio, RadioGroup,
 import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/CreateList";
 import { WatchList } from "./components/WatchList";
-import { RoleSelect } from "./components/RoleSelect";
 import { ViewIcon } from "@chakra-ui/icons";
 import {Genre} from "./components/Genre";
 import { MovieCards } from "./components/MovieCards";
 
 function App() {
-    const [selectedRole, setRole] = useState<string>("User");
+    const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
 
     return (
         <div className="App">
@@ -34,10 +33,7 @@ function App() {
             <br/>
             <Heading size="lg">Central Movie List</Heading>
             <br/>
-            <MovieCards></MovieCards>
-            <div>
-                movies
-            </div>
+            <MovieCards role={selectedRole}></MovieCards>
             <br/>
             <Divider borderWidth="2px"></Divider>
             <br/>
@@ -65,3 +61,7 @@ function App() {
 }
 
 export default App;
+// function SuperSortList(): React.ReactNode {
+//     throw new Error("Function not implemented.");
+// }
+

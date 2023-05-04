@@ -1,5 +1,5 @@
 import { Movie } from "./Movie";
-//make one big array with the movie info just without the stuff idfk
+
 export const moviesList: Movie[] = [
     {
         name:"Minions",
