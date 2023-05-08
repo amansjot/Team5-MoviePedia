@@ -209,16 +209,16 @@ FAIL src/components/Hidden.test.tsx
 ---------------------|---------|----------|---------|---------|-------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
 ---------------------|---------|----------|---------|---------|-------------------
-All files            |   35.71 |    13.04 |   37.83 |   34.73 |                   
+All files            |   42.42 |    15.78 |   38.46 |   40.42 |                   
  src                 |   11.76 |    33.33 |      25 |   11.76 |                   
   App.tsx            |      50 |      100 |      50 |      50 | 25-26             
   index.tsx          |       0 |      100 |     100 |       0 | 8-32              
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   40.74 |       10 |   39.39 |   39.74 |                   
-  CreateList.tsx     |      50 |        0 |   33.33 |   47.36 | 31-49,61,69-85    
+ src/components      |   48.78 |     12.5 |      40 |   46.75 |                   
+  CreateList.tsx     |    42.1 |        0 |      25 |    42.1 | 27-49,61,69-89    
   DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
   DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                   
-  Genre.tsx          |      25 |        0 |   33.33 |      25 | 10-20,33          
+  Genre.tsx          |   85.71 |      100 |      60 |   81.81 | 37,45             
   Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
   Movie.ts           |       0 |        0 |       0 |       0 |                   
   MovieCards.tsx     |   38.09 |    14.28 |      50 |   36.58 | 35-63,68-74       
@@ -228,5 +228,5 @@ All files            |   35.71 |    13.04 |   37.83 |   34.73 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.123 s
+Time:        4.716 s
 Ran all test suites.
