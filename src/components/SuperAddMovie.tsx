@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Accordion, AccordionButton, AccordionIcon, AccordionPanel, AccordionItem } from "@chakra-ui/accordion";
 import { Box, Heading, Spacer } from "@chakra-ui/layout";
 import { Movie } from "./Movie";
-import movie from "../../movie.json";
+import movie from "../movie.json";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 import { Stack } from "@chakra-ui/layout";
 import { HTMLInputTypeAttribute} from "react";
@@ -11,10 +11,10 @@ interface MovieProps {
     movie: Movie[];
 }
 
-export function getMovies(movies: Movie[]): Movie[] {
-    const MovieCopy = movies.map((movies: Movie): Movie => ({...movies}));
-    return MovieCopy;
-}
+// export function getMovies(movies: Movie[]): Movie[] {
+//     const MovieCopy = movies.map((movies: Movie): Movie => ({...movies}));
+//     return MovieCopy;
+// }
 
 //const productArray = getMovies(Movie);
  
@@ -68,7 +68,7 @@ export function SuperAddMovie(): JSX.Element {
         setRating(parseInt(event.target.value));
     }
 
-    function addMovie(name:string, poster: string, year: number, actors:string[], plot:string, director:string, genre:string, rating:number):Movie {
+    function addMovie(name:string, poster: string, year: number, actors:string[], plot:string, director:string, genre:string[], rating:number):Movie {
         const addMovie = {
             name: name,
             poster: poster,
