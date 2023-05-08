@@ -1,37 +1,40 @@
 import React, { useState } from "react";
-import { Accordion, AccordionButton,AccordionIcon,AccordionPanel, AccordionItem } from "@chakra-ui/accordion";
+import { Accordion, AccordionButton, AccordionIcon, AccordionPanel, AccordionItem } from "@chakra-ui/accordion";
 import { Box, Heading, Spacer } from "@chakra-ui/layout";
 import { Movie } from "./Movie";
-import movies from "./movie.json";
+import movie from "../../movie.json";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 import { Stack } from "@chakra-ui/layout";
 import { HTMLInputTypeAttribute} from "react";
 
-interface LocationProps {
-    location: Movie[];
+interface MovieProps {
+    movie: Movie[];
 }
 
-export function getLocations(locations: Location[]): Location[] {
-    const locationCopy = locations.map((locationData: Location): Location => ({...locationData}));
-    return locationCopy;
+export function getMovies(movies: Movie[]): Movie[] {
+    const MovieCopy = movies.map((movies: Movie): Movie => ({...movies}));
+    return MovieCopy;
 }
 
-const productArray = getLocations(movies);
+//const productArray = getMovies(Movie);
  
-export function locationProperty(props: LocationProps){
-    const locationList = props;
+export function MovieProperty(props: MovieProps){
+    const MovieList = props;
 }
  
  
-export function Locations(): JSX.Element {
+export function SuperAddMovie(): JSX.Element {
     const [name, setName] = React.useState("");
     const [poster, setPoster] = React.useState("");
-    const [year, setYear] = React.useState("");
-    const [actors, setActors] = React.useState("");
+    //const [year, setYear] = React.useState("");
+    const [year, setYear] = useState<number>(0);
+    const [actors, setActors] = useState<string[]>([]);
+    //const [actors, setActors] = React.useState("");
     const [plot, setPlot] = React.useState("");
     const [director, setDirector] = React.useState("");
-    const [genre, setGenre] = React.useState("");
-    const [rating, setRating] = React.useState("");
+    const [genre, setGenre] = useState<string[]>([]);
+    //const [genre, setGenre] = React.useState("");
+    const [rating, setRating] = useState<number>(1);
 
     function nameChange (event: React.ChangeEvent<HTMLInputElement>){
         setName(event.target.value);
@@ -42,11 +45,11 @@ export function Locations(): JSX.Element {
     }
 
     function yearChange (event: React.ChangeEvent<HTMLInputElement>){
-        setYear(event.target.value);
+        setYear(parseInt(event.target.value));
     }
 
     function actorsChange (event: React.ChangeEvent<HTMLInputElement>){
-        setActors(event.target.value);
+        setActors([...actors, event.target.value]);
     }
 
     function plotChange (event: React.ChangeEvent<HTMLInputElement>){
@@ -58,15 +61,15 @@ export function Locations(): JSX.Element {
     }
 
     function genreChange (event: React.ChangeEvent<HTMLInputElement>){
-        setGenre(event.target.value);
+        setGenre([...genre, event.target.value]);
     }
 
     function ratingChange (event: React.ChangeEvent<HTMLInputElement>){
-        setRating(event.target.value);
+        setRating(parseInt(event.target.value));
     }
 
-    function addLocation(name:string, poster: string, year: string, actors:string, plot:string, director:string, genre:string, rating:string):Location {
-        const addLocation = {
+    function addMovie(name:string, poster: string, year: number, actors:string[], plot:string, director:string, genre:string, rating:number):Movie {
+        const addMovie = {
             name: name,
             poster: poster,
             year: year,
@@ -76,17 +79,18 @@ export function Locations(): JSX.Element {
             genre: genre,
             rating: rating
         };
-        return addLocation;
-}
+        return addMovie;
+    }   
  
-    function updateLocations (movies: Movie[]): Movie[] {
-        const locationCopy = [...movies];
-        const locat = addLocation(name, poster, year, actors, plot, director, genre, rating);
-        const updatedLocation = [...locationCopy, locat];
-        return updatedLocation;
+    function updateMovies (movies: Movie[]): Movie[] {
+        const movieCopy = [...movies];
+        const locat = addMovie(name, poster, year, actors, plot, director, genre, rating);
+        const updatedMovie = [...movieCopy, locat];
+        return updatedMovie;
     }
     
-    const newList = updateLocations(movies);
+    const newList = updateMovies(movie);
+
     return(
         <Box>
             <Heading h="2vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>

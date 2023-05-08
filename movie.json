@@ -1,5 +1,4 @@
-{
-    "MOVIES": [
+[
         {
             "name":"Minions",
             "poster": "https://www.themoviedb.org/t/p/original/dr02BdCNAUPVU07aOodwPYv6HCf.jpg",   
@@ -205,7 +204,7 @@
             "poster": "https://upload.wikimedia.org/wikipedia/en/6/68/Black_Swan_poster.jpg",   
             "year": 2010,
             "actors": ["Natalie Portman", "Vincent Cassel", "Mila Kunis", "Barbara Hershey", "Winona Ryder"],
-            "plot": "A committed dancer struggles to maintain her sanity after winning the lead role in a production of Tchaikovsky's "Swan Lake".",
+            "plot": "A committed dancer struggles to maintain her sanity after winning the lead role in a production of Tchaikovsky's 'Swan Lake'.",
             "director": "Darren Aronofsky",
             "genre": ["Psychological", "Thriller"],
             "rating":0
@@ -401,5 +400,5 @@
             "rating":0
         }
     ]
- }
+ 
  
