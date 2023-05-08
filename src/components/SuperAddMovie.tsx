@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Accordion, AccordionButton,AccordionIcon,AccordionPanel, AccordionItem } from "@chakra-ui/accordion";
 import { Box, Heading, Spacer } from "@chakra-ui/layout";
-//import { Location } from "./Location";
-//import { locationList } from "./locationList";
+import { Location } from "./Location";
+import { locationList } from "./locationList";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 import { Stack } from "@chakra-ui/layout";
 import { HTMLInputTypeAttribute} from "react";
@@ -158,12 +158,27 @@ export function Locations(): JSX.Element {
                     <InputLeftAddon>Movie Name</InputLeftAddon>
                     <Input onChange={nameChange} variant="filled" placeholder="Insert Movie Name"></Input>
                     <Spacer></Spacer>
+
                     <InputLeftAddon>Poster</InputLeftAddon>
                     <Input onChange={posterChange} variant="filled" placeholder="Insert Poster"></Input>
-                    <InputLeftAddon>Address</InputLeftAddon>
-                    <Input onChange={addressChange} variant="filled" placeholder="Insert Address"></Input>
-                    <InputLeftAddon>Operating Hours</InputLeftAddon>
-                    <Input onChange={hoursChange} variant="filled" placeholder="Insert Operating Hours "></Input>
+
+                    <InputLeftAddon>Year</InputLeftAddon>
+                    <Input onChange={yearChange} variant="filled" placeholder="Insert Year Published"></Input>
+
+                    <InputLeftAddon>Actors</InputLeftAddon>
+                    <Input onChange={actorsChange} variant="filled" placeholder="Insert Actor"></Input>
+
+                    <InputLeftAddon>Plot</InputLeftAddon>
+                    <Input onChange={plotChange} variant="filled" placeholder="Insert Plot"></Input>
+
+                    <InputLeftAddon>Director</InputLeftAddon>
+                    <Input onChange={directorChange} variant="filled" placeholder="Insert Director"></Input>
+
+                    <InputLeftAddon>Genre</InputLeftAddon>
+                    <Input onChange={genreChange} variant="filled" placeholder="Insert Genre"></Input>
+
+                    <InputLeftAddon>rating</InputLeftAddon>
+                    <Input onChange={ratingChange} variant="filled" placeholder="Insert Rating"></Input>
                 </InputGroup>
             </Stack>
         </Box>
