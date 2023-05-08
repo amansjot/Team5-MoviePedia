@@ -1,47 +1,14 @@
 import React, { useState } from "react";
 import { Accordion, AccordionButton,AccordionIcon,AccordionPanel, AccordionItem } from "@chakra-ui/accordion";
 import { Box, Heading, Spacer } from "@chakra-ui/layout";
-import { Location } from "./Location";
-import { locationList } from "./locationList";
+import { Movie } from "./Movie";
+import movies from "./movie.json";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 import { Stack } from "@chakra-ui/layout";
 import { HTMLInputTypeAttribute} from "react";
 
-
-
-// export function hidden(): JSX.Element {
-//     return(
-//         <div>Hidden Hello New</div>
-//     );
-// }
-
-
-//add imports to add another location
-/*
-<Stack spacing={1}>
-               <InputGroup p="7vh">
-                   <InputLeftAddon>Building</InputLeftAddon>
-                   <Input onChange={buildingChange} variant="filled" placeholder="Insert Building"></Input>
-               </InputGroup>
-               <InputGroup p="7vh">
-                   <InputLeftAddon>Location</InputLeftAddon>
-                   <Input onChange={locationChange} variant="filled" placeholder="Insert Location"></Input>
-               </InputGroup>
-               <InputGroup p="7vh">
-                   <InputLeftAddon>Address</InputLeftAddon>
-                   <Input onChange={addressChange} variant="filled" placeholder="Insert Address"></Input>
-               </InputGroup>
-               <InputGroup p="7vh">
-                   <InputLeftAddon>Operating Hours</InputLeftAddon>
-                   <Input onChange={hoursChange} variant="filled" placeholder="Insert Operating Hours "></Input>
-               </InputGroup>
-           </Stack>
-*/
-
-
-
 interface LocationProps {
-    location: Location[];
+    location: Movie[];
 }
 
 export function getLocations(locations: Location[]): Location[] {
@@ -49,7 +16,7 @@ export function getLocations(locations: Location[]): Location[] {
     return locationCopy;
 }
 
-const productArray = getLocations(locationList);
+const productArray = getLocations(movies);
  
 export function locationProperty(props: LocationProps){
     const locationList = props;
@@ -112,41 +79,41 @@ export function Locations(): JSX.Element {
         return addLocation;
 }
  
-    function updateLocations (locations: Location[]): Location[] {
-        const locationCopy = [...locations];
+    function updateLocations (movies: Movie[]): Movie[] {
+        const locationCopy = [...movies];
         const locat = addLocation(name, poster, year, actors, plot, director, genre, rating);
         const updatedLocation = [...locationCopy, locat];
         return updatedLocation;
     }
     
-    const newList = updateLocations(locationList);
+    const newList = updateLocations(movies);
     return(
         <Box>
             <Heading h="2vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>
             <Accordion p="8vh">
-                {newList.map((location)=>(
+                {newList.map((Movie)=>(
                     //name, poster, year, actors, plot, director, genre, rating
-                    <AccordionItem key={location.name}>
+                    <AccordionItem key={Movie.name}>
                         <AccordionButton>
                             <AccordionIcon/>
                             <Box>
-                                <text>{location.name}</text>
+                                <text>{Movie.name}</text>
                             </Box>
                         </AccordionButton>
                         <AccordionPanel>
-                            Poster: {location.poster}
+                            Poster: {Movie.poster}
                             <Spacer></Spacer>
-                            Year Hours: {location.year}
+                            Year Hours: {Movie.year}
                             <Spacer></Spacer>
-                            Actors: {location.actors}
+                            Actors: {Movie.actors}
                             <Spacer></Spacer>
-                            Plot: {location.plot}
+                            Plot: {Movie.plot}
                             <Spacer></Spacer>
-                            Director: {location.director}
+                            Director: {Movie.director}
                             <Spacer></Spacer>
-                            Genre: {location.genre}
+                            Genre: {Movie.genre}
                             <Spacer></Spacer>
-                            Rating: {location.rating}
+                            Rating: {Movie.rating}
                         </AccordionPanel>
                     </AccordionItem>
                 ))}

@@ -6,7 +6,7 @@ import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/CreateList";
 import { WatchList } from "./components/WatchList";
 import { RoleSelect } from "./components/RoleSelect";
-import { SuperAddMovie } from "./components/SuperAddMovie"
+import { SuperAddMovie } from "./components/SuperAddMovie";
 
 function App() {
     const [selectedRole, setRole] = useState<string>("User");
