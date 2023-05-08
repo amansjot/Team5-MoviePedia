@@ -48,25 +48,7 @@ export function Genre(): JSX.Element {
                         <option value={genre} key={key}>{genre}</option>
                     );
                 }) }
-                {/* <option value='horror'>Horror</option>
-                <option value='comedy'>Comedy</option>
-                <option value='rom-com'>Rom-Com</option>
-                <option value='action'>Action</option> */}
             </Select>
         </div>
     );
 }
-
-//                  <Select placeholder='Select type' onChange={(event) => solution(event)}>
-//                      <option value = 'horror'>Horror</option>
-//                      <option value = 'comedy'>Comedy</option>
-//                      <option value = 'rom-com'>Rom-Com</option>
-//                      <option value = 'action'>Action</option>
-//                 </Select>
-//              </FormControl>
-//              <br/>
-//              <div> {soln} </div>
-//         </div>
-//      );
-//  } */
-//  }
