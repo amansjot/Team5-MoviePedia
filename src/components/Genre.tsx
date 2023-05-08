@@ -16,23 +16,6 @@ export function Genre(): JSX.Element {
     const genreList: string[] = Array.from(genreSet);
 
 
-    // function solution(event: React.ChangeEvent<HTMLSelectElement>){
-    //     if(event.target.value === "horror"){
-    //         setSoln("");
-    //     }
-    //     if(event.target.value === "comedy"){
-    //         setSoln("");
-    //     }
-    //     if(event.target.value === "rom-com"){
-    //         setSoln("");
-    //     }
-    //     if(event.target.value === "action"){
-    //         setSoln("");
-    //     }
-
-
-    // }
-
     function updateGenre (event: React.ChangeEvent<HTMLSelectElement>){
         setGenre(event.target.value);
     }
