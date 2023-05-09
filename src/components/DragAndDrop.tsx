@@ -3,7 +3,7 @@ import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
 import { Card, CardHeader, CardBody, Text } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
-import "./DragDropList.css";
+import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
 
 export function DragAndDrop(): JSX.Element {

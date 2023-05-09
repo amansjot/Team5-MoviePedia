@@ -6,7 +6,7 @@ import { Button } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
 import { sortAndDeduplicateDiagnostics } from "typescript";
 import { useDrag } from "react-dnd";
-import "/Users/juliaoneill/Team5-MoviePedia/src/components/DragDropList.css";
+import "../DragDropList.css";
 
 export function getMovies(movies: Movie[]): Movie[] {
     const movieCopy = movies.map((movieData: Movie): Movie => ({...movieData}));
