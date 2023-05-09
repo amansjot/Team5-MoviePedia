@@ -8,14 +8,12 @@ import { Heading,Image,Box } from "@chakra-ui/react";
 
 export function DragAndDrop(): JSX.Element {
     
-    
     const [movieList, setMovieList] = useState<Movie[]>([]);
 
     function handleOnDrop(e: React.DragEvent) {
         const widgetType = JSON.parse(
             e.dataTransfer.getData("widgetType")
         ) as Movie;
-        console.log("widgetType", widgetType);
         setMovieList([...movieList, widgetType]);
     }
 
@@ -27,7 +25,7 @@ export function DragAndDrop(): JSX.Element {
         <div id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
             <SimpleGrid spacing={3} columns={2}>
-                <Box borderWidth="3px" borderRadius="lg" bg="gray.600" p={10} w="100%" h="100%">
+                <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="100%" h="100%">
                     <Heading>
                         <Text size="md">Main List</Text>
                     </Heading>
@@ -48,7 +46,7 @@ export function DragAndDrop(): JSX.Element {
                         ))}
                     </SimpleGrid>
                 </Box>
-                <Box borderWidth="3px" borderRadius="lg" bg="gray.600" p={10} w="100%" h="100%">
+                <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="100%" h="100%">
                     <Heading>
                         <Text size="md"> List</Text>
                     </Heading>

@@ -4,8 +4,6 @@ import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, 
 import { moviesList } from "./MoviesList";
 import { Button } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
-import { sortAndDeduplicateDiagnostics } from "typescript";
-import { useDrag } from "react-dnd";
 import "../DragDropList.css";
 
 export function getMovies(movies: Movie[]): Movie[] {
