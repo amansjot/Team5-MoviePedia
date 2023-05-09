@@ -3,7 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import { Center, Container, Heading, ListItem, UnorderedList, Radio, RadioGroup, Stack, HStack, Wrap, Divider, Flex, Box } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
-import { CreateList } from "./components/CreateList";
+import { CreateList } from "./components/newCreateList";
 import { DragAndDrop } from "./components/DragAndDrop";
 import { ViewIcon } from "@chakra-ui/icons";
 import {Genre} from "./components/Genre";
@@ -43,12 +43,13 @@ function App() {
                     <MovieCards role={selectedRole}></MovieCards>
                 </Box>
                 <Box w="50%">
-                    <DragAndDrop></DragAndDrop>
+                    
                     <br/>
                     <CreateList></CreateList>
                     <br/>
                     <Genre></Genre>
                     <br/>
+                    <DragAndDrop></DragAndDrop>
                     <Divider borderWidth="2px"></Divider>
                     <WatchList></WatchList>
                 </Box>
