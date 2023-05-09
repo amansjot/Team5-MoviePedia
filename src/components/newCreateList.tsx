@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, SimpleGrid, FormControl, FormLabel, FormHelperText, Input, Heading} from "@chakra-ui/react";
+import { Button, SimpleGrid, FormControl, FormLabel, FormHelperText, Input, Heading, Container, HStack} from "@chakra-ui/react";
 
 
 export function CreateList(): JSX.Element {
@@ -7,7 +7,7 @@ export function CreateList(): JSX.Element {
     const [userlistbyPreference, setuserPreferenceList] = useState<string[]>([]);
     const [preference, setPreference] = useState<string>("");
 
-    function updatePreference(event: React.ChangeEvent<HTMLInputElement>) {
+    function updateNewName(event: React.ChangeEvent<HTMLInputElement>) {
         setPreference(event.target.value);
     }
 
@@ -32,33 +32,28 @@ export function CreateList(): JSX.Element {
     }
 
     return (
-        <div>
-            <Heading size="lg">Personalized Lists </Heading>
+        <Container mt="-6">
+            <Heading size="lg">Create a List</Heading>
             <div>
                 <div>
-                Add To {preference} List
-                </div>
-            </div>
-            <div>
-                <div>
-                    <strong>My Main List:</strong>
                     {usermainList.map((movie: string) => (
                         <li key={movie}>{movie}</li>
                     ))}
-                    <Button onClick={clearmainList}>Clear List</Button>
                 </div>
+                <br/>
                 <FormControl>
-                    <FormLabel>What would you like to name your list? </FormLabel>
-                    <Input type = 'preference' value = {preference} onChange = {updatePreference}/>
+                    <HStack m="0 auto">
+                        <Input bg="white" borderColor="black" _hover={{ borderColor: "black" }} placeholder="List Name (ex. Favorite Movies, Watch List, Horror List)"  type = 'text'/>
+                        <Button border="1px solid black" pl="6" pr="6" borderColor="black" onClick={clearPreferenceList}>Create List</Button>
+                    </HStack>
                 </FormControl>
                 <div>
-                    <strong>My {preference} List:</strong>
                     {userlistbyPreference.map((movie: string) => (
                         <li key={movie}>{movie}</li>
                     ))}
-                    <Button onClick={clearPreferenceList}>Clear List</Button>
+                    {/* <Button onClick={clearPreferenceList}>Clear List</Button> */}
                 </div>
             </div>
-        </div>
+        </Container>
     );
 }
