@@ -9,6 +9,7 @@ import { ViewIcon } from "@chakra-ui/icons";
 import {Genre} from "./components/Genre";
 import { MovieCards } from "./components/MovieCards";
 import { WatchList } from "./components/WatchList";
+import { SuperAddMovie } from "./components/SuperAddMovie";
 
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
@@ -56,6 +57,11 @@ function App() {
             <br/>
             
             <br/>
+            <div>
+                <CreateList></CreateList>
+                <WatchList></WatchList>
+                <SuperAddMovie></SuperAddMovie>
+            </div>
             <HStack p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
                 <Stack>
                     <div><b>MoviePedia 2023</b></div>
@@ -69,6 +75,3 @@ function App() {
 }
 
 export default App;
-// function SuperSortList(): React.ReactNode {
-//     throw new Error("Function not implemented.");
-// }
