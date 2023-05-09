@@ -28,10 +28,8 @@ export function CreateList(): JSX.Element {
     }
 
     function addMovieTomainList(newMovie: string) {
-        if (!usermainList.includes(newMovie)){
-            setusermainList([...usermainList, newMovie]);
+        setusermainList([...usermainList, newMovie]);
 
-        }
     }
 
     function clearmainList() {
