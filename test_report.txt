@@ -3,6 +3,1997 @@
 > react-scripts test --coverage
 
 FAIL src/App.test.tsx
+  ● Console
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
+    console.error
+      Warning: Encountered two children with the same key, `null`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Grid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:327:5)
+          at SimpleGrid2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:618:13)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Container2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:232:52)
+          at div
+          at MovieCards (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/MovieCards.tsx:22:5)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at div
+          at /home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@emotion/react/dist/emotion-element-b63ca7c6.cjs.dev.js:43:23
+          at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
+          at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
+          at div
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:26:45)
+
+      4 |
+      5 | test("renders learn react link", () => {
+    > 6 |     render(<App />);
+        |           ^
+      7 |     const linkElement = screen.getByText(/learn react/i);
+      8 |     expect(linkElement).toBeInTheDocument();
+      9 | });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19167:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performConcurrentWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:25738:74)
+      at flushActQueue (node_modules/react/cjs/react.development.js:2667:24)
+      at act (node_modules/react/cjs/react.development.js:2582:11)
+      at node_modules/@testing-library/react/dist/act-compat.js:63:25
+      at renderRoot (node_modules/@testing-library/react/dist/pure.js:159:26)
+      at render (node_modules/@testing-library/react/dist/pure.js:246:10)
+      at Object.<anonymous> (src/App.test.tsx:6:11)
+
   ● renders learn react link
 
     TestingLibraryElementError: Unable to find an element with the text: /learn react/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
@@ -148,7 +2139,9 @@ FAIL src/App.test.tsx
                 [0mCentral Movie List[0m
               [36m</h2>[39m
               [36m<br />[39m
-              [36m<div>[39m
+              [36m<div[39m
+                [33mid[39m=[32m"movie-list"[39m
+              [36m>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"chakra-container css-uwpzx4"[39m
                 [36m>[39m
@@ -156,16 +2149,15 @@ FAIL src/App.test.tsx
                     [33mclass[39m=[32m"css-11oj1on"[39m
                   [36m>[39m
                     [36m<div[39m
-                      [33mclass[39m=[32m"chakra-card css-1chkk63"[39m
+                      [33mdraggable[39m=[32m"true"[39m
                     [36m>[39m
                       [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card__header css-0"[39m
+                        [33mclass[39m=[32m"chakra-card css-1chkk63"[39m
                       [36m>[39m
-                        [36m<h2[39m
-                          [33mclass[39m=[32m"chakra-heading css-0"[39m
+                        [36m<div[39m
+                          [33mclass[39m=[32m"chakra-card__header css-0"[39m
                         [36m>[39m
-                          [36m<p[39m
-                            [33mclass[39m=[32m"chakr...
+                          [36m<...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -203,27 +2195,27 @@ FAIL src/components/Hidden.test.tsx
           at Array.map (<anonymous>)
       at Emittery.emit (node_modules/emittery/index.js:258:23)
 
----------------------|---------|----------|---------|---------|-------------------
-File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
----------------------|---------|----------|---------|---------|-------------------
-All files            |   42.85 |    16.66 |   38.46 |   40.86 |                   
- src                 |   11.76 |    33.33 |      25 |   11.76 |                   
-  App.tsx            |      50 |      100 |      50 |      50 | 25-26             
-  index.tsx          |       0 |      100 |     100 |       0 | 8-32              
-  reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10              
- src/components      |   49.38 |    13.33 |      40 |   47.36 |                   
-  CreateList.tsx     |   44.44 |        0 |      25 |   44.44 | 27-47,59,67-87    
-  DragAndDrop.tsx    |       0 |      100 |       0 |       0 | 4                 
-  DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                   
-  Genre.tsx          |   85.71 |      100 |      60 |   81.81 | 20,28             
-  Hidden.tsx         |       0 |      100 |       0 |       0 | 4                 
-  Movie.ts           |       0 |        0 |       0 |       0 |                   
-  MovieCards.tsx     |   38.09 |    14.28 |      50 |   36.58 | 35-63,68-74       
-  MoviesList.tsx     |     100 |      100 |     100 |     100 |                   
-  WatchList.tsx      |      75 |      100 |      50 |     100 |                   
----------------------|---------|----------|---------|---------|-------------------
+---------------------|---------|----------|---------|---------|--------------------
+File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s  
+---------------------|---------|----------|---------|---------|--------------------
+All files            |   41.12 |    16.66 |   35.55 |   39.21 |                    
+ src                 |   11.76 |    33.33 |      25 |   11.76 |                    
+  App.tsx            |      50 |      100 |      50 |      50 | 38-39              
+  index.tsx          |       0 |      100 |     100 |       0 | 8-32               
+  reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10               
+ src/components      |   46.66 |    13.33 |   36.58 |    44.7 |                    
+  CreateList.tsx     |   44.44 |        0 |      25 |   44.44 | 27-47,59,67-87     
+  DragAndDrop.tsx    |      25 |      100 |      20 |      25 | 15-23,36-57        
+  DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                    
+  Genre.tsx          |   85.71 |      100 |      60 |   81.81 | 20,28              
+  Hidden.tsx         |       0 |      100 |       0 |       0 | 4                  
+  Movie.ts           |       0 |        0 |       0 |       0 |                    
+  MovieCards.tsx     |   36.36 |    14.28 |   43.75 |   34.88 | 28,42-70,75-81,106 
+  MoviesList.tsx     |     100 |      100 |     100 |     100 |                    
+  WatchList.tsx      |      75 |      100 |      50 |     100 |                    
+---------------------|---------|----------|---------|---------|--------------------
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        3.973 s
+Time:        5.302 s
 Ran all test suites.
