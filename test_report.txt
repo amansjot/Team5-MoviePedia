@@ -2198,12 +2198,13 @@ FAIL src/components/Hidden.test.tsx
 ---------------------|---------|----------|---------|---------|--------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s  
 ---------------------|---------|----------|---------|---------|--------------------
-All files            |    41.5 |    16.66 |   35.55 |    39.6 |                    
+All files            |   36.36 |       15 |   29.62 |   34.48 |                    
  src                 |   11.76 |    33.33 |      25 |   11.76 |                    
   App.tsx            |      50 |      100 |      50 |      50 | 26-27              
   index.tsx          |       0 |      100 |     100 |       0 | 8-32               
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10               
- src/components      |   47.19 |    13.33 |   36.58 |   45.23 |                    
+ src/components      |   40.38 |    11.76 |      30 |   38.38 |                    
+  AdminList.tsx      |       0 |        0 |       0 |       0 | 5-62               
   CreateList.tsx     |   44.44 |        0 |      25 |   44.44 | 27-47,59,67-87     
   DragAndDrop.tsx    |   28.57 |      100 |      20 |   28.57 | 14-21,34-55        
   DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                    
@@ -2217,5 +2218,5 @@ All files            |    41.5 |    16.66 |   35.55 |    39.6 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        5.103 s
+Time:        5.872 s
 Ran all test suites.
