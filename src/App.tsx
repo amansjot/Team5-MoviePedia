@@ -8,19 +8,7 @@ import { DragAndDrop } from "./components/DragAndDrop";
 import { ViewIcon } from "@chakra-ui/icons";
 import {Genre} from "./components/Genre";
 import { MovieCards } from "./components/MovieCards";
-import { useDrag, useDrop } from "react-dnd";
 import { WatchList } from "./components/WatchList";
-/*
-goes under drag and drop
-<div>
-                <CreateList></CreateList>
-                <br/>
-                <Genre></Genre>
-                <br/>
-                <Divider borderWidth="2px"></Divider>
-                <br/>
-            </div>
-*/
 
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
@@ -54,13 +42,13 @@ function App() {
                     <MovieCards role={selectedRole}></MovieCards>
                 </Box>
                 <Box w="50%">
+                    <DragAndDrop></DragAndDrop>
+                    <br/>
                     <CreateList></CreateList>
                     <br/>
                     <Genre></Genre>
                     <br/>
                     <Divider borderWidth="2px"></Divider>
-                    <br/>
-                    <DragAndDrop></DragAndDrop>
                     <WatchList></WatchList>
                 </Box>
             </Flex>
