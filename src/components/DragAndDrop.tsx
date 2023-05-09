@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { useDrop } from "react-dnd";
 import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
 import { Card, CardHeader, CardBody, Text } from "@chakra-ui/react";
