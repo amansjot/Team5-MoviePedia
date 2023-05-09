@@ -2198,19 +2198,19 @@ FAIL src/components/SuperAddMovie.test.tsx
 ---------------------|---------|----------|---------|---------|--------------------
 File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s  
 ---------------------|---------|----------|---------|---------|--------------------
-All files            |   26.08 |     15.9 |   20.27 |   24.35 |                    
+All files            |   25.92 |     15.9 |      20 |    24.2 |                    
  src                 |      20 |     37.5 |      40 |      20 |                    
   App.tsx            |   57.14 |       75 |   66.66 |   57.14 | 19,35-36           
   index.tsx          |       0 |      100 |     100 |       0 | 8-32               
   reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10               
- src/components      |   26.95 |    11.11 |   18.84 |      25 |                    
+ src/components      |   26.76 |    11.11 |   18.57 |   24.81 |                    
   AdminList.tsx      |       0 |        0 |       0 |       0 | 5-62               
   CreateList.tsx     |       0 |        0 |       0 |       0 | 6-87               
   DragAndDrop.tsx    |   28.57 |      100 |      20 |   28.57 | 14-21,34-55        
   DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                    
   Genre.tsx          |   85.71 |      100 |      60 |   81.81 | 20,28              
   Movie.ts           |       0 |        0 |       0 |       0 |                    
-  MovieCards.tsx     |   36.36 |    14.28 |   43.75 |   34.88 | 26,40-68,73-79,104 
+  MovieCards.tsx     |   35.55 |    14.28 |   41.17 |   34.09 | 26,40-73,78-82,104 
   MoviesList.tsx     |     100 |      100 |     100 |     100 |                    
   SuperAddMovie.tsx  |       0 |      100 |       0 |       0 | 31-147             
   SuperNewMovie.tsx  |       0 |        0 |       0 |       0 |                    
@@ -2220,5 +2220,5 @@ All files            |   26.08 |     15.9 |   20.27 |   24.35 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        5.002 s
+Time:        4.587 s
 Ran all test suites.
