@@ -39,6 +39,9 @@ export function MovieCards({
 
     function sortList(type: string) {
         let sortedList: Movie[] = moviesList.slice(0); // make copy
+        if (filter != "[All]") {
+            sortedList = movieList.slice(0);
+        }
         if (type == "title1") {
             sortedList.sort(function(a,b) {
                 var x = a.name.toLowerCase();
@@ -78,7 +81,7 @@ export function MovieCards({
         if (role == "Super") {
             return (
                 <Container>
-                    <Center mb={3}>
+                    <Center mb={5}>
                         <Heading size="md">Sort by:&nbsp;&nbsp;</Heading>
                         <Select w="200px" bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => updateSort(event)}>
                             <option value="title1" selected>Title (A-Z)</option>
@@ -111,28 +114,28 @@ export function MovieCards({
     genreList.unshift("[All]");
 
     function filterGenre (event: React.ChangeEvent<HTMLSelectElement>){
-        const filter: string = event.target.value; 
-        setFilter(filter);
-
-        setMovieList(getMovies(moviesList));
-        sortList(sort);
+        setFilter(event.target.value);
 
         if (filter != "[All]") {
-            setMovieList(getMovies(moviesList));
-            sortList(sort);
-            const list = movieList.slice(0);
-            const filteredList = list.filter((movie: Movie) => {
+            const filteredList = getMovies(moviesList).filter((movie: Movie) => {
                 return movie.genre.includes(filter);
             });
             setMovieList(filteredList);
+            // Filter currently not sorting based on sort
+            // sortList(sort);
+        } else {
+            setMovieList(getMovies(moviesList));
+            sortList(sort);
         }
     }
 
     return(
         <div id="movie-list">
             {addSortField()}
+
+            {/* Filter by Genre feature */}
             {/* <Container>
-                <Center mb={2}>
+                <Center mb={5}>
                     <Heading size="md">Filter by Genre:&nbsp;&nbsp;</Heading>
                     <Select w="200px" bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => filterGenre(event)}>
                         { genreList.map((genre: string, key: number) => {
@@ -143,6 +146,7 @@ export function MovieCards({
                     </Select>
                 </Center>
             </Container> */}
+
             <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
                 <SimpleGrid w="100%" spacing={2} templateColumns={{base: "repeat(3, 1fr)"}}>
                     {movieList.map((movie)=>(

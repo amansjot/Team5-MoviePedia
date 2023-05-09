@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
-import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
@@ -21,18 +21,25 @@ export function DragAndDrop(): JSX.Element {
         event.preventDefault();
     }
 
+    function deleteItem(index: number) {
+        const newMovieList: Movie[] = [...movieList];
+        newMovieList.splice(index, 1);
+        setMovieList(newMovieList);
+    }
+
     return(
         <div id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
             <SimpleGrid spacing={3} columns={1}>
                 <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">
                     <Heading>
-                        <Text size="md">Main List</Text>
+                        <Text size="md">User List</Text>
                     </Heading>
                     <SimpleGrid style={{"height": "auto", "minHeight": "250px"}} w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   
-                        {movieList.map((movie)=>(
+                        {movieList.map((movie: Movie, index: number): JSX.Element => (
                             <Card height="300px" align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={5} maxW="sm" direction={{base: "row", sm:"column"}} overflow="hidden" variant="elevated" key={movie.name}>
                                 <CardHeader key={movie.name}>
+                                    <CloseButton position="absolute" top="0" right="0" onClick={() => deleteItem(index)}/>
                                     <Heading size="sm">
                                         <Text><span>{movie.name} ({movie.year})</span></Text>
                                     </Heading>
