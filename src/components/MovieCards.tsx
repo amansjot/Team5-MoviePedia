@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
-import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center } from "@chakra-ui/react";
+import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center, Select } from "@chakra-ui/react";
 import { moviesList } from "./MoviesList";
 import { Button } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
@@ -68,24 +68,24 @@ export function MovieCards({
         setMovieList(sortedList);
     }
 
+    function updateSort(event: React.ChangeEvent<HTMLSelectElement>){
+        sortList(event.target.value);
+        setSort(event.target.value);
+    }
+
     function addSortField(): JSX.Element {
         if (role == "Super") {
             return (
                 <Container>
                     <Heading size="md">Sort by:</Heading>
                     <Center mb={3}>
-                        <RadioGroup onChange={type => {
-                            sortList(type);
-                            setSort(type);
-                        }} value={sort}>
-                            <Stack>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='title1'>Title (A-Z)</Radio>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='title2'>Title (Z-A)</Radio>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='year1'>Year (Old to New)</Radio>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='year2'>Year (New to Old)</Radio>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='director'>Director</Radio>
-                            </Stack>
-                        </RadioGroup>
+                        <Select onChange={(event) => updateSort(event)}>
+                            <option value="title1" selected>Title (A-Z)</option>
+                            <option value="title2">Title (Z-A)</option>
+                            <option value="year1">Year (Old to New)</option>
+                            <option value="year2">Year (New to Old)</option>
+                            <option value="director">Director</option>
+                        </Select>
                     </Center>
                 </Container>
             );
