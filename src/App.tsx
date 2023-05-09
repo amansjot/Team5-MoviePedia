@@ -4,10 +4,23 @@ import "./App.css";
 import { Center, Container, Heading, ListItem, UnorderedList, Radio, RadioGroup, Stack, HStack, Wrap, Divider, Flex, Box } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/CreateList";
-import { WatchList } from "./components/WatchList";
+import { DragAndDrop } from "./components/DragAndDrop";
 import { ViewIcon } from "@chakra-ui/icons";
 import {Genre} from "./components/Genre";
 import { MovieCards } from "./components/MovieCards";
+import { useDrag, useDrop } from "react-dnd";
+import { WatchList } from "./components/WatchList";
+/*
+goes under drag and drop
+<div>
+                <CreateList></CreateList>
+                <br/>
+                <Genre></Genre>
+                <br/>
+                <Divider borderWidth="2px"></Divider>
+                <br/>
+            </div>
+*/
 
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
@@ -47,6 +60,7 @@ function App() {
                     <br/>
                     <Divider borderWidth="2px"></Divider>
                     <br/>
+                    <DragAndDrop></DragAndDrop>
                     <WatchList></WatchList>
                 </Box>
             </Flex>
@@ -70,4 +84,3 @@ export default App;
 // function SuperSortList(): React.ReactNode {
 //     throw new Error("Function not implemented.");
 // }
-
