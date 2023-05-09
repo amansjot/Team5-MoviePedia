@@ -90,44 +90,46 @@ export function MovieCards({
     }
 
     return(
-        <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
+        <div>
             {addSortField()}
-            <SimpleGrid h="4000px" w="100%" spacing={2} templateColumns={{base: "repeat(4, 1fr)"}}>
-                {movieList.map((movie)=>(
-                    <Card align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={movie.name}>
-                        <CardHeader key={movie.name}>
-                            <Heading size="md">
-                                <Text><span>{movie.name}</span></Text>
-                            </Heading>
-                            <Text><i>{movie.year}<br/>{movie.director}</i></Text>
-                        </CardHeader>
-                        <CardBody mt={-5}>
-                            <Image width={120} src={movie.poster} alt={movie.name}></Image>
-                            <div></div>
-                        </CardBody>
-                        <Popover>
-                            <PopoverTrigger>
-                                <Button>Show More</Button>
-                            </PopoverTrigger>
-                            <PopoverContent w="40">
-                                <PopoverArrow />
-                                <PopoverCloseButton/>
-                                <PopoverBody>
-                                    <Text></Text>
-                                    {/* <Text fontSize="xs" key={movie.plot}>{movie.plot}</Text> */}
-                                    <Text fontSize="xs">    
-                                        {movie.plot}      
-                                        <br/><br/>
-                                        <span>Actors: {expandArray(movie.actors)}</span>
-                                        <br/>
-                                        <span>Genre: {expandArray(movie.genre)}</span>
-                                    </Text>
-                                </PopoverBody>
-                            </PopoverContent>
-                        </Popover>
-                    </Card>
-                ))}
-            </SimpleGrid>
-        </Container>
+            <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
+                <SimpleGrid h="4000px" w="100%" spacing={2} templateColumns={{base: "repeat(4, 1fr)"}}>
+                    {movieList.map((movie)=>(
+                        <Card align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={movie.name}>
+                            <CardHeader key={movie.name}>
+                                <Heading size="md">
+                                    <Text><span>{movie.name}</span></Text>
+                                </Heading>
+                                <Text><i>{movie.year}<br/>{movie.director}</i></Text>
+                            </CardHeader>
+                            <CardBody mt={-5}>
+                                <Image width={120} src={movie.poster} alt={movie.name}></Image>
+                                <div></div>
+                            </CardBody>
+                            <Popover>
+                                <PopoverTrigger>
+                                    <Button>Show More</Button>
+                                </PopoverTrigger>
+                                <PopoverContent w="40">
+                                    <PopoverArrow />
+                                    <PopoverCloseButton/>
+                                    <PopoverBody>
+                                        <Text></Text>
+                                        {/* <Text fontSize="xs" key={movie.plot}>{movie.plot}</Text> */}
+                                        <Text fontSize="xs">    
+                                            {movie.plot}      
+                                            <br/><br/>
+                                            <span>Actors: {expandArray(movie.actors)}</span>
+                                            <br/>
+                                            <span>Genre: {expandArray(movie.genre)}</span>
+                                        </Text>
+                                    </PopoverBody>
+                                </PopoverContent>
+                            </Popover>
+                        </Card>
+                    ))}
+                </SimpleGrid>
+            </Container>
+        </div>
     );
 }
