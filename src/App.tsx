@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { Center, Container, Heading, ListItem, UnorderedList, Radio, RadioGroup, Stack, HStack, Wrap, Divider } from "@chakra-ui/react";
+import { Center, Container, Heading, ListItem, UnorderedList, Radio, RadioGroup, Stack, HStack, Wrap, Divider, Flex, Box } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/CreateList";
 import { WatchList } from "./components/WatchList";
@@ -34,22 +34,25 @@ function App() {
                 </Stack>
             </HStack>
             <br/>
-            <Heading size="lg">Central Movie List</Heading>
-            <br/>
-            <MovieCards role={selectedRole}></MovieCards>
-            <br/>
+            <Flex>
+                <Box w="50%">
+                    <Heading size="lg">Central Movie List</Heading>
+                    <br/>
+                    <MovieCards role={selectedRole}></MovieCards>
+                </Box>
+                <Box w="50%">
+                    <CreateList></CreateList>
+                    <br/>
+                    <Genre></Genre>
+                    <br/>
+                    <Divider borderWidth="2px"></Divider>
+                    <br/>
+                    <WatchList></WatchList>
+                </Box>
+            </Flex>
             <Divider borderWidth="2px"></Divider>
             <br/>
-            <div>
-                <CreateList></CreateList>
-                <br/>
-                <Genre></Genre>
-                <br/>
-                <Divider borderWidth="2px"></Divider>
-                <br/>
-                
-                <WatchList></WatchList>
-            </div>
+            
             <br/>
             <HStack p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
                 <Stack>
