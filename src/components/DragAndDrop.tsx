@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
-import { Card, CardHeader, CardBody, Text } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
@@ -24,14 +24,14 @@ export function DragAndDrop(): JSX.Element {
     return(
         <div id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
-            <SimpleGrid spacing={3} columns={2}>
-                <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="100%" h="100%">
+            <SimpleGrid spacing={3} columns={1}>
+                <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">
                     <Heading>
                         <Text size="md">Main List</Text>
                     </Heading>
-                    <SimpleGrid h="500px" w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   
+                    <SimpleGrid style={{"height": "auto", "minHeight": "250px"}} w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   
                         {movieList.map((movie)=>(
-                            <Card align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={5} maxW="sm" direction={{base: "row", sm:"column"}} overflow="hidden" variant="elevated" key={movie.name}>
+                            <Card height="300px" align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={5} maxW="sm" direction={{base: "row", sm:"column"}} overflow="hidden" variant="elevated" key={movie.name}>
                                 <CardHeader key={movie.name}>
                                     <Heading size="sm">
                                         <Text><span>{movie.name} ({movie.year})</span></Text>
@@ -40,28 +40,19 @@ export function DragAndDrop(): JSX.Element {
                                 </CardHeader>
                                 <CardBody mt={-5}>
                                     <Image width={79} src={movie.poster} alt={movie.name}></Image>
-                                    <div></div>
-                                </CardBody>
-                            </Card>
-                        ))}
-                    </SimpleGrid>
-                </Box>
-                <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="100%" h="100%">
-                    <Heading>
-                        <Text size="md"> List</Text>
-                    </Heading>
-                    <SimpleGrid h="500px" w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   
-                        {movieList.map((movie)=>(
-                            <Card align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={5} maxW="sm" direction={{base: "row", sm:"column"}} overflow="hidden" variant="elevated" key={movie.name}>
-                                <CardHeader key={movie.name}>
-                                    <Heading size="sm">
-                                        <Text><span>{movie.name} ({movie.year})</span></Text>
-                                    </Heading>
-                                    <Text><i>{movie.director}</i></Text>
-                                </CardHeader>
-                                <CardBody mt={-5}>
-                                    <Image width={79} src={movie.poster} alt={movie.name}></Image>
-                                    <div></div>
+                                    <Container mt="2" mb="-1">Rating:</Container>
+                                    <Slider defaultValue={5} min={1} max={5} step={1}>
+                                        {[1, 2, 3, 4, 5].map((num: number): JSX.Element => {
+                                            return (
+                                                <SliderMark key={num} value={num} fontSize="sm" mt="2" ml="-1">{num}</SliderMark>
+                                            );
+                                        })}
+                                        <SliderTrack bg='red.100'>
+                                            <Box position='relative' right={10} />
+                                            <SliderFilledTrack bg='tomato' />
+                                        </SliderTrack>
+                                        <SliderThumb boxSize={2} />
+                                    </Slider>
                                 </CardBody>
                             </Card>
                         ))}

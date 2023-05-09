@@ -6,9 +6,7 @@ import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/newCreateList";
 import { DragAndDrop } from "./components/DragAndDrop";
 import { ViewIcon } from "@chakra-ui/icons";
-import {Genre} from "./components/Genre";
 import { MovieCards } from "./components/MovieCards";
-import { WatchList } from "./components/WatchList";
 import { SuperAddMovie } from "./components/SuperAddMovie";
 
 function App() {
@@ -51,24 +49,19 @@ function App() {
                     <MovieCards role={selectedRole}></MovieCards>
                 </Box>
                 <Box w="50%">
-                    
                     <br/>
                     <CreateList></CreateList>
                     <br/>
-                    <Genre></Genre>
-                    <br/>
                     <DragAndDrop></DragAndDrop>
                     <Divider borderWidth="2px"></Divider>
-                    <WatchList></WatchList>
                 </Box>
             </Flex>
+            <br/>
             <Divider borderWidth="2px"></Divider>
             <br/>
             
             <br/>
             <div>
-                <CreateList></CreateList>
-                <WatchList></WatchList>
                 {superAddMovie()}
             </div>
             <HStack p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
