@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 import { Accordion, AccordionButton, AccordionIcon, AccordionPanel, AccordionItem } from "@chakra-ui/accordion";
-import { Box, Heading, Spacer } from "@chakra-ui/layout";
+//import { Box, Heading, Spacer } from "@chakra-ui/layout";
 import { Movie } from "./Movie";
 import movie from "../movie.json";
+import {SuperNewMovie} from "./SuperNewMovie";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
-import { Stack } from "@chakra-ui/layout";
+//import { Stack } from "@chakra-ui/layout";
 import { HTMLInputTypeAttribute} from "react";
+import { Button } from "@chakra-ui/react";
+import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
+import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center } from "@chakra-ui/react";
 
-interface MovieProps {
+/* interface MovieProps {
     movie: Movie[];
-}
+} */
 
 // export function getMovies(movies: Movie[]): Movie[] {
 //     const MovieCopy = movies.map((movies: Movie): Movie => ({...movies}));
@@ -18,9 +22,9 @@ interface MovieProps {
 
 //const productArray = getMovies(Movie);
  
-export function MovieProperty(props: MovieProps){
+/* export function MovieProperty(props: MovieProps){
     const MovieList = props;
-}
+} */
  
  
 export function SuperAddMovie(): JSX.Element {
@@ -89,42 +93,62 @@ export function SuperAddMovie(): JSX.Element {
         return updatedMovie;
     }
     
+    function expandArray(array: string[]): string {
+        const copy = [...array];
+        const listOfItems = copy.join(", ");
+        return listOfItems;
+    }
+
     const newList = updateMovies(movie);
 
+    //<Heading h="2vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>
     return(
         <Box>
-            <Heading h="2vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>
-            <Accordion p="8vh">
-                {newList.map((Movie)=>(
-                    //name, poster, year, actors, plot, director, genre, rating
-                    <AccordionItem key={Movie.name}>
-                        <AccordionButton>
-                            <AccordionIcon/>
-                            <Box>
-                                <text>{Movie.name}</text>
-                            </Box>
-                        </AccordionButton>
-                        <AccordionPanel>
-                            Poster: {Movie.poster}
-                            <Spacer></Spacer>
-                            Year Hours: {Movie.year}
-                            <Spacer></Spacer>
-                            Actors: {Movie.actors}
-                            <Spacer></Spacer>
-                            Plot: {Movie.plot}
-                            <Spacer></Spacer>
-                            Director: {Movie.director}
-                            <Spacer></Spacer>
-                            Genre: {Movie.genre}
-                            <Spacer></Spacer>
-                            Rating: {Movie.rating}
-                        </AccordionPanel>
-                    </AccordionItem>
-                ))}
-            </Accordion>
+            <div>
+                <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
+                    <SimpleGrid h="4000px" w="100%" spacing={2} templateColumns={{base: "repeat(4, 1fr)"}}>
+                        {movie.map((Movie)=>(
+                            <Card align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={Movie.name}>
+                                <CardHeader key={Movie.name}>
+                                    <Heading size="md">
+                                        <Text><span>{Movie.name}</span></Text>
+                                    </Heading>
+                                    <Text><i>{Movie.year}<br/>{Movie.director}</i></Text>
+                                </CardHeader>
+                                <CardBody mt={-5}>
+                                    <Image width={120} src={Movie.poster} alt={Movie.name}></Image>
+                                    <div></div>
+                                </CardBody>
+                                <Popover>
+                                    <PopoverTrigger>
+                                        <Button>Show More</Button>
+                                    </PopoverTrigger>
+                                    <PopoverContent w="40">
+                                        <PopoverArrow />
+                                        <PopoverCloseButton/>
+                                        <PopoverBody>
+                                            <Text></Text>
+                                            {/* <Text fontSize="xs" key={movie.plot}>{movie.plot}</Text> */}
+                                            <Text fontSize="xs">    
+                                                {Movie.plot}      
+                                                <br/><br/>
+                                                <span>Actors: {expandArray(Movie.actors)}</span>
+                                                <br/>
+                                                <span>Genre: {expandArray(Movie.genre)}</span>
+                                            </Text>
+                                        </PopoverBody>
+                                    </PopoverContent>
+                                </Popover>
+                            </Card>
+                        ))}
+                    </SimpleGrid>
+                </Container>
+            </div>
             <Spacer></Spacer>
-            <Heading size ="md" style={{"fontFamily": "'Georgia', sans-serif"}}>Add a New Location:</Heading>
-            <Stack spacing={1}>
+            
+            <Heading size ="md" style={{"fontFamily": "'Georgia', sans-serif"}}>Add a New Movie:</Heading>
+            
+            { <Stack spacing={1}>
                 <InputGroup p="7vh">
                     <InputLeftAddon>Movie Name</InputLeftAddon>
                     <Input onChange={nameChange} variant="filled" placeholder="Insert Movie Name"></Input>
@@ -151,7 +175,7 @@ export function SuperAddMovie(): JSX.Element {
                     <InputLeftAddon>rating</InputLeftAddon>
                     <Input onChange={ratingChange} variant="filled" placeholder="Insert Rating"></Input>
                 </InputGroup>
-            </Stack>
+            </Stack> }
         </Box>
     );
 }
