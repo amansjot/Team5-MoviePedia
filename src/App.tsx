@@ -26,7 +26,7 @@ function App() {
                         <Heading as='h3' size="md">Change Role</Heading>
                         <RadioGroup onChange={setRole} value={selectedRole}>
                             <Stack direction='row'>
-                                <Radio value='Super'>Super</Radio>
+                                <Radio value='Super' onChange={SuperAddMovie}>Super</Radio>
                                 <Radio value='Admin'>Admin</Radio>
                                 <Radio value='User'>User</Radio>
                             </Stack>

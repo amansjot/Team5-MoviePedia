@@ -3,7 +3,7 @@ import { Accordion, AccordionButton, AccordionIcon, AccordionPanel, AccordionIte
 //import { Box, Heading, Spacer } from "@chakra-ui/layout";
 import { Movie } from "./Movie";
 import movie from "../movie.json";
-import {SuperNewMovie} from "./SuperNewMovie";
+//import {SuperNewMovie} from "./SuperNewMovie";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 //import { Stack } from "@chakra-ui/layout";
 import { HTMLInputTypeAttribute} from "react";
@@ -100,11 +100,8 @@ export function SuperAddMovie(): JSX.Element {
     }
 
     const newList = updateMovies(movie);
-
-    //<Heading h="2vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>
-    return(
-        <Box>
-            <div>
+    /** 
+    <div>
                 <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
                     <SimpleGrid h="4000px" w="100%" spacing={2} templateColumns={{base: "repeat(4, 1fr)"}}>
                         {movie.map((Movie)=>(
@@ -128,7 +125,7 @@ export function SuperAddMovie(): JSX.Element {
                                         <PopoverCloseButton/>
                                         <PopoverBody>
                                             <Text></Text>
-                                            {/* <Text fontSize="xs" key={movie.plot}>{movie.plot}</Text> */}
+    
                                             <Text fontSize="xs">    
                                                 {Movie.plot}      
                                                 <br/><br/>
@@ -144,6 +141,11 @@ export function SuperAddMovie(): JSX.Element {
                     </SimpleGrid>
                 </Container>
             </div>
+    */
+    //<Heading h="2vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>
+    
+    return(
+        <Box>
             <Spacer></Spacer>
             
             <Heading size ="md" style={{"fontFamily": "'Georgia', sans-serif"}}>Add a New Movie:</Heading>
