@@ -14,6 +14,14 @@ import { SuperAddMovie } from "./components/SuperAddMovie";
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
 
+    function superAddMovie(): JSX.Element {
+        if (selectedRole == "Super") {
+            return (<SuperAddMovie></SuperAddMovie>);
+        } else {
+            return (<></>);
+        }
+    }
+
     return (
         <div className="App">
             <HStack p={6} bg="blue.100" borderBottom="2px solid black" justify="space-between">
@@ -60,7 +68,7 @@ function App() {
             <div>
                 <CreateList></CreateList>
                 <WatchList></WatchList>
-                <SuperAddMovie></SuperAddMovie>
+                {superAddMovie()}
             </div>
             <HStack p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
                 <Stack>
