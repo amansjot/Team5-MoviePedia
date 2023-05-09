@@ -1,44 +1,37 @@
 import React, { useState } from "react";
 import { FormControl, FormLabel, Heading, Input, Select } from "@chakra-ui/react";
 import {CreateList} from "./CreateList";
+import {moviesList} from "./MoviesList";
 
 export function Genre(): JSX.Element {
-    const [answer, setAnswer] = useState<string>("");
-    const [soln, setSoln] =  useState<string>("");
+    const [chosenGenre, setGenre] = useState<string>("Genre");
 
-    function solution(event: React.ChangeEvent<HTMLSelectElement>){
-        if(event.target.value === "horror"){
-            setSoln("");
+    const GENRES: string[][] = moviesList.map((x) => x.genre);
+    let genreSet: Set<string> = new Set();
+    for (let i = 0; i < GENRES.length; i++) {
+        for (let j = 0; j < GENRES[i].length; j++) {
+            genreSet.add(GENRES[i][j]);
         }
-        if(event.target.value === "comedy"){
-            setSoln("");
-        }
-        if(event.target.value === "rom-com"){
-            setSoln("");
-        }
-        if(event.target.value === "action"){
-            setSoln("");
-        }
-
-
     }
+    const genreList: string[] = Array.from(genreSet);
 
+
+    function updateGenre (event: React.ChangeEvent<HTMLSelectElement>){
+        setGenre(event.target.value);
+    }
 
     return (
         <div>
-            <Heading size="lg">Personalized Lists </Heading>
-            <br/>
-            <FormControl>
-                <FormLabel>Choose a genre to create a list for: </FormLabel>
-                <Select placeholder='Select type' onChange={(event) => solution(event)}>
-                    <option value = 'horror'>Horror</option>
-                    <option value = 'comedy'>Comedy</option>
-                    <option value = 'rom-com'>Rom-Com</option>
-                    <option value = 'action'>Action</option>
-                </Select>
-            </FormControl>
-            <br/>
-            <div> {soln} </div>
+            <Heading size="lg">Genre Lists </Heading>
+            <br />
+            <FormLabel>Choose a genre to create a list for: </FormLabel>
+            <Select placeholder='Select type' onChange={(event) => updateGenre(event)}>
+                { genreList.map((genre: string, key: number) => {
+                    return (
+                        <option value={genre} key={key}>{genre}</option>
+                    );
+                }) }
+            </Select>
         </div>
     );
 }
