@@ -20,6 +20,14 @@ function App() {
         }
     }
 
+    function createList(): JSX.Element {
+        if (selectedRole == "User") {
+            return (<CreateList></CreateList>);
+        } else {
+            return (<></>);
+        }
+    }
+
     return (
         <div className="App">
             <HStack p={6} bg="blue.100" borderBottom="2px solid black" justify="space-between">
@@ -50,7 +58,7 @@ function App() {
                 </Box>
                 <Box w="50%">
                     <br/>
-                    <CreateList></CreateList>
+                    {createList()}
                     <br/>
                     <DragAndDrop></DragAndDrop>
                     <Divider borderWidth="2px"></Divider>
