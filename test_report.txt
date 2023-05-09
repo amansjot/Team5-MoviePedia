@@ -148,25 +148,24 @@ FAIL src/App.test.tsx
                 [0mCentral Movie List[0m
               [36m</h2>[39m
               [36m<br />[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"chakra-container css-uwpzx4"[39m
-              [36m>[39m
+              [36m<div>[39m
                 [36m<div[39m
-                  [33mclass[39m=[32m"css-11oj1on"[39m
+                  [33mclass[39m=[32m"chakra-container css-uwpzx4"[39m
                 [36m>[39m
                   [36m<div[39m
-                    [33mclass[39m=[32m"chakra-card css-1chkk63"[39m
+                    [33mclass[39m=[32m"css-11oj1on"[39m
                   [36m>[39m
                     [36m<div[39m
-                      [33mclass[39m=[32m"chakra-card__header css-0"[39m
+                      [33mclass[39m=[32m"chakra-card css-1chkk63"[39m
                     [36m>[39m
-                      [36m<h2[39m
-                        [33mclass[39m=[32m"chakra-heading css-0"[39m
+                      [36m<div[39m
+                        [33mclass[39m=[32m"chakra-card__header css-0"[39m
                       [36m>[39m
-                        [36m<p[39m
-                          [33mclass[39m=[32m"chakra-text css-0"[39m
+                        [36m<h2[39m
+                          [33mclass[39m=[32m"chakra-heading css-0"[39m
                         [36m>[39m
-             ...
+                          [36m<p[39m
+                            [33mclass[39m=[32m"chakr...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -226,5 +225,5 @@ All files            |   42.42 |    15.78 |   38.46 |   40.42 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.004 s
+Time:        5.994 s
 Ran all test suites.
