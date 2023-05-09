@@ -1,72 +1,70 @@
 import React, { useState } from "react";
-import { Button, Heading, SimpleGrid } from "@chakra-ui/react";
+import { Button, SimpleGrid, FormControl, FormLabel, FormHelperText, Input, Heading} from "@chakra-ui/react";
 import {Movie} from "./Movie";
-import movies from "./movie.json";
 
 
-// const MOVIES = [
-//     "Minions",
-//     "Toy Story",
-//     "Toy Story 2",
-//     "Toy Story 3",
-//     "Cars",
-//     "Aladdin",
-//     "Tangled",
-//     "Frozen",
-//     "Wreck-It Ralph",
-//     "Moana",
-// ];
+const MOVIES = [
+    "Minions",
+    "Toy Story",
+    "Toy Story 2",
+    "Toy Story 3",
+    "Cars",
+    "Aladdin",
+    "Tangled",
+    "Frozen",
+    "Wreck-It Ralph",
+    "Moana",
+];
 
 
 export function CreateList(): JSX.Element {
-    const ml = movies.MOVIES; 
-    const masterlist = ml.map(a=>({
-        name:a.name, poster:a.poster, year:a.year, actors:a.actors, plot:a.plot, director:a.director, genre:a.genre, rating:a.rating
-    }));
-    const [allOptions] = useState<Movie[]>(masterlist);
-    const [usermainList, setusermainList] = useState<Movie[]>([]);
-    const [userlistbyGenre, setuserGenreList] = useState<Movie[]>([]);
-    "";
-    function addMovieTomainList(newMovie: Movie) {
-        if (!usermainList.includes(newMovie)){
-            setusermainList([...usermainList, newMovie]);
+    const [allOptions] = useState<string[]>(MOVIES);
+    const [usermainList, setusermainList] = useState<string[]>([]);
+    const [userlistbyPreference, setuserPreferenceList] = useState<string[]>([]);
+    const [preference, setPreference] = useState<string>("");
 
-        }
+    function updatePreference(event: React.ChangeEvent<HTMLInputElement>) {
+        setPreference(event.target.value);
+    }
+
+    function addMovieTomainList(newMovie: string) {
+        setusermainList([...usermainList, newMovie]);
+
     }
 
     function clearmainList() {
         setusermainList([]);
     }
 
-    function addMovieTogenreList(newMovie: Movie) {
-        if (!userlistbyGenre.includes(newMovie)){
-            setuserGenreList([...userlistbyGenre, newMovie]);
+    function addMovieToPreferenceList(newMovie: string) {
+        if (!userlistbyPreference.includes(newMovie)){
+            setuserPreferenceList([...userlistbyPreference, newMovie]);
 
         }
     }
 
-    function cleargenreList() {
-        setuserGenreList([]);
+    function clearPreferenceList() {
+        setuserPreferenceList([]);
     }
 
     return (
         <div>
-            <Heading size="lg">Create A List </Heading>
+            <Heading size="lg">Personalized Lists </Heading>
             <SimpleGrid columns={2} spacing={10}>
                 <div>
                     <div>
-                        {allOptions.map((option: Movie) => (
-                            <div key={option.name}>
-                Add To Main&nbsp;&nbsp;&nbsp;&nbsp;
-                                <Button onClick={() => addMovieTomainList(option)}>{option.name}</Button>
+                        {allOptions.map((option: string) => (
+                            <div key={option}>
+                Add To Main
+                                <Button onClick={() => addMovieTomainList(option)}>{option}</Button>
                             </div>
                         ))}
                     </div>
                     <div>
-                        {allOptions.map((option: Movie) => (
-                            <div key={option.name}>
-                Add To Genre List
-                                <Button onClick={() => addMovieTogenreList(option)}>{option.name}</Button>
+                        {allOptions.map((option: string) => (
+                            <div key={option}>
+                Add To {preference} List
+                                <Button onClick={() => addMovieToPreferenceList(option)}>{option}</Button>
                             </div>
                         ))}
                     </div>
@@ -74,19 +72,22 @@ export function CreateList(): JSX.Element {
                 <div>
                     <div>
                         <strong>My Main List:</strong>
-                        {usermainList.map((movie: Movie) => (
-                            <li key={movie.name}>{movie.name}</li>
+                        {usermainList.map((movie: string) => (
+                            <li key={movie}>{movie}</li>
                         ))}
                         <Button onClick={clearmainList}>Clear List</Button>
                     </div>
+                    <FormControl>
+                        <FormLabel>What would you like to name your list? </FormLabel>
+                        <Input type = 'preference' value = {preference} onChange = {updatePreference}/>
+                    </FormControl>
                     <div>
-                        <strong>My Genre List:</strong>
-                        {userlistbyGenre.map((movie: Movie) => (
-                            <li key={movie.name}>{movie.name}</li>
+                        <strong>My {preference} List:</strong>
+                        {userlistbyPreference.map((movie: string) => (
+                            <li key={movie}>{movie}</li>
                         ))}
-                        <Button onClick={cleargenreList}>Clear List</Button>
+                        <Button onClick={clearPreferenceList}>Clear List</Button>
                     </div>
-                    <br/>
                 </div>
             </SimpleGrid>
         </div>
