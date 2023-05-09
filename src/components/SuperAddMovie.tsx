@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Accordion, AccordionButton, AccordionIcon, AccordionPanel, AccordionItem } from "@chakra-ui/accordion";
 //import { Box, Heading, Spacer } from "@chakra-ui/layout";
 import { Movie } from "./Movie";
-import movie from "../movie.json";
+//import movie from "../movie.json";
 //import {SuperNewMovie} from "./SuperNewMovie";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 //import { Stack } from "@chakra-ui/layout";
@@ -99,7 +99,7 @@ export function SuperAddMovie(): JSX.Element {
         return listOfItems;
     }
 
-    const newList = updateMovies(movie);
+    //const newList = updateMovies(movie);
     /** 
     <div>
                 <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
