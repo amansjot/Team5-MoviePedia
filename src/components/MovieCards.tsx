@@ -60,8 +60,8 @@ export function MovieCards({
             });
         } else if (type == "director") {
             sortedList.sort(function(a,b) {
-                var x = a.director.toLowerCase();
-                var y = b.director.toLowerCase();
+                var x = a.director.split(" ")[1].toLowerCase();
+                var y = b.director.split(" ")[1].toLowerCase();
                 return x < y ? -1 : x > y ? 1 : 0;
             });
         }
