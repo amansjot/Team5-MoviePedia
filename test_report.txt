@@ -2143,21 +2143,22 @@ FAIL src/App.test.tsx
                 [33mid[39m=[32m"movie-list"[39m
               [36m>[39m
                 [36m<div[39m
-                  [33mclass[39m=[32m"chakra-container css-uwpzx4"[39m
+                  [33mclass[39m=[32m"chakra-container css-0"[39m
                 [36m>[39m
                   [36m<div[39m
-                    [33mclass[39m=[32m"css-16ci3wh"[39m
+                    [33mclass[39m=[32m"css-1e88rvj"[39m
                   [36m>[39m
-                    [36m<div[39m
-                      [33mdraggable[39m=[32m"true"[39m
+                    [36m<h2[39m
+                      [33mclass[39m=[32m"chakra-heading css-0"[39m
                     [36m>[39m
-                      [36m<div[39m
-                        [33mclass[39m=[32m"chakra-card css-mrkl4l"[39m
-                      [36m>[39m
-                        [36m<div[39m
-                          [33mclass[39m=[32m"chakra-card__header css-0"[39m
-                        [36m>[39m
-                          [36m<h...
+                      [0mFilter by Genre:  [0m
+                    [36m</h2>[39m
+                    [0m(unfinished) [0m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"chakra-select__wrapper css-vaqiau"[39m
+                    [36m>[39m
+                      [36m<select[39m
+              ...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -2195,28 +2196,28 @@ FAIL src/components/SuperAddMovie.test.tsx
           at Array.map (<anonymous>)
       at Emittery.emit (node_modules/emittery/index.js:258:23)
 
----------------------|---------|----------|---------|---------|----------------------------------------------
-File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                            
----------------------|---------|----------|---------|---------|----------------------------------------------
-All files            |   19.83 |    13.86 |   18.39 |    18.9 |                                              
- src                 |   26.08 |       50 |      50 |   26.08 |                                              
-  App.tsx            |      60 |       75 |      75 |      60 | 17,27,41-42                                  
-  index.tsx          |       0 |      100 |     100 |       0 | 8-32                                         
-  reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10                                         
- src/components      |   19.19 |     8.98 |   16.04 |   18.13 |                                              
-  CreateList.tsx     |       0 |        0 |       0 |       0 | 12-100                                       
-  DragAndDrop.tsx    |   14.58 |     7.14 |   17.64 |   14.89 | 15-66,72-77,84-88,117-130                    
-  DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                                              
-  Genre.tsx          |       0 |        0 |       0 |       0 | 6-32                                         
-  Movie.ts           |       0 |        0 |       0 |       0 |                                              
-  MovieCards.tsx     |   39.24 |    15.78 |   39.13 |   36.48 | 30,37-41,52-88,93-97,128-139,145,152-155,180 
-  MoviesList.tsx     |     100 |      100 |     100 |     100 |                                              
-  SuperAddMovie.tsx  |       0 |        0 |       0 |       0 | 15-223                                       
-  SuperNewMovie.tsx  |       0 |        0 |       0 |       0 |                                              
-  newCreateList.tsx  |   33.33 |        0 |    12.5 |   33.33 | 11-31,40-51                                  
----------------------|---------|----------|---------|---------|----------------------------------------------
+---------------------|---------|----------|---------|---------|--------------------------------------------------
+File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                
+---------------------|---------|----------|---------|---------|--------------------------------------------------
+All files            |   20.08 |    13.86 |    19.1 |   19.16 |                                                  
+ src                 |   26.08 |       50 |      50 |   26.08 |                                                  
+  App.tsx            |      60 |       75 |      75 |      60 | 17,27,41-42                                      
+  index.tsx          |       0 |      100 |     100 |       0 | 8-32                                             
+  reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10                                             
+ src/components      |   19.46 |     8.98 |   16.86 |   18.43 |                                                  
+  CreateList.tsx     |       0 |        0 |       0 |       0 | 12-100                                           
+  DragAndDrop.tsx    |   14.58 |     7.14 |   17.64 |   14.89 | 15-66,72-77,84-88,117-130                        
+  DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                                                  
+  Genre.tsx          |       0 |        0 |       0 |       0 | 6-32                                             
+  Movie.ts           |       0 |        0 |       0 |       0 |                                                  
+  MovieCards.tsx     |    39.5 |    15.78 |      40 |   36.84 | 30,37-41,52-88,93-97,128-139,145,152-155,167,181 
+  MoviesList.tsx     |     100 |      100 |     100 |     100 |                                                  
+  SuperAddMovie.tsx  |       0 |        0 |       0 |       0 | 15-223                                           
+  SuperNewMovie.tsx  |       0 |        0 |       0 |       0 |                                                  
+  newCreateList.tsx  |   33.33 |        0 |    12.5 |   33.33 | 11-31,40-51                                      
+---------------------|---------|----------|---------|---------|--------------------------------------------------
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        6.498 s
+Time:        6.16 s
 Ran all test suites.
