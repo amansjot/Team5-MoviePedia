@@ -16,6 +16,9 @@ function App() {
     function superAddMovie(): JSX.Element {
         if (selectedRole == "Super") {
             return (<SuperAddMovie></SuperAddMovie>);
+        } 
+        if (selectedRole == "Admin") {
+            return (<AdminList></AdminList>);
         } else {
             return (<></>);
         }
