@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Accordion, AccordionButton, AccordionIcon, AccordionPanel, AccordionItem } from "@chakra-ui/accordion";
-//import { Box, Heading, Spacer } from "@chakra-ui/layout";
 import { Movie } from "./Movie";
 //import movie from "../movie.json";
 //import {SuperNewMovie} from "./SuperNewMovie";
@@ -10,34 +9,15 @@ import { HTMLInputTypeAttribute} from "react";
 import { Button } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
 import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center } from "@chakra-ui/react";
-
-/* interface MovieProps {
-    movie: Movie[];
-} */
-
-// export function getMovies(movies: Movie[]): Movie[] {
-//     const MovieCopy = movies.map((movies: Movie): Movie => ({...movies}));
-//     return MovieCopy;
-// }
-
-//const productArray = getMovies(Movie);
- 
-/* export function MovieProperty(props: MovieProps){
-    const MovieList = props;
-} */
- 
  
 export function SuperAddMovie(): JSX.Element {
     const [name, setName] = React.useState("");
     const [poster, setPoster] = React.useState("");
-    //const [year, setYear] = React.useState("");
     const [year, setYear] = useState<number>(0);
     const [actors, setActors] = useState<string[]>([]);
-    //const [actors, setActors] = React.useState("");
     const [plot, setPlot] = React.useState("");
     const [director, setDirector] = React.useState("");
     const [genre, setGenre] = useState<string[]>([]);
-    //const [genre, setGenre] = React.useState("");
     const [rating, setRating] = useState<number>(1);
 
     function nameChange (event: React.ChangeEvent<HTMLInputElement>){
@@ -100,6 +80,7 @@ export function SuperAddMovie(): JSX.Element {
     }
 
     //const newList = updateMovies(movie);
+
     /** 
     <div>
                 <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
@@ -146,6 +127,44 @@ export function SuperAddMovie(): JSX.Element {
     
     return(
         <Box>
+            <div>
+                <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
+                    <SimpleGrid h="4000px" w="100%" spacing={2} templateColumns={{base: "repeat(4, 1fr)"}}>
+                        <Card align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={name}>
+                            <CardHeader key={name}>
+                                <Heading size="md">
+                                    <Text><span>{name}</span></Text>
+                                </Heading>
+                                <Text><i>{year}<br/>{director}</i></Text>
+                            </CardHeader>
+                            <CardBody mt={-5}>
+                                <Image width={120} src={poster} alt={name}></Image>
+                                <div></div>
+                            </CardBody>
+                            <Popover>
+                                <PopoverTrigger>
+                                    <Button>Show More</Button>
+                                </PopoverTrigger>
+                                <PopoverContent w="40">
+                                    <PopoverArrow />
+                                    <PopoverCloseButton/>
+                                    <PopoverBody>
+                                        <Text></Text>
+    
+                                        <Text fontSize="xs">    
+                                            {plot}      
+                                            <br/><br/>
+                                            <span>Actors: {expandArray(actors)}</span>
+                                            <br/>
+                                            <span>Genre: {expandArray(genre)}</span>
+                                        </Text>
+                                    </PopoverBody>
+                                </PopoverContent>
+                            </Popover>
+                        </Card>
+                    </SimpleGrid>
+                </Container>
+            </div>
             <Spacer></Spacer>
             
             <Heading size ="md" style={{"fontFamily": "'Georgia', sans-serif"}}>Add a New Movie:</Heading>
@@ -173,9 +192,6 @@ export function SuperAddMovie(): JSX.Element {
 
                     <InputLeftAddon>Genre</InputLeftAddon>
                     <Input onChange={genreChange} variant="filled" placeholder="Insert Genre"></Input>
-
-                    <InputLeftAddon>rating</InputLeftAddon>
-                    <Input onChange={ratingChange} variant="filled" placeholder="Insert Rating"></Input>
                 </InputGroup>
             </Stack> }
         </Box>
