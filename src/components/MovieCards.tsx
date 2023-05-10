@@ -160,9 +160,10 @@ export function MovieCards({
             {addSortField()}
 
             {/* Filter by Genre feature */}
-            {/* <Container>
+            <Container>
                 <Center mb={5}>
                     <Heading size="md">Filter by Genre:&nbsp;&nbsp;</Heading>
+                    (unfinished)&nbsp;
                     <Select w="200px" bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => filterGenre(event)}>
                         { genreList.map((genre: string, key: number) => {
                             return (
@@ -171,7 +172,7 @@ export function MovieCards({
                         }) }
                     </Select>
                 </Center>
-            </Container> */}
+            </Container>
 
             <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
                 <SimpleGrid w="100%" spacing={2} templateColumns={{base: "repeat(3, 1fr)"}}>
