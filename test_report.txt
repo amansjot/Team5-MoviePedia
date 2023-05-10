@@ -26,7 +26,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -77,7 +77,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -128,7 +128,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -179,7 +179,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -230,7 +230,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -281,7 +281,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -332,7 +332,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -383,7 +383,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -434,7 +434,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -485,7 +485,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -536,7 +536,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -587,7 +587,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -638,7 +638,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -689,7 +689,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -740,7 +740,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -791,7 +791,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -842,7 +842,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -893,7 +893,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -944,7 +944,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -995,7 +995,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1046,7 +1046,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1097,7 +1097,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1148,7 +1148,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1199,7 +1199,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1250,7 +1250,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1301,7 +1301,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1352,7 +1352,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1403,7 +1403,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1454,7 +1454,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1505,7 +1505,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1556,7 +1556,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1607,7 +1607,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1658,7 +1658,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1709,7 +1709,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1760,7 +1760,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1811,7 +1811,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1862,7 +1862,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1913,7 +1913,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -1964,7 +1964,7 @@ FAIL src/App.test.tsx
           at ChakraComponent (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dist/index.js:228:71)
           at Flex2 (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/layout/dist/index.js:307:11)
           at div
-          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:13:45)
+          at App (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/App.tsx:14:45)
 
       4 |
       5 | test("renders learn react link", () => {
@@ -2195,29 +2195,29 @@ FAIL src/components/SuperAddMovie.test.tsx
           at Array.map (<anonymous>)
       at Emittery.emit (node_modules/emittery/index.js:258:23)
 
----------------------|---------|----------|---------|---------|----------------------------
-File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s          
----------------------|---------|----------|---------|---------|----------------------------
-All files            |   21.57 |    15.38 |   16.45 |   20.21 |                            
- src                 |   26.08 |       40 |      50 |   26.08 |                            
-  App.tsx            |      60 |    66.66 |      75 |      60 | 17,27,41-42                
-  index.tsx          |       0 |      100 |     100 |       0 | 8-32                       
-  reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10                       
- src/components      |   20.95 |     9.52 |   13.69 |   19.37 |                            
-  AdminList.tsx      |       0 |        0 |       0 |       0 | 5-62                       
-  CreateList.tsx     |       0 |        0 |       0 |       0 | 12-100                     
-  DragAndDrop.tsx    |   18.18 |      100 |   14.28 |   18.18 | 14-27,40-53                
-  DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                            
-  Genre.tsx          |       0 |        0 |       0 |       0 | 6-32                       
-  Movie.ts           |       0 |        0 |       0 |       0 |                            
-  MovieCards.tsx     |   42.42 |     12.5 |      40 |    38.7 | 27,41-77,82-86,117-128,154 
-  MoviesList.tsx     |     100 |      100 |     100 |     100 |                            
-  SuperAddMovie.tsx  |       0 |      100 |       0 |       0 | 31-147                     
-  SuperNewMovie.tsx  |       0 |        0 |       0 |       0 |                            
-  newCreateList.tsx  |   33.33 |        0 |    12.5 |   33.33 | 11-31,40-52                
----------------------|---------|----------|---------|---------|----------------------------
+---------------------|---------|----------|---------|---------|----------------------------------------
+File                 | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                      
+---------------------|---------|----------|---------|---------|----------------------------------------
+All files            |   23.34 |    12.82 |   19.78 |   22.37 |                                        
+ src                 |   26.08 |       40 |      50 |   26.08 |                                        
+  App.tsx            |      60 |    66.66 |      75 |      60 | 18,28,42-43                            
+  index.tsx          |       0 |      100 |     100 |       0 | 8-32                                   
+  reportWebVitals.ts |       0 |        0 |       0 |       0 | 3-10                                   
+ src/components      |   23.03 |     8.82 |   17.64 |   21.93 |                                        
+  AdminList.tsx      |   46.66 |        0 |   33.33 |   46.66 | 24-42,54,62                            
+  CreateList.tsx     |       0 |        0 |       0 |       0 | 12-100                                 
+  DragAndDrop.tsx    |   12.19 |     4.16 |    12.5 |   12.19 | 15-66,71-75,103-116                    
+  DroppedMovie.tsx   |       0 |        0 |       0 |       0 |                                        
+  Genre.tsx          |       0 |        0 |       0 |       0 | 6-32                                   
+  Movie.ts           |       0 |        0 |       0 |       0 |                                        
+  MovieCards.tsx     |   41.09 |     14.7 |   39.13 |   38.23 | 27,41-77,82-86,117-128,134,141-143,168 
+  MoviesList.tsx     |     100 |      100 |     100 |     100 |                                        
+  SuperAddMovie.tsx  |       0 |      100 |       0 |       0 | 31-147                                 
+  SuperNewMovie.tsx  |       0 |        0 |       0 |       0 |                                        
+  newCreateList.tsx  |   33.33 |        0 |    12.5 |   33.33 | 11-31,40-52                            
+---------------------|---------|----------|---------|---------|----------------------------------------
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        6.672 s
+Time:        5.067 s
 Ran all test suites.
