@@ -10,6 +10,7 @@ import {Genre} from "./components/Genre";
 import { MovieCards } from "./components/MovieCards";
 import { WatchList } from "./components/WatchList";
 import { SuperAddMovie } from "./components/SuperAddMovie";
+import { AdminList } from "./components/AdminList";
 
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
@@ -17,6 +18,9 @@ function App() {
     function superAddMovie(): JSX.Element {
         if (selectedRole == "Super") {
             return (<SuperAddMovie></SuperAddMovie>);
+        } 
+        if (selectedRole == "Admin") {
+            return (<AdminList></AdminList>);
         } else {
             return (<></>);
         }
