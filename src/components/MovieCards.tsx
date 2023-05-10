@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
-import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center, Select } from "@chakra-ui/react";
+import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center, Select, CloseButton } from "@chakra-ui/react";
 import { moviesList } from "./MoviesList";
 import { Button } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
@@ -129,6 +129,20 @@ export function MovieCards({
         }
     }
 
+    function closeButton(index: number): JSX.Element {
+        if (localStorage.getItem("role") == "Super") {
+            return (<CloseButton position="absolute" top="0" right="0" onClick={() => deleteItem(index)}/>);
+        } else {
+            return (<></>);
+        }
+    }
+
+    function deleteItem(index: number) {
+        const newMovieList: Movie[] = [...movieList];
+        newMovieList.splice(index, 1);
+        setMovieList(newMovieList);
+    }
+
     return(
         <div id="movie-list">
             {addSortField()}
@@ -149,11 +163,12 @@ export function MovieCards({
 
             <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
                 <SimpleGrid w="100%" spacing={2} templateColumns={{base: "repeat(3, 1fr)"}}>
-                    {movieList.map((movie)=>(
+                    {movieList.map((movie: Movie, index: number)=>(
                         <div key={null} draggable
                             onDragStart={(event) => changeDrag(event, movie)}>
                             <Card align="center" height="390px" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={movie.name}>
                                 <CardHeader key={movie.name}>
+                                    {closeButton(index)}
                                     <Heading size="md">
                                         <Text><span>{movie.name}</span></Text>
                                     </Heading>

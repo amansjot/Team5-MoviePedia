@@ -8,6 +8,7 @@ import { DragAndDrop } from "./components/DragAndDrop";
 import { ViewIcon } from "@chakra-ui/icons";
 import { MovieCards } from "./components/MovieCards";
 import { SuperAddMovie } from "./components/SuperAddMovie";
+import { AdminList } from "./components/AdminList";
 
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
@@ -70,8 +71,12 @@ function App() {
             
             <br/>
             <div>
+                {AdminList()}
+            </div>
+            <div>
                 {superAddMovie()}
             </div>
+            <br/><br/>
             <HStack p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
                 <Stack>
                     <div><b>MoviePedia 2023</b></div>
