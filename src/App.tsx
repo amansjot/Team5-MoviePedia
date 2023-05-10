@@ -8,17 +8,13 @@ import { DragAndDrop } from "./components/DragAndDrop";
 import { ViewIcon } from "@chakra-ui/icons";
 import { MovieCards } from "./components/MovieCards";
 import { SuperAddMovie } from "./components/SuperAddMovie";
-import { AdminList } from "./components/AdminList";
 
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
 
     function superAddMovie(): JSX.Element {
-        if (selectedRole == "Super") {
+        if (selectedRole == "Super" || selectedRole == "Admin") {
             return (<SuperAddMovie></SuperAddMovie>);
-        } 
-        if (selectedRole == "Admin") {
-            return (<AdminList></AdminList>);
         } else {
             return (<></>);
         }
@@ -68,13 +64,9 @@ function App() {
                     <Divider borderWidth="2px"></Divider>
                 </Box>
             </Flex>
-            <br/>
-            <Divider borderWidth="2px"></Divider>
-            <br/>
             
-            <br/>
             <div>
-                {AdminList()}
+                {/* {AdminList()} */}
             </div>
             <div>
                 {superAddMovie()}
