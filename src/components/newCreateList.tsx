@@ -34,12 +34,11 @@ export function CreateList(): JSX.Element {
     return (
         <Container mt="-6">
             <Heading size="lg">Create a List</Heading>
+            (not implemented)
             <div>
-                <div>
-                    {usermainList.map((movie: string) => (
-                        <li key={movie}>{movie}</li>
-                    ))}
-                </div>
+                {usermainList.map((movie: string) => (
+                    <li key={movie}>{movie}</li>
+                ))}
                 <br/>
                 <FormControl>
                     <HStack m="0 auto">

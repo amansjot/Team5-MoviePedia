@@ -66,6 +66,19 @@ export function DragAndDrop(): JSX.Element {
         setSort(event.target.value);
     }
 
+    // This needs to auto-update when a MovieCards X is clicked
+    function delAllItems(): JSX.Element {
+        if (localStorage.getItem("delete")) {
+            for (let i = movieList.length - 1; i >= 0; i--) {
+                if (movieList[i].name == localStorage.getItem("delete")) {
+                    movieList.splice(i, 1);
+                }
+            }
+            localStorage.removeItem("delete");
+        }
+        return (<></>);
+    }
+
     function addSortField(): JSX.Element {
         if (localStorage.getItem("role") == "User") {
             return (
@@ -93,6 +106,7 @@ export function DragAndDrop(): JSX.Element {
             <Heading>
                 <Text size="md">User List</Text>
             </Heading>
+            {delAllItems()}
             <br/>
             {addSortField()}
             <br/>

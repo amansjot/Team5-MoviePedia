@@ -23,13 +23,24 @@ export function MovieCards({
     role: string;
 }): JSX.Element {
 
+    // const [moviesList, setMoviesList] = useState<Movie[]>(moviesList);
+    
+
     function changeDrag(event: React.DragEvent, widgetType: Movie) {
         event.dataTransfer.setData("widgetType", JSON.stringify(widgetType));
     }
 
-    
     const [movieList, setMovieList] = useState<Movie[]>(getMovies(moviesList));
     const [sort, setSort] = useState<string>("title1");
+
+    if (localStorage.getItem("newMovie")) {
+        const newMovie: Movie = JSON.parse(localStorage.getItem("newMovie") || "");
+        const newMovieList: Movie[] = [...movieList, newMovie];
+        setMovieList(newMovieList);
+        // if (movieList.includes(newMovie)) {
+        localStorage.removeItem("newMovie");
+        // }
+    }
 
     function expandArray(array: string[]): string {
         const copy = [...array];
@@ -38,7 +49,7 @@ export function MovieCards({
     }
 
     function sortList(type: string) {
-        let sortedList: Movie[] = moviesList.slice(0); // make copy
+        let sortedList: Movie[] = movieList.slice(0); // make copy
         if (filter != "[All]") {
             sortedList = movieList.slice(0);
         }
@@ -138,6 +149,7 @@ export function MovieCards({
     }
 
     function deleteItem(index: number) {
+        localStorage.setItem("delete", movieList[index].name);
         const newMovieList: Movie[] = [...movieList];
         newMovieList.splice(index, 1);
         setMovieList(newMovieList);

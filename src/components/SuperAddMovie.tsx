@@ -6,26 +6,30 @@ import { Movie } from "./Movie";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 //import { Stack } from "@chakra-ui/layout";
 import { HTMLInputTypeAttribute} from "react";
-import { Button } from "@chakra-ui/react";
+import { Button, Divider, IconButton } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
 import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center } from "@chakra-ui/react";
+import { CheckIcon, CloseIcon, SearchIcon } from "@chakra-ui/icons";
  
 export function SuperAddMovie(): JSX.Element {
-    const [name, setName] = React.useState("");
-    const [poster, setPoster] = React.useState("");
-    const [year, setYear] = useState<number>(0);
-    const [actors, setActors] = useState<string[]>([]);
+    const [name, setName] = React.useState("Movie Title");
+    const [poster, setPoster] = React.useState("https://placehold.co/130x200");
+    const [year, setYear] = useState<number>(2023);
+    const [actors, setActors] = useState<string>("");
     const [plot, setPlot] = React.useState("");
     const [director, setDirector] = React.useState("");
-    const [genre, setGenre] = useState<string[]>([]);
-    const [rating, setRating] = useState<number>(1);
+    const [genre, setGenre] = useState<string>("");
 
     function nameChange (event: React.ChangeEvent<HTMLInputElement>){
         setName(event.target.value);
     }
 
     function posterChange (event: React.ChangeEvent<HTMLInputElement>){
-        setPoster(event.target.value);
+        if (!event.target.value) {
+            setPoster("https://placehold.co/130x200");
+        } else {
+            setPoster(event.target.value);
+        }
     }
 
     function yearChange (event: React.ChangeEvent<HTMLInputElement>){
@@ -33,7 +37,7 @@ export function SuperAddMovie(): JSX.Element {
     }
 
     function actorsChange (event: React.ChangeEvent<HTMLInputElement>){
-        setActors([...actors, event.target.value]);
+        setActors(event.target.value);
     }
 
     function plotChange (event: React.ChangeEvent<HTMLInputElement>){
@@ -45,11 +49,7 @@ export function SuperAddMovie(): JSX.Element {
     }
 
     function genreChange (event: React.ChangeEvent<HTMLInputElement>){
-        setGenre([...genre, event.target.value]);
-    }
-
-    function ratingChange (event: React.ChangeEvent<HTMLInputElement>){
-        setRating(parseInt(event.target.value));
+        setGenre(event.target.value);
     }
 
     function addMovie(name:string, poster: string, year: number, actors:string[], plot:string, director:string, genre:string[], rating:number):Movie {
@@ -61,20 +61,20 @@ export function SuperAddMovie(): JSX.Element {
             plot: plot,
             director: director,
             genre: genre,
-            rating: rating
+            rating: 0
         };
         return addMovie;
     }   
  
     function updateMovies (movies: Movie[]): Movie[] {
         const movieCopy = [...movies];
-        const locat = addMovie(name, poster, year, actors, plot, director, genre, rating);
+        const locat = addMovie(name, poster, year, actors.split(","), plot, director, genre.split(","), 0);
         const updatedMovie = [...movieCopy, locat];
         return updatedMovie;
     }
     
-    function expandArray(array: string[]): string {
-        const copy = [...array];
+    function expandArray(array: string): string {
+        const copy = array.split(",");
         const listOfItems = copy.join(", ");
         return listOfItems;
     }
@@ -125,12 +125,113 @@ export function SuperAddMovie(): JSX.Element {
     */
     //<Heading h="2vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>
     
+    function heading(): JSX.Element {
+        if (localStorage.getItem("role") == "Super") {
+            return (<Heading size ="lg" mb="4">Add a New Movie</Heading>);
+        } else if (localStorage.getItem("role") == "Admin") {
+            return (<Heading size ="lg" mb="4">Review New Movies</Heading>);
+        } else {
+            return (<></>);
+        }
+    }
+
+    function movieInput(): JSX.Element {
+        if (localStorage.getItem("role") == "Super") {
+            return (<Stack spacing={1}>
+                <InputGroup px="10">
+                    <InputLeftAddon>Movie Name</InputLeftAddon>
+                    <Input onChange={nameChange} variant="filled" placeholder="Insert Movie Name"></Input>
+                    <Spacer px="2"></Spacer>
+
+                    <InputLeftAddon>Poster</InputLeftAddon>
+                    <Input onChange={posterChange} variant="filled" placeholder="Insert Poster"></Input>
+                    <Spacer px="2"></Spacer>
+
+                    <InputLeftAddon>Year</InputLeftAddon>
+                    <Input onChange={yearChange} variant="filled" placeholder="Insert Year Published"></Input>
+                </InputGroup>
+                <InputGroup px="10" pt="2">
+                    <InputLeftAddon>Actors</InputLeftAddon>
+                    <Input onChange={actorsChange} variant="filled" placeholder="Insert Actor"></Input>
+                    <Spacer px="2"></Spacer>
+
+                    <InputLeftAddon>Plot</InputLeftAddon>
+                    <Input onChange={plotChange} variant="filled" placeholder="Insert Plot"></Input>
+                    <Spacer px="2"></Spacer>
+
+                    <InputLeftAddon>Director</InputLeftAddon>
+                    <Input onChange={directorChange} variant="filled" placeholder="Insert Director"></Input>
+                    <Spacer px="2"></Spacer>
+
+                    <InputLeftAddon>Genre</InputLeftAddon>
+                    <Input onChange={genreChange} variant="filled" placeholder="Insert Genre"></Input>
+                </InputGroup>
+            </Stack>);
+        } else {
+            return (<></>);
+        }
+    }
+
+    function acceptNewMovie() {
+        const newMovie: Movie = {
+            name: name,
+            poster: poster,  
+            year: year,
+            actors: actors.split(","),
+            plot: plot,
+            director: director,
+            genre: genre.split(","),
+            rating: 0
+        };
+        localStorage.setItem("newMovie", JSON.stringify(newMovie));
+        resetNewMovie();
+    }
+
+    function resetNewMovie() {
+        setName("Movie Title");
+        setPoster("https://placehold.co/130x200");
+        setYear(2023);
+        setActors("");
+        setPlot("");
+        setDirector("");
+        setGenre("");
+    }
+
+    function reviewNewMovie(): JSX.Element {
+        const isEdited: boolean = name !== "Movie Title" && actors != "" && plot != "" && director != "" && genre != ""; 
+        if (localStorage.getItem("role") == "Admin" && isEdited) {
+            return (<CardFooter mb="-3">
+                <IconButton
+                    colorScheme="green"
+                    aria-label="Search database"
+                    icon={<CheckIcon />}
+                    onClick={acceptNewMovie}
+                />
+                <Spacer p="1"></Spacer>
+                <IconButton
+                    colorScheme="red"
+                    aria-label="Search database"
+                    icon={<CloseIcon />}
+                    onClick={resetNewMovie}
+                />
+            </CardFooter>);
+        } else {
+            return (<></>);
+        }
+    }
+
     return(
         <Box>
+            <br/>
+            <br/>
+            <Divider borderWidth="2px"></Divider>
+            <br/>
+            {/* style={{"fontFamily": "'Georgia', sans-serif"}} */}
+            {heading()}
             <div>
-                <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
-                    <SimpleGrid h="4000px" w="100%" spacing={2} templateColumns={{base: "repeat(4, 1fr)"}}>
-                        <Card align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={name}>
+                <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="auto" minHeight="375px" overflowY={"scroll"}>
+                    <SimpleGrid h="auto" w="100%" spacing={2} templateColumns={{base: "repeat(3, 1fr)"}}>
+                        <Card align="center" w="200px" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={name}>
                             <CardHeader key={name}>
                                 <Heading size="md">
                                     <Text><span>{name}</span></Text>
@@ -138,7 +239,7 @@ export function SuperAddMovie(): JSX.Element {
                                 <Text><i>{year}<br/>{director}</i></Text>
                             </CardHeader>
                             <CardBody mt={-5}>
-                                <Image width={120} src={poster} alt={name}></Image>
+                                <Image border="1px solid grey" width={100} height={165} src={poster} alt={name}></Image>
                                 <div></div>
                             </CardBody>
                             <Popover>
@@ -161,39 +262,15 @@ export function SuperAddMovie(): JSX.Element {
                                     </PopoverBody>
                                 </PopoverContent>
                             </Popover>
+                            {reviewNewMovie()}
                         </Card>
                     </SimpleGrid>
                 </Container>
             </div>
             <Spacer></Spacer>
-            
-            <Heading size ="md" style={{"fontFamily": "'Georgia', sans-serif"}}>Add a New Movie:</Heading>
-            
-            { <Stack spacing={1}>
-                <InputGroup p="7vh">
-                    <InputLeftAddon>Movie Name</InputLeftAddon>
-                    <Input onChange={nameChange} variant="filled" placeholder="Insert Movie Name"></Input>
-                    <Spacer></Spacer>
+            <br/>
 
-                    <InputLeftAddon>Poster</InputLeftAddon>
-                    <Input onChange={posterChange} variant="filled" placeholder="Insert Poster"></Input>
-
-                    <InputLeftAddon>Year</InputLeftAddon>
-                    <Input onChange={yearChange} variant="filled" placeholder="Insert Year Published"></Input>
-
-                    <InputLeftAddon>Actors</InputLeftAddon>
-                    <Input onChange={actorsChange} variant="filled" placeholder="Insert Actor"></Input>
-
-                    <InputLeftAddon>Plot</InputLeftAddon>
-                    <Input onChange={plotChange} variant="filled" placeholder="Insert Plot"></Input>
-
-                    <InputLeftAddon>Director</InputLeftAddon>
-                    <Input onChange={directorChange} variant="filled" placeholder="Insert Director"></Input>
-
-                    <InputLeftAddon>Genre</InputLeftAddon>
-                    <Input onChange={genreChange} variant="filled" placeholder="Insert Genre"></Input>
-                </InputGroup>
-            </Stack> }
+            {movieInput()}
         </Box>
     );
 }
