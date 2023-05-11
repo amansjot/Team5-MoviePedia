@@ -151,13 +151,14 @@ export function DragAndDrop(): JSX.Element {
             </SimpleGrid>
         </div>
     );
- */
+ 
 
-    
+    /*
     return(
         <SimpleGrid spacing={3} columns={2}>
             <MainMovieList></MainMovieList>
             <CustomMovieList></CustomMovieList>
         </SimpleGrid>
     );
+    */
 }
