@@ -142,16 +142,15 @@ export function MovieCards({
     const [second_filter, setSecondFilter] = useState<string>("");
     function filterContains(event: React.ChangeEvent<HTMLInputElement>){
         setSecondFilter(event.target.value);
-        if(second_filter!= ""){
+        if(event.target.value!= ""){
             const filteredList = getMovies(moviesList).filter((movie: Movie) => {
-                return movie.plot.includes(second_filter);
+                return movie.plot.includes(event.target.value);
             });
             setMovieList(filteredList);
         } else{
             setMovieList(getMovies(moviesList));
             sortList(sort);
         }
-        
     }
 
     function closeButton(index: number): JSX.Element {
