@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { FormControl, FormLabel, Heading, Input, Select } from "@chakra-ui/react";
-import {CreateList} from "./CreateList";
+import { Select } from "@chakra-ui/react";
 import {moviesList} from "./MoviesList";
 
 export function Genre(): JSX.Element {
-    const [chosenGenre, setGenre] = useState<string>("Genre");
+    const [filter, setFilter] = useState<string>("Genre");
 
     const GENRES: string[][] = moviesList.map((x) => x.genre);
     let genreSet: Set<string> = new Set();
@@ -14,24 +13,26 @@ export function Genre(): JSX.Element {
         }
     }
     const genreList: string[] = Array.from(genreSet);
+    genreList.sort();
+    genreList.unshift("[All]");
 
+    function filterGenre (event: React.ChangeEvent<HTMLSelectElement>){
+        const genre: string = event.target.value; 
+        setFilter(genre);
+        if (genre != "[All]") {
 
-    function updateGenre (event: React.ChangeEvent<HTMLSelectElement>){
-        setGenre(event.target.value);
+        } else {
+
+        }
     }
 
     return (
-        <div>
-            <Heading size="lg">Genre Lists </Heading>
-            <br />
-            <FormLabel>Choose a genre to create a list for: </FormLabel>
-            <Select placeholder='Select type' onChange={(event) => updateGenre(event)}>
-                { genreList.map((genre: string, key: number) => {
-                    return (
-                        <option value={genre} key={key}>{genre}</option>
-                    );
-                }) }
-            </Select>
-        </div>
+        <Select w="200px" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => filterGenre(event)}>
+            { genreList.map((genre: string, key: number) => {
+                return (
+                    <option value={genre} key={key}>{genre}</option>
+                );
+            }) }
+        </Select>
     );
 }

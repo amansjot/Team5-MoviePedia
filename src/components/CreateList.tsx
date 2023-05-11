@@ -1,7 +1,13 @@
 import React, { useState } from "react";
-import { Button, SimpleGrid, FormControl, FormLabel, FormHelperText, Input, Heading} from "@chakra-ui/react";
-import {Movie} from "./Movie";
-
+import {
+    Button,
+    SimpleGrid,
+    FormControl,
+    FormLabel,
+    FormHelperText,
+    Input,
+    Heading,
+} from "@chakra-ui/react";
 
 const MOVIES = [
     "Minions",
@@ -16,7 +22,6 @@ const MOVIES = [
     "Moana",
 ];
 
-
 export function CreateList(): JSX.Element {
 
     const [allOptions] = useState<string[]>(MOVIES);
@@ -30,7 +35,6 @@ export function CreateList(): JSX.Element {
 
     function addMovieTomainList(newMovie: string) {
         setusermainList([...usermainList, newMovie]);
-
     }
 
     function clearmainList() {
@@ -38,9 +42,8 @@ export function CreateList(): JSX.Element {
     }
 
     function addMovieToPreferenceList(newMovie: string) {
-        if (!userlistbyPreference.includes(newMovie)){
+        if (!userlistbyPreference.includes(newMovie)) {
             setuserPreferenceList([...userlistbyPreference, newMovie]);
-
         }
     }
 
@@ -49,14 +52,16 @@ export function CreateList(): JSX.Element {
     }
     return (
         <div>
-            <Heading size="lg">Personalized Lists </Heading>
+            <Heading size="lg">Create a List</Heading>
             <SimpleGrid columns={2} spacing={10}>
                 <div>
                     <div>
                         {allOptions.map((option: string) => (
                             <div key={option}>
                 Add To Main
-                                <Button onClick={() => addMovieTomainList(option)}>{option}</Button>
+                                <Button onClick={() => addMovieTomainList(option)}>
+                                    {option}
+                                </Button>
                             </div>
                         ))}
                     </div>
@@ -64,22 +69,30 @@ export function CreateList(): JSX.Element {
                         {allOptions.map((option: string) => (
                             <div key={option}>
                 Add To {preference} List
-                                <Button onClick={() => addMovieToPreferenceList(option)}>{option}</Button>
+                                <Button onClick={() => addMovieToPreferenceList(option)}>
+                                    {option}
+                                </Button>
                             </div>
                         ))}
                     </div>
                 </div>
                 <div>
                     <div>
-                        <strong>My Main List:</strong>
+                        <strong>My Mai List:</strong>
                         {usermainList.map((movie: string) => (
                             <li key={movie}>{movie}</li>
                         ))}
-                        <Button onClick={clearmainList}>Clear List</Button>
+                        <Button onClick={clearmainList}>Car List</Button>
                     </div>
                     <FormControl>
-                        <FormLabel>What would you like to name your list? </FormLabel>
-                        <Input type = 'preference' value = {preference} onChange = {updatePreference}/>
+                        <FormLabel>
+              List Name (ex. My Favorite Movies, Watch List, My Horror List)
+                        </FormLabel>
+                        <Input
+                            type="preference"
+                            value={preference}
+                            onChange={updatePreference}
+                        />
                     </FormControl>
                     <div>
                         <strong>My {preference} List:</strong>

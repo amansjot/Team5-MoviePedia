@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
-import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center } from "@chakra-ui/react";
+import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center, Select, CloseButton } from "@chakra-ui/react";
 import { moviesList } from "./MoviesList";
 import { Button } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
-import { sortAndDeduplicateDiagnostics } from "typescript";
-import { useDrag } from "react-dnd";
 import "../DragDropList.css";
+import {Genre} from "./Genre";
 
 export function getMovies(movies: Movie[]): Movie[] {
     const movieCopy = movies.map((movieData: Movie): Movie => ({...movieData}));
@@ -24,13 +23,24 @@ export function MovieCards({
     role: string;
 }): JSX.Element {
 
+    // const [moviesList, setMoviesList] = useState<Movie[]>(moviesList);
+    
+
     function changeDrag(event: React.DragEvent, widgetType: Movie) {
         event.dataTransfer.setData("widgetType", JSON.stringify(widgetType));
     }
 
-    
     const [movieList, setMovieList] = useState<Movie[]>(getMovies(moviesList));
     const [sort, setSort] = useState<string>("title1");
+
+    if (localStorage.getItem("newMovie")) {
+        const newMovie: Movie = JSON.parse(localStorage.getItem("newMovie") || "");
+        const newMovieList: Movie[] = [...movieList, newMovie];
+        setMovieList(newMovieList);
+        // if (movieList.includes(newMovie)) {
+        localStorage.removeItem("newMovie");
+        // }
+    }
 
     function expandArray(array: string[]): string {
         const copy = [...array];
@@ -39,7 +49,10 @@ export function MovieCards({
     }
 
     function sortList(type: string) {
-        let sortedList: Movie[] = moviesList.slice(0); // make copy
+        let sortedList: Movie[] = movieList.slice(0); // make copy
+        if (filter != "[All]") {
+            sortedList = movieList.slice(0);
+        }
         if (type == "title1") {
             sortedList.sort(function(a,b) {
                 var x = a.name.toLowerCase();
@@ -62,32 +75,32 @@ export function MovieCards({
             });
         } else if (type == "director") {
             sortedList.sort(function(a,b) {
-                var x = a.director.toLowerCase();
-                var y = b.director.toLowerCase();
+                var x = a.director.split(" ")[1].toLowerCase();
+                var y = b.director.split(" ")[1].toLowerCase();
                 return x < y ? -1 : x > y ? 1 : 0;
             });
         }
         setMovieList(sortedList);
     }
 
+    function updateSort(event: React.ChangeEvent<HTMLSelectElement>){
+        sortList(event.target.value);
+        setSort(event.target.value);
+    }
+
     function addSortField(): JSX.Element {
         if (role == "Super") {
             return (
                 <Container>
-                    <Heading size="md">Sort by:</Heading>
-                    <Center mb={3}>
-                        <RadioGroup onChange={type => {
-                            sortList(type);
-                            setSort(type);
-                        }} value={sort}>
-                            <Stack>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='title1'>Title (A-Z)</Radio>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='title2'>Title (Z-A)</Radio>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='year1'>Year (Old to New)</Radio>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='year2'>Year (New to Old)</Radio>
-                                <Radio borderColor="black" colorScheme='red' p={[0,2]} value='director'>Director</Radio>
-                            </Stack>
-                        </RadioGroup>
+                    <Center mb={5}>
+                        <Heading size="md">Sort by:&nbsp;&nbsp;</Heading>
+                        <Select w="200px" bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => updateSort(event)}>
+                            <option value="title1" selected>Title (A-Z)</option>
+                            <option value="title2">Title (Z-A)</option>
+                            <option value="year1">Year (Old to New)</option>
+                            <option value="year2">Year (New to Old)</option>
+                            <option value="director">Director</option>
+                        </Select>
                     </Center>
                 </Container>
             );
@@ -96,16 +109,79 @@ export function MovieCards({
         }
     }
 
+
+    const [filter, setFilter] = useState<string>("Genre");
+
+    const GENRES: string[][] = moviesList.map((x) => x.genre);
+    let genreSet: Set<string> = new Set();
+    for (let i = 0; i < GENRES.length; i++) {
+        for (let j = 0; j < GENRES[i].length; j++) {
+            genreSet.add(GENRES[i][j]);
+        }
+    }
+
+    const genreList: string[] = Array.from(genreSet);
+    genreList.sort();
+    genreList.unshift("[All]");
+
+    function filterGenre (event: React.ChangeEvent<HTMLSelectElement>){
+        setFilter(event.target.value);
+
+        if (filter != "[All]") {
+            const filteredList = getMovies(moviesList).filter((movie: Movie) => {
+                return movie.genre.includes(filter);
+            });
+            setMovieList(filteredList);
+            // Filter currently not sorting based on sort
+            // sortList(sort);
+        } else {
+            setMovieList(getMovies(moviesList));
+            sortList(sort);
+        }
+    }
+
+    function closeButton(index: number): JSX.Element {
+        if (localStorage.getItem("role") == "Super") {
+            return (<CloseButton position="absolute" top="0" right="0" onClick={() => deleteItem(index)}/>);
+        } else {
+            return (<></>);
+        }
+    }
+
+    function deleteItem(index: number) {
+        localStorage.setItem("delete", movieList[index].name);
+        const newMovieList: Movie[] = [...movieList];
+        newMovieList.splice(index, 1);
+        setMovieList(newMovieList);
+    }
+
     return(
         <div id="movie-list">
             {addSortField()}
+
+            {/* Filter by Genre feature */}
+            <Container>
+                <Center mb={5}>
+                    <Heading size="md">Filter by Genre:&nbsp;&nbsp;</Heading>
+                    (unfinished)&nbsp;
+                    <Select w="200px" bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => filterGenre(event)}>
+                        { genreList.map((genre: string, key: number) => {
+                            return (
+                                <option value={genre} key={key}>{genre}</option>
+                            );
+                        }) }
+                    </Select>
+                </Center>
+            </Container>
+
             <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
-                <SimpleGrid h="4000px" w="100%" spacing={2} templateColumns={{base: "repeat(4, 1fr)"}}>
-                    {movieList.map((movie)=>(
+                <SimpleGrid w="100%" spacing={2} templateColumns={{base: "repeat(3, 1fr)"}}>
+                    {movieList.map((movie: Movie, index: number)=>(
                         <div key={null} draggable
                             onDragStart={(event) => changeDrag(event, movie)}>
-                            <Card align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={movie.name}>
+                            <Card align="center" height="390px" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={movie.name}>
                                 <CardHeader key={movie.name}>
+                                    {closeButton(index)}
                                     <Heading size="md">
                                         <Text><span>{movie.name}</span></Text>
                                     </Heading>

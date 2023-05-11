@@ -1,5 +1,4 @@
-{
-    "MOVIES": [
+[
         {
             "name":"Minions",
             "poster": "https://www.themoviedb.org/t/p/original/dr02BdCNAUPVU07aOodwPYv6HCf.jpg",   
@@ -401,5 +400,5 @@
             "rating":0
         }
     ]
- }
+ 
  

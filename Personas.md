@@ -45,23 +45,3 @@ What Do They Want: Be able to add users for them
 
 What Is Their Main Barrier: Would not be able to add a user and disappoint customers if they need help with becoming a user. 
 
-
-## User 6
-Who Are They: 
-
-
-What Do They Want:
-
-
-What Is Their Main Barrier: 
-
-
-## User 7
-Who Are They: 
-
-
-What Do They Want:
-
-
-What Is Their Main Barrier: 
-
