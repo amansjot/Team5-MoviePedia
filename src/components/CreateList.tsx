@@ -23,6 +23,7 @@ const MOVIES = [
 ];
 
 export function CreateList(): JSX.Element {
+
     const [allOptions] = useState<string[]>(MOVIES);
     const [usermainList, setusermainList] = useState<string[]>([]);
     const [userlistbyPreference, setuserPreferenceList] = useState<string[]>([]);
@@ -49,7 +50,6 @@ export function CreateList(): JSX.Element {
     function clearPreferenceList() {
         setuserPreferenceList([]);
     }
-
     return (
         <div>
             <Heading size="lg">Create a List</Heading>

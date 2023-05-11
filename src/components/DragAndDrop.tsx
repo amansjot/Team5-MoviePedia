@@ -6,8 +6,14 @@ import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
 
+import { MainMovieList } from "./MainMovieList";
+import { CustomMovieList } from "./CustomMovieList";
+
+//add an aspect for giving a review once the movie is in the list 
+
+
 export function DragAndDrop(): JSX.Element {
-    
+
     const [movieList, setMovieList] = useState<Movie[]>([]);
     const [sort, setSort] = useState<string>("title1");
 
@@ -144,5 +150,14 @@ export function DragAndDrop(): JSX.Element {
                 </Box>
             </SimpleGrid>
         </div>
+    );
+ */
+
+    
+    return(
+        <SimpleGrid spacing={3} columns={2}>
+            <MainMovieList></MainMovieList>
+            <CustomMovieList></CustomMovieList>
+        </SimpleGrid>
     );
 }
