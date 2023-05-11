@@ -184,6 +184,7 @@ export function SuperAddMovie(): JSX.Element {
             rating: 0
         };
         localStorage.setItem("newMovie", JSON.stringify(newMovie));
+        localStorage.setItem("role", localStorage.getItem("role") || "Admin");
         resetNewMovie();
     }
 
@@ -196,6 +197,10 @@ export function SuperAddMovie(): JSX.Element {
         setDirector("");
         setGenre("");
     }
+
+    // function explainEdited(): JSX.Element {
+    //     if (localStorage.getItem("role") == "Admin" && isEdited)
+    // }
 
     function reviewNewMovie(): JSX.Element {
         const isEdited: boolean = name !== "Movie Title" && actors != "" && plot != "" && director != "" && genre != ""; 

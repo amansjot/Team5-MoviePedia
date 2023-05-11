@@ -140,9 +140,10 @@ export function MovieCards({
         }
     }
     const [second_filter, setSecondFilter] = useState<string>("");
+
     function filterContains(event: React.ChangeEvent<HTMLInputElement>){
         setSecondFilter(event.target.value);
-        if(event.target.value!= ""){
+        if (event.target.value !=  "") {
             const filteredList = getMovies(moviesList).filter((movie: Movie) => {
                 return movie.plot.includes(event.target.value);
             });
@@ -193,7 +194,7 @@ export function MovieCards({
                     <Heading size="md"> Description Contains: </Heading>
                     <FormControl>
                         <Input
-                            placeholder="(ex: bride, spacecraft, love"
+                            placeholder="(ex: bride, spacecraft, love)"
                             type="description_contains"
                             value={second_filter}
                             onChange={filterContains}
