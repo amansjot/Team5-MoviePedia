@@ -2212,7 +2212,7 @@ All files             |   18.81 |    13.59 |   17.17 |   17.93 |
   Genre.tsx           |       0 |        0 |       0 |       0 | 6-32                                                     
   MainMovieList.tsx   |       0 |      100 |       0 |       0 | 11-34                                                    
   Movie.ts            |       0 |        0 |       0 |       0 |                                                          
-  MovieCards.tsx      |   37.07 |       15 |   37.03 |   34.52 | 30,37-41,52-88,93-97,128-139,144-152,159,166-169,181,210 
+  MovieCards.tsx      |   37.07 |       15 |   37.03 |   34.52 | 30,37-41,52-88,93-97,128-139,144-152,158,165-168,180,209 
   MoviesList.tsx      |     100 |      100 |     100 |     100 |                                                          
   SuperAddMovie.tsx   |       0 |        0 |       0 |       0 | 15-223                                                   
   SuperNewMovie.tsx   |       0 |        0 |       0 |       0 |                                                          
@@ -2221,5 +2221,5 @@ All files             |   18.81 |    13.59 |   17.17 |   17.93 |
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        4.595 s
+Time:        4.733 s
 Ran all test suites.
