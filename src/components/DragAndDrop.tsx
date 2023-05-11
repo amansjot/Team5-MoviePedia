@@ -5,7 +5,7 @@ import { Card, CardHeader, CardBody, Text } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
-import { updatePreference } from "./CreateList";
+
 import { MainMovieList } from "./MainMovieList";
 import { CustomMovieList } from "./CustomMovieList";
 
@@ -13,7 +13,7 @@ import { CustomMovieList } from "./CustomMovieList";
 
 
 export function DragAndDrop(): JSX.Element {
-    
+    //const list:Movie[] = [];
     /*
     const [movieList, setMovieList] = useState<Movie[]>([]);
 
@@ -28,7 +28,8 @@ export function DragAndDrop(): JSX.Element {
     function handleDragOver(event: React.DragEvent) {
         event.preventDefault();
     }
-<div id="movie-list" onDrop={handleOnDrop}
+    return(
+        <div id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
             <SimpleGrid spacing={3} columns={2}>
                 <Box borderWidth="3px" borderRadius="lg" bg="gray.600" p={10} w="100%" h="100%">
@@ -76,14 +77,14 @@ export function DragAndDrop(): JSX.Element {
                 </Box>
             </SimpleGrid>
         </div>
-        */
+    );
+ */
 
-
+    
     return(
         <SimpleGrid spacing={3} columns={2}>
             <MainMovieList></MainMovieList>
             <CustomMovieList></CustomMovieList>
-            
         </SimpleGrid>
     );
 }

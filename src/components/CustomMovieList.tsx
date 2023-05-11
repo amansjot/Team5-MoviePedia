@@ -25,7 +25,7 @@ export function CustomMovieList(): JSX.Element {
         <div id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
             <Box borderWidth="3px" borderRadius="lg" bg="gray.600" p={10} w="100%" h="100%">
-                <Heading>
+                <Heading>s
                     <Text size="md">Custom List</Text>
                 </Heading>
                 <SimpleGrid h="500px" w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   

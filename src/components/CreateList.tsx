@@ -16,37 +16,37 @@ const MOVIES = [
     "Moana",
 ];
 
-export const [allOptions] = useState<string[]>(MOVIES);
-export const [usermainList, setusermainList] = useState<string[]>([]);
-export const [userlistbyPreference, setuserPreferenceList] = useState<string[]>([]);
-export  const [preference, setPreference] = useState<string>("");
 
-export function updatePreference(event: React.ChangeEvent<HTMLInputElement>) {
-    setPreference(event.target.value);
-}
-
-export function addMovieTomainList(newMovie: string) {
-    setusermainList([...usermainList, newMovie]);
-
-}
-
-export function clearmainList() {
-    setusermainList([]);
-}
-
-export function addMovieToPreferenceList(newMovie: string) {
-    if (!userlistbyPreference.includes(newMovie)){
-        setuserPreferenceList([...userlistbyPreference, newMovie]);
-
-    }
-}
-
-export function clearPreferenceList() {
-    setuserPreferenceList([]);
-}
 export function CreateList(): JSX.Element {
 
+    const [allOptions] = useState<string[]>(MOVIES);
+    const [usermainList, setusermainList] = useState<string[]>([]);
+    const [userlistbyPreference, setuserPreferenceList] = useState<string[]>([]);
+    const [preference, setPreference] = useState<string>("");
 
+    function updatePreference(event: React.ChangeEvent<HTMLInputElement>) {
+        setPreference(event.target.value);
+    }
+
+    function addMovieTomainList(newMovie: string) {
+        setusermainList([...usermainList, newMovie]);
+
+    }
+
+    function clearmainList() {
+        setusermainList([]);
+    }
+
+    function addMovieToPreferenceList(newMovie: string) {
+        if (!userlistbyPreference.includes(newMovie)){
+            setuserPreferenceList([...userlistbyPreference, newMovie]);
+
+        }
+    }
+
+    function clearPreferenceList() {
+        setuserPreferenceList([]);
+    }
     return (
         <div>
             <Heading size="lg">Personalized Lists </Heading>
