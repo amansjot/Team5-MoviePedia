@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
-import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center, Select, CloseButton } from "@chakra-ui/react";
+import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center, Select, CloseButton, FormControl, FormLabel, Input } from "@chakra-ui/react";
 import { moviesList } from "./MoviesList";
 import { Button } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
@@ -79,7 +79,7 @@ export function MovieCards({
                 var y = b.director.split(" ")[1].toLowerCase();
                 return x < y ? -1 : x > y ? 1 : 0;
             });
-        }
+        } 
         setMovieList(sortedList);
     }
 
@@ -139,6 +139,20 @@ export function MovieCards({
             sortList(sort);
         }
     }
+    const [second_filter, setSecondFilter] = useState<string>("");
+    function filterContains(event: React.ChangeEvent<HTMLInputElement>){
+        setSecondFilter(event.target.value);
+        if(second_filter!= ""){
+            const filteredList = getMovies(moviesList).filter((movie: Movie) => {
+                return movie.plot.includes(second_filter);
+            });
+            setMovieList(filteredList);
+        } else{
+            setMovieList(getMovies(moviesList));
+            sortList(sort);
+        }
+        
+    }
 
     function closeButton(index: number): JSX.Element {
         if (localStorage.getItem("role") == "Super") {
@@ -171,6 +185,21 @@ export function MovieCards({
                             );
                         }) }
                     </Select>
+                </Center>
+            </Container>
+
+            {/* Filter by Description Contains Feature  */}
+            <Container>
+                <Center mb ={5}>
+                    <Heading size="md"> Description Contains: </Heading>
+                    <FormControl>
+                        <Input
+                            placeholder="(ex: bride, spacecraft, love"
+                            type="description_contains"
+                            value={second_filter}
+                            onChange={filterContains}
+                        />
+                    </FormControl>
                 </Center>
             </Container>
 
