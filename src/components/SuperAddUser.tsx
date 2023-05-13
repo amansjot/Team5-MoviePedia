@@ -7,30 +7,30 @@ import {
     FormHelperText,
     Input,
     Heading,
+    Divider
 } from "@chakra-ui/react";
  
-let users = ["Super","Admin","User"];
-
-export function SuperAddUser(): JSX.Element {
+export function SuperAddUser({u}: {u:string[];}): JSX.Element {
     
     const [user, setUser] = useState<string>("");
 
     function updateUser(event: React.ChangeEvent<HTMLInputElement>) {
         setUser(event.target.value);
-        users = [...users, user];
+        u = [...u, user];
     }
 
     return(
         <div>
+            <br/>
+            <br/>
+            <Divider borderWidth="2px"></Divider>
+            <br/>
             <Heading size ="lg" mb="4">Add a New User</Heading>
             <FormControl>
-                <FormLabel>
-              Insert User Name
-                </FormLabel>
                 <Input
                     type="User"
                     value={user}
-                    onChange={updateUser}
+                    onChange={updateUser} placeholder="Insert User Name"
                 />
             </FormControl>
         </div>
