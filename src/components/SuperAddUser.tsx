@@ -10,13 +10,12 @@ import {
     Divider
 } from "@chakra-ui/react";
  
-export function SuperAddUser({u}: {u:string[];}): JSX.Element {
+export function SuperAddUser(): JSX.Element {
     
     const [user, setUser] = useState<string>("");
-
     function updateUser(event: React.ChangeEvent<HTMLInputElement>) {
         setUser(event.target.value);
-        u = [...u, user];
+        localStorage.setItem("role", user);
     }
 
     return(
