@@ -22,11 +22,20 @@ goes under drag and drop
 */
 
 import { SuperAddMovie } from "./components/SuperAddMovie";
+import { SuperAddUser } from "./components/SuperAddUser";
 
 
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
 
+    function superAddUser(): JSX.Element {
+        if (selectedRole == "Super") {
+            return (<SuperAddUser></SuperAddUser>);
+        } else {
+            return (<></>);
+        }
+    }
+    
     function superAddMovie(): JSX.Element {
         if (selectedRole == "Super" || selectedRole == "Admin") {
             return (<SuperAddMovie></SuperAddMovie>);
@@ -86,6 +95,9 @@ function App() {
             </div>
             <div>
                 {superAddMovie()}
+            </div>
+            <div>
+                {superAddUser()}
             </div>
             <br/><br/>
             <HStack p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
