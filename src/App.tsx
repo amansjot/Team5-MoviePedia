@@ -26,11 +26,12 @@ import { SuperAddUser } from "./components/SuperAddUser";
 
 
 function App() {
-    const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
+    let users = ["Super","Admin","User"];
+    const [selectedRole, setRole] = useState<string>("User");
 
     function superAddUser(): JSX.Element {
         if (selectedRole == "Super") {
-            return (<SuperAddUser></SuperAddUser>);
+            return (<SuperAddUser u={users} ></SuperAddUser>);
         } else {
             return (<></>);
         }
@@ -66,9 +67,9 @@ function App() {
                         setRole(role);
                     }} value={selectedRole}>
                         <Stack direction='row'>
-                            <Radio borderColor="black" colorScheme='red' pr={4} value='Super'>Super</Radio>
-                            <Radio borderColor="black" colorScheme='red' pr={4} value='Admin'>Admin</Radio>
-                            <Radio borderColor="black" colorScheme='red' pr={4} value='User'>User</Radio>
+                            {users.map((p: string) =>
+                                <Radio key={p} borderColor="black" colorScheme='red' pr={4} value={p}>{p}</Radio>
+                            )}
                         </Stack>
                     </RadioGroup>
                 </Stack>
