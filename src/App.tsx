@@ -26,7 +26,6 @@ import { SuperAddUser } from "./components/SuperAddUser";
 
 
 function App() {
-    let users = ["Super","Admin","User"];
     const [selectedRole, setRole] = useState<string>("User");
 
     function superAddUser(): JSX.Element {
