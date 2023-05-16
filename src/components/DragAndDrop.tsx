@@ -6,8 +6,6 @@ import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
 
-import { MainMovieList } from "./MainMovieList";
-import { CustomMovieList } from "./CustomMovieList";
 
 //add an aspect for giving a review once the movie is in the list 
 
