@@ -64,6 +64,19 @@ function App() {
                         </Box>
                     </Flex>
                 </div>);
+        if (selectedRole !== "Super" && selectedRole !== "Admin") {
+            return (
+                <div>
+                    <Heading size="lg">Create Custom Lists</Heading>
+                    <Flex>
+                        <Box w="50%">
+                            <CustomList1></CustomList1>
+                        </Box>
+                        <Box w="50%">
+                            <CustomList2></CustomList2>
+                        </Box>
+                    </Flex>
+                </div>);
         } else {
             return (<></>);
         }
