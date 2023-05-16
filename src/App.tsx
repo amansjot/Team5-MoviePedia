@@ -27,8 +27,7 @@ import { SuperAddUser } from "./components/SuperAddUser";
 
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
-
-    let users = ["Super", "Admin", "User"];
+    const [users, setUsers] = useState<string[]>(["Super", "Admin", "User"]);
 
     function superAddUser(): JSX.Element {
         if (selectedRole == "Super") {
@@ -47,7 +46,7 @@ function App() {
     }
 
     function createList(): JSX.Element {
-        if (selectedRole == "User") {
+        if (selectedRole !== "Super" && selectedRole !== "Admin") {
             return (<CreateList></CreateList>);
         } else {
             return (<></>);
@@ -67,7 +66,7 @@ function App() {
                         localStorage.setItem("role", role);
                         setRole(role);
                         if (!users.includes(role)){
-                            users = [...users, role];
+                            setUsers([...users, role]);
                         };
                     }} value={selectedRole}>
                         <Stack direction='row'>
