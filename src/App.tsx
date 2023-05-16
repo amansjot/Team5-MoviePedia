@@ -50,6 +50,7 @@ function App() {
     function createList(): JSX.Element {
         if (selectedRole !== "Super" && selectedRole !== "Admin") {
             return (<CreateList></CreateList>);
+        }
         if (selectedRole !== "Super" && selectedRole !== "Admin") {
             return (
                 <div>
