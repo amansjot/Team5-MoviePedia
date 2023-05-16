@@ -5,10 +5,12 @@ import { Center, Container, Heading, ListItem, UnorderedList, Radio, RadioGroup,
 
 import { Button } from "@chakra-ui/react";
 import { CreateList } from "./components/newCreateList";
-
+import { CustomList1 } from "./components/CustomList1";
+import { CustomList2 } from "./components/CustomList2";
 import { DragAndDrop } from "./components/DragAndDrop";
 import { ViewIcon } from "@chakra-ui/icons";
 import { MovieCards } from "./components/MovieCards";
+
 /*
 goes under drag and drop
 <div>
@@ -80,7 +82,17 @@ function App() {
                     <Divider borderWidth="2px"></Divider>
                 </Box>
             </Flex>
-            
+            <Divider borderWidth="2px"></Divider>
+            <Heading size="lg">Create Custom Lists</Heading>
+            <Flex>
+                <Box w="50%">
+                    <CustomList1></CustomList1>
+                </Box>
+                <Box w="50%">
+                    <CustomList2></CustomList2>
+                </Box>
+            </Flex>
+                
             <div>
                 {/* {AdminList()} */}
             </div>
