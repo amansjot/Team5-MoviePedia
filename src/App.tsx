@@ -39,7 +39,18 @@ function App() {
 
     function createList(): JSX.Element {
         if (selectedRole == "User") {
-            return (<CreateList></CreateList>);
+            return (
+                <div>
+                    <Heading size="lg">Create Custom Lists</Heading>
+                    <Flex>
+                        <Box w="50%">
+                            <CustomList1></CustomList1>
+                        </Box>
+                        <Box w="50%">
+                            <CustomList2></CustomList2>
+                        </Box>
+                    </Flex>
+                </div>);
         } else {
             return (<></>);
         }
@@ -74,24 +85,16 @@ function App() {
                     <MovieCards role={selectedRole}></MovieCards>
                 </Box>
                 <Box w="50%">
-                    <br/>
-                    {createList()}
-                    <br/>
+                    
                     <DragAndDrop></DragAndDrop>
 
                     <Divider borderWidth="2px"></Divider>
                 </Box>
             </Flex>
             <Divider borderWidth="2px"></Divider>
-            <Heading size="lg">Create Custom Lists</Heading>
-            <Flex>
-                <Box w="50%">
-                    <CustomList1></CustomList1>
-                </Box>
-                <Box w="50%">
-                    <CustomList2></CustomList2>
-                </Box>
-            </Flex>
+            <br/>
+            {createList()}
+            <br/>
                 
             <div>
                 {/* {AdminList()} */}
