@@ -143,22 +143,22 @@ export function SuperAddMovie(): JSX.Element {
                     <Input onChange={nameChange} variant="filled" placeholder="Insert Movie Name"></Input>
                     <Spacer px="2"></Spacer>
 
-                    <InputLeftAddon>Poster</InputLeftAddon>
-                    <Input onChange={posterChange} variant="filled" placeholder="Insert Poster"></Input>
-                    <Spacer px="2"></Spacer>
-
                     <InputLeftAddon>Year</InputLeftAddon>
                     <Input onChange={yearChange} variant="filled" placeholder="Insert Year Published"></Input>
                 </InputGroup>
                 <InputGroup px="10" pt="2">
-                    <InputLeftAddon>Actors</InputLeftAddon>
-                    <Input onChange={actorsChange} variant="filled" placeholder="Insert Actor"></Input>
-                    <Spacer px="2"></Spacer>
-
+                    <InputLeftAddon>Poster</InputLeftAddon>
+                    <Input onChange={posterChange} variant="filled" placeholder="Insert Poster URL (ex. https://____.png)"></Input>
+                </InputGroup>
+                <InputGroup px="10" pt="2">
                     <InputLeftAddon>Plot</InputLeftAddon>
                     <Input onChange={plotChange} variant="filled" placeholder="Insert Plot"></Input>
-                    <Spacer px="2"></Spacer>
-
+                </InputGroup>
+                <InputGroup px="10" pt="2">
+                    <InputLeftAddon>Actors</InputLeftAddon>
+                    <Input onChange={actorsChange} variant="filled" placeholder="Insert Actors (comma-separated)"></Input>
+                </InputGroup>
+                <InputGroup px="10" pt="2">
                     <InputLeftAddon>Director</InputLeftAddon>
                     <Input onChange={directorChange} variant="filled" placeholder="Insert Director"></Input>
                     <Spacer px="2"></Spacer>
