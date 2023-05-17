@@ -11,7 +11,6 @@ import {
     Center,
 } from "@chakra-ui/react";
 
-import{SuperAddUser} from "./SuperAddUser";
 
 export function Users(): JSX.Element {
     const USERS = [
@@ -22,8 +21,14 @@ export function Users(): JSX.Element {
         "Priya"
     ];
 
-    const allUsers = localStorage.getItem("users")?.split(",") || USERS;
 
+    const userStr = localStorage.getItem("users") || USERS.join(",");
+
+    const allUsers = userStr.split(",");
+
+    function selectUser(event: React.ChangeEvent<HTMLSelectElement>){
+        localStorage.setItem("user", event.target.value);
+    }
 
 
     return (
