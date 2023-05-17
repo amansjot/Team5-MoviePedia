@@ -2210,15 +2210,15 @@ FAIL src/components/SuperAddMovie.test.tsx
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                        
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------
-All files             |   18.64 |    16.55 |   17.48 |    18.1 |                                                          
+All files             |   17.96 |    15.72 |   17.24 |   17.52 |                                                          
  src                  |   38.88 |       50 |      70 |   38.88 |                                                          
   App.tsx             |   60.86 |    61.11 |    87.5 |   60.86 | 39,45,53,75,83,97-100                                    
   index.tsx           |       0 |      100 |     100 |       0 | 8-32                                                     
   reportWebVitals.ts  |       0 |        0 |       0 |       0 | 3-10                                                     
- src/components       |   16.46 |    10.85 |   13.53 |   15.78 |                                                          
+ src/components       |    15.8 |    10.21 |   13.33 |   15.22 |                                                          
   CreateList.tsx      |       0 |        0 |       0 |       0 | 12-100                                                   
-  CustomList1.tsx     |      25 |       50 |   11.11 |      25 | 15-38,54-67                                              
-  CustomList2.tsx     |      25 |       50 |   11.11 |      25 | 16-39,55-68                                              
+  CustomList1.tsx     |   17.39 |    16.66 |      10 |   18.18 | 15-50,69-82                                              
+  CustomList2.tsx     |   17.39 |    16.66 |      10 |   18.18 | 16-51,70-83                                              
   CustomMovieList.tsx |       0 |      100 |       0 |       0 | 10-33                                                    
   DragAndDrop.tsx     |   16.32 |    13.33 |   22.22 |   16.66 | 19-70,76-81,88-92,125-138                                
   DroppedMovie.tsx    |       0 |        0 |       0 |       0 |                                                          
@@ -2234,5 +2234,5 @@ All files             |   18.64 |    16.55 |   17.48 |    18.1 |
 Test Suites: 4 failed, 4 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        5.242 s
+Time:        5.446 s
 Ran all test suites.
