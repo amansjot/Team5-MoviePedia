@@ -2,7 +2,7 @@
 > moviepedia@0.1.0 test
 > react-scripts test --coverage
 
-FAIL src/App.test.tsx (5.186 s)
+FAIL src/App.test.tsx
   ● Console
 
     console.error
@@ -2127,39 +2127,38 @@ FAIL src/App.test.tsx (5.186 s)
             [36m</div>[39m
           [36m</div>[39m
           [36m<br />[39m
-          [36m<div>[39m
-            [36m<h2[39m
-              [33mclass[39m=[32m"chakra-heading css-0"[39m
-            [36m>[39m
-              [0m Select a User [0m
-            [36m</h2>[39m
-            [36m<br />[39m
+          [36m<div[39m
+            [33mclass[39m=[32m"css-clmqzu"[39m
+          [36m>[39m
             [36m<div[39m
-              [33mclass[39m=[32m"css-gmuwbf"[39m
+              [33mclass[39m=[32m"css-11ze7cv"[39m
             [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"chakra-select__wrapper css-vaqiau"[39m
+              [36m<h2[39m
+                [33mclass[39m=[32m"chakra-heading css-0"[39m
               [36m>[39m
-                [36m<select[39m
-                  [33mclass[39m=[32m"chakra-select css-5p4u73"[39m
+                [0mCentral Movie List[0m
+              [36m</h2>[39m
+              [36m<br />[39m
+              [36m<div[39m
+                [33mid[39m=[32m"movie-list"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-container css-0"[39m
                 [36m>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"Sakhee"[39m
+                  [36m<div[39m
+                    [33mclass[39m=[32m"css-1e88rvj"[39m
                   [36m>[39m
-                    [0mSakhee[0m
-                  [36m</option>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"Aman"[39m
-                  [36m>[39m
-                    [0mAman[0m
-                  [36m</option>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"Heni"[39m
-                  [36m>[39m
-                    [0mHeni[0m
-                  [36m</option>[39m
-                  [36m<option[39m
-                    [33mvalue[39m=[32m"J...
+                    [36m<h2[39m
+                      [33mclass[39m=[32m"chakra-heading css-0"[39m
+                    [36m>[39m
+                      [0mFilter by Genre:  [0m
+                    [36m</h2>[39m
+                    [0m(unfinished) [0m
+                    [36m<div[39m
+                      [33mclass[39m=[32m"chakra-select__wrapper css-vaqiau"[39m
+                    [36m>[39m
+                      [36m<select[39m
+              ...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -2200,30 +2199,29 @@ FAIL src/components/SuperAddMovie.test.tsx
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                        
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------
-All files             |   17.11 |    13.24 |    15.6 |   16.52 |                                                          
- src                  |   34.28 |    41.66 |   66.66 |   34.28 |                                                          
-  App.tsx             |   54.54 |       50 |   85.71 |   54.54 | 39,45,53,63-77,91-94                                     
+All files             |   17.74 |    14.83 |   16.78 |   17.17 |                                                          
+ src                  |   36.84 |     42.3 |      70 |   36.84 |                                                          
+  App.tsx             |      56 |       50 |    87.5 |      56 | 39,45,53,63-77,85,99-102                                 
   index.tsx           |       0 |      100 |     100 |       0 | 8-32                                                     
   reportWebVitals.ts  |       0 |        0 |       0 |       0 | 3-10                                                     
- src/components       |   15.31 |     7.87 |   12.12 |   14.59 |                                                          
+ src/components       |   15.56 |      9.3 |   12.78 |   14.86 |                                                          
   CreateList.tsx      |       0 |        0 |       0 |       0 | 12-100                                                   
   CustomList1.tsx     |       0 |        0 |       0 |       0 | 10-67                                                    
   CustomList2.tsx     |       0 |        0 |       0 |       0 | 11-69                                                    
   CustomMovieList.tsx |       0 |      100 |       0 |       0 | 10-33                                                    
-  DragAndDrop.tsx     |   14.58 |     7.14 |   17.64 |   14.89 | 19-70,76-81,88-92,121-134                                
+  DragAndDrop.tsx     |   16.32 |    13.33 |   22.22 |   16.66 | 19-70,76-81,88-92,125-138                                
   DroppedMovie.tsx    |       0 |        0 |       0 |       0 |                                                          
   Genre.tsx           |       0 |        0 |       0 |       0 | 6-32                                                     
   Movie.ts            |       0 |        0 |       0 |       0 |                                                          
-  MovieCards.tsx      |   37.07 |       15 |   37.03 |   34.52 | 30,37-41,52-88,93-97,128-139,145-153,159,166-169,181,210 
+  MovieCards.tsx      |   37.07 |       15 |   37.03 |   34.52 | 30,37-41,52-88,93-97,128-139,145-153,159,166-169,181,211 
   MoviesList.tsx      |     100 |      100 |     100 |     100 |                                                          
   SuperAddMovie.tsx   |       0 |        0 |       0 |       0 | 15-228                                                   
-  SuperAddUser.tsx    |       0 |        0 |       0 |       0 | 16-52                                                    
-  SuperNewMovie.tsx   |       0 |        0 |       0 |       0 |                                                          
+  SuperAddUser.tsx    |       0 |        0 |       0 |       0 | 18-56                                                    
   Users.tsx           |   71.42 |      100 |      50 |   71.42 | 30,38                                                    
   newCreateList.tsx   |    9.09 |        0 |    4.34 |    9.25 | 10-104,134-154,170-181                                   
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------
 Test Suites: 3 failed, 3 total
 Tests:       1 failed, 1 total
 Snapshots:   0 total
-Time:        7.344 s
+Time:        4.934 s
 Ran all test suites.
