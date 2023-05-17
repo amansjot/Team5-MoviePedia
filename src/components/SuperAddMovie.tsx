@@ -127,9 +127,9 @@ export function SuperAddMovie(): JSX.Element {
     
     function heading(): JSX.Element {
         if (localStorage.getItem("role") == "Super") {
-            return (<Heading size ="lg" mb="4">Add a New Movie</Heading>);
+            return (<Heading size ="xl" mb="4">Add a New Movie</Heading>);
         } else if (localStorage.getItem("role") == "Admin") {
-            return (<Heading size ="lg" mb="4">Review New Movies</Heading>);
+            return (<Heading size ="xl" mb="4">Review New Movie</Heading>);
         } else {
             return (<></>);
         }
@@ -227,10 +227,6 @@ export function SuperAddMovie(): JSX.Element {
 
     return(
         <Box>
-            <br/>
-            <br/>
-            <Divider borderWidth="2px"></Divider>
-            <br/>
             {/* style={{"fontFamily": "'Georgia', sans-serif"}} */}
             {heading()}
             <div>

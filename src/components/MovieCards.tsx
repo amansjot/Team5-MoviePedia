@@ -194,6 +194,7 @@ export function MovieCards({
                     <Heading size="md"> Description Contains: </Heading>
                     <FormControl>
                         <Input
+                            bg="white" borderColor={"black"} _hover={{ borderColor: "black" }}
                             placeholder="(ex: bride, spacecraft, love)"
                             type="description_contains"
                             value={second_filter}

@@ -104,11 +104,15 @@ export function DragAndDrop(): JSX.Element {
         }
     }
 
+    function getUser(): string {
+        return localStorage.getItem("user") || "User";
+    }
+
     return(
         <div id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
             <Heading>
-                <Text size="md">User List</Text>
+                <Text size="md">{getUser()}&apos;s List</Text>
             </Heading>
             {delAllItems()}
             <br/>

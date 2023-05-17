@@ -35,7 +35,7 @@ export function Users(): JSX.Element {
         <div>
             <Heading size="xl"> Select a User </Heading><br/>
             <Center>
-                <Select w="200px" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => selectUser(event)}>
+                <Select bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} w="200px" onChange={(event) => selectUser(event)}>
                     { allUsers.map((user: string, key: number) => {
                         return (
                             <option value={user} key={key}>{user}</option>
