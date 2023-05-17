@@ -78,6 +78,14 @@ function App() {
         }
     }
 
+    function userList(): JSX.Element {
+        if (selectedRole == "User") {
+            return (<DragAndDrop></DragAndDrop>);
+        } else {
+            return (<></>);
+        }
+    }
+
     return (
         <div className="App">
             <HStack p={6} bg="blue.100" borderBottom="2px solid black" justify="space-between">
@@ -103,36 +111,28 @@ function App() {
                 </Stack>
             </HStack>
             <br/>
-            {selectUser()}
-            <Flex>
+            <Flex mt="5">
                 <Box w="50%">
-                    <Heading size="lg">Central Movie List</Heading>
+                    <Heading size="xl">Central Movie List</Heading>
                     <br/>
                     <MovieCards role={selectedRole}></MovieCards>
                 </Box>
                 <Box w="50%">
                     
-                    <DragAndDrop></DragAndDrop>
 
-                    <Divider borderWidth="2px"></Divider>
+                    <div>
+                        {superAddUser()}
+                        {superAddMovie()}
+                    </div>
+                    <div>
+                        {selectUser()}
+                        {userList()}
+                        {createList()}
+                    </div>
                 </Box>
             </Flex>
-            <Divider borderWidth="2px"></Divider>
-            <br/>
-            {createList()}
-            <br/>
-                
-            <div>
-                {/* {AdminList()} */}
-            </div>
-            <div>
-                {superAddMovie()}
-            </div>
-            <div>
-                {superAddUser()}
-            </div>
             <br/><br/>
-            <HStack p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
+            <HStack mt="5" p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
                 <Stack>
                     <div><b>MoviePedia 2023</b></div>
                     <div>

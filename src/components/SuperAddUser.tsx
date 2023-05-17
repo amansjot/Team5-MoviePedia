@@ -9,6 +9,8 @@ import {
     Heading,
     Select,
     Center,
+    Divider,
+    Flex,
 } from "@chakra-ui/react";
 
 
@@ -37,20 +39,28 @@ export function SuperAddUser(): JSX.Element {
 
     return (
         <div>
-            <br></br>
-            <Heading> Add or Remove User </Heading>
+            <Heading size="xl"> Add or Remove User </Heading>
+            <br/>
             <div>
-                <FormControl>
-                    <Input
-                        placeholder="Type the User's name here"
-                        value={new_user}
-                        onChange={set_new_user}
-                    />
-                </FormControl>
-                <Button onClick={() => localStorage.setItem("users", (localStorage.getItem("users") || USERS.join(",")) + "," + new_user)}>Add</Button>
+                <Flex justifyContent="center">
+                    <FormControl w="50%">
+                        <Input
+                            bg="white" borderColor={"black"} _hover={{ borderColor: "black" }}
+                            placeholder="Type the User's name here"
+                            value={new_user}
+                            onChange={set_new_user}
+                        />
+                    </FormControl>
+                    <Button mx="2" onClick={() => localStorage.setItem("users", (localStorage.getItem("users") || USERS.join(",")) + "," + new_user)}>Add</Button>
 
-                <Button onClick={() => localStorage.setItem("users", USERS.filter((e,i) => e!== new_user).join(","))}>Remove</Button>
+                    <Button onClick={() => localStorage.setItem("users", USERS.filter((e,i) => e!== new_user).join(","))}>Remove</Button>
+                </Flex>
             </div>
+            <br/><br/>
+            <Center mt="5" mb="8">
+                <Divider border="1px solid #333" my="auto" w="60%"></Divider>
+            </Center>
+            <br/>
         </div>
     );
 }
