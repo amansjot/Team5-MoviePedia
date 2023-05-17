@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
-import { moviesList } from "./MoviesList";
+//import { moviesList } from "./MoviesList";
 import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select, Button } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
@@ -41,7 +41,7 @@ export function CustomList1(): JSX.Element {
     return(
         <div>
             <Button onClick={changeHidden}>First Custom List</Button>{visible &&
-                 <div id="movie-list" onDrop={handleOnDrop}
+                 <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop}
                      onDragOver={handleDragOver}>
                      <Heading>
                          <Input width="80%" onChange={changeListName} size ="md" placeholder="Input New List Name"></Input>
