@@ -39,6 +39,18 @@ export function CustomList2(): JSX.Element {
         setMovieList(newMovieList);
     }
     
+    function delAllItems(): JSX.Element {
+        if (localStorage.getItem("delete")) {
+            for (let i = movieList.length - 1; i >= 0; i--) {
+                if (movieList[i].name == localStorage.getItem("delete")) {
+                    movieList.splice(i, 1);
+                }
+            }
+            localStorage.removeItem("delete");
+        }
+        return (<></>);
+    }
+
     return(
         <div>
             <Button onClick={changeHidden}>Second Custom List</Button>{visible &&
@@ -48,6 +60,9 @@ export function CustomList2(): JSX.Element {
                          <Input width="80%" onChange={changeListName} size ="md" placeholder="Input New List Name"></Input>
                          <Text>{listName}</Text>
                      </Heading>
+                     
+                     {delAllItems()}
+                    
                      <SimpleGrid spacing={3} columns={1}>
                          <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">
                              <SimpleGrid style={{"height": "auto", "minHeight": "250px"}} w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   
