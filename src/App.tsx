@@ -31,6 +31,7 @@ import { Users } from "./components/Users";
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
     const [users, setUsers] = useState<string[]>(["Super", "Admin", "User"]);
+    // const [currUser, setCurrUser] = useState<string[]>(localStorage.getItem("users"));
 
     function selectUser(): JSX.Element{
         if (selectedRole == "User"){
@@ -75,6 +76,7 @@ function App() {
     //         return (<></>);
     //     }
     // }
+
 
     function userList(): JSX.Element {
         if (selectedRole == "User") {
