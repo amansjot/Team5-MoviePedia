@@ -26,6 +26,7 @@ goes under drag and drop
 import { SuperAddMovie } from "./components/SuperAddMovie";
 import { SuperAddUser } from "./components/SuperAddUser";
 import { Users } from "./components/Users";
+import { SuperEditMovie } from "./components/SuperEditMovie";
 
 
 function App() {
@@ -52,6 +53,14 @@ function App() {
     function superAddMovie(): JSX.Element {
         if (selectedRole == "Super" || selectedRole == "Admin") {
             return (<SuperAddMovie></SuperAddMovie>);
+        } else {
+            return (<></>);
+        }
+    }
+
+    function superEditMovie(): JSX.Element {
+        if (selectedRole == "Super") {
+            return (<SuperEditMovie></SuperEditMovie>);
         } else {
             return (<></>);
         }
@@ -127,6 +136,7 @@ function App() {
 
                     <div>
                         {superAddUser()}
+                        {superEditMovie()}
                         {superAddMovie()}
                     </div>
                     <div>
