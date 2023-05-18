@@ -1738,7 +1738,7 @@ FAIL src/components/Genre.test.tsx
 
       at Object.<anonymous> (src/components/Genre.test.tsx:54:48)
 
-FAIL src/components/SuperAddUser.test.tsx
+PASS src/components/SuperAddUser.test.tsx
   ● Console
 
     console.error
@@ -2653,78 +2653,6 @@ FAIL src/components/SuperAddUser.test.tsx
       at keyboardImplementation (node_modules/@testing-library/user-event/dist/keyboard/keyboardImplementation.js:81:12)
       at keyboardImplementation (node_modules/@testing-library/user-event/dist/keyboard/keyboardImplementation.js:81:12)
       at keyboardImplementation (node_modules/@testing-library/user-event/dist/keyboard/keyboardImplementation.js:81:12)
-
-  ● SuperAddUser Component tests › Editing the textbox adds a user
-
-    TestingLibraryElementError: Unable to find an element with the text: /Current Users:/i. This could be because the text is broken up by multiple elements. In this case, you can provide a function for your text matcher to make your matcher more flexible.
-
-    Ignored nodes: comments, script, style
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div>[39m
-          [36m<h2[39m
-            [33mclass[39m=[32m"chakra-heading css-0"[39m
-          [36m>[39m
-            [0m Add or Remove User [0m
-          [36m</h2>[39m
-          [36m<br />[39m
-          [36m<div>[39m
-            [36m<div[39m
-              [33mclass[39m=[32m"css-1l4w6pd"[39m
-            [36m>[39m
-              [36m<div[39m
-                [33mclass[39m=[32m"chakra-form-control css-11ze7cv"[39m
-                [33mrole[39m=[32m"group"[39m
-              [36m>[39m
-                [36m<input[39m
-                  [33mclass[39m=[32m"chakra-input css-1901mcg"[39m
-                  [33mid[39m=[32m"field-:r2:"[39m
-                  [33mplaceholder[39m=[32m"Type the User's name here"[39m
-                  [33mvalue[39m=[32m"Ada Lovelace"[39m
-                [36m/>[39m
-              [36m</div>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"chakra-button css-1vu5ea3"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mAdd[0m
-              [36m</button>[39m
-              [36m<button[39m
-                [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-                [33mtype[39m=[32m"button"[39m
-              [36m>[39m
-                [0mRemove[0m
-              [36m</button>[39m
-            [36m</div>[39m
-          [36m</div>[39m
-          [36m<br />[39m
-          [36m<br />[39m
-          [36m<div[39m
-            [33mclass[39m=[32m"css-1fjeuaw"[39m
-          [36m>[39m
-            [36m<hr[39m
-              [33maria-orientation[39m=[32m"horizontal"[39m
-              [33mclass[39m=[32m"chakra-divider css-1x5080r"[39m
-            [36m/>[39m
-          [36m</div>[39m
-          [36m<br />[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      29 |         gain.click();
-      30 |         expect(
-    > 31 |             screen.getByText(/Current Users:/i)
-         |                    ^
-      32 |         ).toBeInTheDocument();
-      33 |     });
-      34 |     // test("Can choose one genre, then go to another", () => {
-
-      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
-      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
-      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
-      at getByText (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/components/SuperAddUser.test.tsx:31:20)
 
 FAIL src/components/CustomList1.test.tsx
   ● Test suite failed to run
@@ -5042,8 +4970,8 @@ All files             |   20.85 |    14.52 |   21.21 |      20 |
   Users.tsx           |     100 |      100 |     100 |     100 |                                                                    
   newCreateList.tsx   |       0 |        0 |       0 |       0 | 10-181                                                             
 ----------------------|---------|----------|---------|---------|--------------------------------------------------------------------
-Test Suites: 7 failed, 7 total
-Tests:       8 failed, 6 passed, 14 total
+Test Suites: 6 failed, 1 passed, 7 total
+Tests:       7 failed, 7 passed, 14 total
 Snapshots:   0 total
-Time:        7.936 s
+Time:        9.936 s
 Ran all test suites.
