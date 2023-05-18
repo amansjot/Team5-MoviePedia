@@ -254,9 +254,9 @@ export function SuperAddMovie(): JSX.Element {
             {heading()}
             {description()}
             <div>
-                <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="auto" minHeight="375px" overflowY={"scroll"}>
-                    <SimpleGrid h="auto" w="100%" spacing={2} templateColumns={{base: "repeat(3, 1fr)"}}>
-                        <Card align="center" w="200px" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={name}>
+                <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="auto" w="350px" minHeight="370px" overflowY={"scroll"}>
+                    <SimpleGrid h="auto" w="200px" m="0 auto" spacing={2} templateColumns={{base: "repeat(3, 2fr)"}}>
+                        <Card m="0 auto" align="center" w="200px" backgroundColor="gray.300" border="1px solid #aaa" pb={3} key={name}>
                             <CardHeader key={name}>
                                 <Heading size="md">
                                     <Text><span>{name}</span></Text>
