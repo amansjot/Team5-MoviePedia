@@ -51,14 +51,10 @@ export function Users(): JSX.Element {
                     }) }
                 </Select>
             </Center><br/>
-            {selectedPerson && 
-            (<CustomList1 key={selectedPerson} name = {selectedPerson} />) 
-            && 
-            (<CustomList2 key={selectedPerson} name = {selectedPerson} />) 
-            &&
-            (<DragAndDrop key={selectedPerson} name = {selectedPerson} />) 
+            {selectedPerson &&  (<CustomList1 key={selectedPerson} name = {selectedPerson} />) }
+            {selectedPerson && (<CustomList2 key={selectedPerson} name = {selectedPerson} />) } 
+            {selectedPerson && (<DragAndDrop key={selectedPerson} name = {selectedPerson} />) }
             
-            }
         </div>
 
     );
