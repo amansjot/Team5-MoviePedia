@@ -69,6 +69,102 @@ FAIL src/components/Users.test.tsx
       at Object.<anonymous> (src/components/Users.test.tsx:27:19)
 
     console.error
+      Warning: Encountered two children with the same key, `Aman`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at Users (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/Users.tsx:28:57)
+
+      25 |         );
+      26 |         const select = screen.getByRole("combobox");
+    > 27 |         userEvent.selectOptions(select, "Aman");
+         |                   ^
+      28 |         expect(screen.getByText(/Aman/i)).toBeInTheDocument();
+      29 |         expect(screen.queryByText(/Sakhee/i)).not.toBeInTheDocument();
+      30 |     });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19174:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:26085:20)
+      at flushSyncCallbacks (node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26201:7)
+      at finishEventHandler (node_modules/react-dom/cjs/react-dom.development.js:3976:5)
+      at batchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:3994:5)
+      at dispatchEventForPluginEventSystem (node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+      at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+      at dispatchEvent (node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+      at dispatchDiscreteEvent (node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+      at HTMLDivElement.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLSelectElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLSelectElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+      at Proxy.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+      at node_modules/@testing-library/dom/dist/events.js:19:20
+      at Object.eventWrapper (node_modules/@testing-library/dom/dist/config.js:25:23)
+      at fireEvent (node_modules/@testing-library/dom/dist/events.js:12:35)
+      at Function.fireEvent.<computed> [as change] (node_modules/@testing-library/dom/dist/events.js:110:36)
+      at selectOption (node_modules/@testing-library/user-event/dist/select-options.js:137:20)
+      at selectOptions (node_modules/@testing-library/user-event/dist/select-options.js:90:7)
+      at Object.<anonymous> (src/components/Users.test.tsx:27:19)
+
+    console.error
+      Warning: Encountered two children with the same key, `Aman`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at Users (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/Users.tsx:28:57)
+
+      25 |         );
+      26 |         const select = screen.getByRole("combobox");
+    > 27 |         userEvent.selectOptions(select, "Aman");
+         |                   ^
+      28 |         expect(screen.getByText(/Aman/i)).toBeInTheDocument();
+      29 |         expect(screen.queryByText(/Sakhee/i)).not.toBeInTheDocument();
+      30 |     });
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19174:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:26085:20)
+      at flushSyncCallbacks (node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26201:7)
+      at finishEventHandler (node_modules/react-dom/cjs/react-dom.development.js:3976:5)
+      at batchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:3994:5)
+      at dispatchEventForPluginEventSystem (node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+      at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+      at dispatchEvent (node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+      at dispatchDiscreteEvent (node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+      at HTMLDivElement.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLSelectElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLSelectElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+      at Proxy.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+      at node_modules/@testing-library/dom/dist/events.js:19:20
+      at Object.eventWrapper (node_modules/@testing-library/dom/dist/config.js:25:23)
+      at fireEvent (node_modules/@testing-library/dom/dist/events.js:12:35)
+      at Function.fireEvent.<computed> [as change] (node_modules/@testing-library/dom/dist/events.js:110:36)
+      at selectOption (node_modules/@testing-library/user-event/dist/select-options.js:137:20)
+      at selectOptions (node_modules/@testing-library/user-event/dist/select-options.js:90:7)
+      at Object.<anonymous> (src/components/Users.test.tsx:27:19)
+
+    console.error
       Warning: An update to Users inside a test was not wrapped in act(...).
       
       When testing, code that causes React state updates should be wrapped into act(...):
@@ -132,6 +228,102 @@ FAIL src/components/Users.test.tsx
       at Object.<anonymous> (src/components/Users.test.tsx:38:19)
 
     console.error
+      Warning: Encountered two children with the same key, `Aman`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at Users (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/Users.tsx:28:57)
+
+      36 |         );
+      37 |         const select = screen.getByRole("combobox");
+    > 38 |         userEvent.selectOptions(select, "Aman");
+         |                   ^
+      39 |         expect(screen.getByText(/Aman/i)).toBeInTheDocument();
+      40 |         expect(screen.queryByText(/Sakhee/i)).not.toBeInTheDocument();
+      41 |         userEvent.selectOptions(select, "Julia");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19174:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:26085:20)
+      at flushSyncCallbacks (node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26201:7)
+      at finishEventHandler (node_modules/react-dom/cjs/react-dom.development.js:3976:5)
+      at batchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:3994:5)
+      at dispatchEventForPluginEventSystem (node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+      at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+      at dispatchEvent (node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+      at dispatchDiscreteEvent (node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+      at HTMLDivElement.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLSelectElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLSelectElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+      at Proxy.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+      at node_modules/@testing-library/dom/dist/events.js:19:20
+      at Object.eventWrapper (node_modules/@testing-library/dom/dist/config.js:25:23)
+      at fireEvent (node_modules/@testing-library/dom/dist/events.js:12:35)
+      at Function.fireEvent.<computed> [as change] (node_modules/@testing-library/dom/dist/events.js:110:36)
+      at selectOption (node_modules/@testing-library/user-event/dist/select-options.js:137:20)
+      at selectOptions (node_modules/@testing-library/user-event/dist/select-options.js:90:7)
+      at Object.<anonymous> (src/components/Users.test.tsx:38:19)
+
+    console.error
+      Warning: Encountered two children with the same key, `Aman`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at Users (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/Users.tsx:28:57)
+
+      36 |         );
+      37 |         const select = screen.getByRole("combobox");
+    > 38 |         userEvent.selectOptions(select, "Aman");
+         |                   ^
+      39 |         expect(screen.getByText(/Aman/i)).toBeInTheDocument();
+      40 |         expect(screen.queryByText(/Sakhee/i)).not.toBeInTheDocument();
+      41 |         userEvent.selectOptions(select, "Julia");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19174:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:26085:20)
+      at flushSyncCallbacks (node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26201:7)
+      at finishEventHandler (node_modules/react-dom/cjs/react-dom.development.js:3976:5)
+      at batchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:3994:5)
+      at dispatchEventForPluginEventSystem (node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+      at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+      at dispatchEvent (node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+      at dispatchDiscreteEvent (node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+      at HTMLDivElement.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLSelectElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLSelectElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+      at Proxy.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+      at node_modules/@testing-library/dom/dist/events.js:19:20
+      at Object.eventWrapper (node_modules/@testing-library/dom/dist/config.js:25:23)
+      at fireEvent (node_modules/@testing-library/dom/dist/events.js:12:35)
+      at Function.fireEvent.<computed> [as change] (node_modules/@testing-library/dom/dist/events.js:110:36)
+      at selectOption (node_modules/@testing-library/user-event/dist/select-options.js:137:20)
+      at selectOptions (node_modules/@testing-library/user-event/dist/select-options.js:90:7)
+      at Object.<anonymous> (src/components/Users.test.tsx:38:19)
+
+    console.error
       Warning: An update to Users inside a test was not wrapped in act(...).
       
       When testing, code that causes React state updates should be wrapped into act(...):
@@ -176,6 +368,102 @@ FAIL src/components/Users.test.tsx
       at node_modules/react-dom/cjs/react-dom.development.js:9288:12
       at batchedUpdates$1 (node_modules/react-dom/cjs/react-dom.development.js:26140:12)
       at batchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:3991:12)
+      at dispatchEventForPluginEventSystem (node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+      at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+      at dispatchEvent (node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+      at dispatchDiscreteEvent (node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+      at HTMLDivElement.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLSelectElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLSelectElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+      at Proxy.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+      at node_modules/@testing-library/dom/dist/events.js:19:20
+      at Object.eventWrapper (node_modules/@testing-library/dom/dist/config.js:25:23)
+      at fireEvent (node_modules/@testing-library/dom/dist/events.js:12:35)
+      at Function.fireEvent.<computed> [as change] (node_modules/@testing-library/dom/dist/events.js:110:36)
+      at selectOption (node_modules/@testing-library/user-event/dist/select-options.js:137:20)
+      at selectOptions (node_modules/@testing-library/user-event/dist/select-options.js:90:7)
+      at Object.<anonymous> (src/components/Users.test.tsx:52:19)
+
+    console.error
+      Warning: Encountered two children with the same key, `Aman`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at Users (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/Users.tsx:28:57)
+
+      50 |         );
+      51 |         const select = screen.getByRole("combobox");
+    > 52 |         userEvent.selectOptions(select, "Aman");
+         |                   ^
+      53 |         expect(screen.getByText(/Aman/i)).toBeInTheDocument();
+      54 |         expect(screen.queryByText(/Sakhee/i)).not.toBeInTheDocument();
+      55 |         userEvent.selectOptions(select, "Sakhee");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19174:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:26085:20)
+      at flushSyncCallbacks (node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26201:7)
+      at finishEventHandler (node_modules/react-dom/cjs/react-dom.development.js:3976:5)
+      at batchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:3994:5)
+      at dispatchEventForPluginEventSystem (node_modules/react-dom/cjs/react-dom.development.js:9287:3)
+      at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (node_modules/react-dom/cjs/react-dom.development.js:6465:5)
+      at dispatchEvent (node_modules/react-dom/cjs/react-dom.development.js:6457:5)
+      at dispatchDiscreteEvent (node_modules/react-dom/cjs/react-dom.development.js:6430:5)
+      at HTMLDivElement.callTheUserObjectsOperation (node_modules/jsdom/lib/jsdom/living/generated/EventListener.js:26:30)
+      at innerInvokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:338:25)
+      at invokeEventListeners (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:274:3)
+      at HTMLSelectElementImpl._dispatch (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:221:9)
+      at HTMLSelectElementImpl.dispatchEvent (node_modules/jsdom/lib/jsdom/living/events/EventTarget-impl.js:94:17)
+      at Proxy.dispatchEvent (node_modules/jsdom/lib/jsdom/living/generated/EventTarget.js:231:34)
+      at node_modules/@testing-library/dom/dist/events.js:19:20
+      at Object.eventWrapper (node_modules/@testing-library/dom/dist/config.js:25:23)
+      at fireEvent (node_modules/@testing-library/dom/dist/events.js:12:35)
+      at Function.fireEvent.<computed> [as change] (node_modules/@testing-library/dom/dist/events.js:110:36)
+      at selectOption (node_modules/@testing-library/user-event/dist/select-options.js:137:20)
+      at selectOptions (node_modules/@testing-library/user-event/dist/select-options.js:90:7)
+      at Object.<anonymous> (src/components/Users.test.tsx:52:19)
+
+    console.error
+      Warning: Encountered two children with the same key, `Aman`. Keys should be unique so that components maintain their identity across updates. Non-unique keys may cause children to be duplicated and/or omitted — the behavior is unsupported and could change in a future version.
+          at div
+          at Users (/home/runner/work/Team5-MoviePedia/Team5-MoviePedia/src/components/Users.tsx:28:57)
+
+      50 |         );
+      51 |         const select = screen.getByRole("combobox");
+    > 52 |         userEvent.selectOptions(select, "Aman");
+         |                   ^
+      53 |         expect(screen.getByText(/Aman/i)).toBeInTheDocument();
+      54 |         expect(screen.queryByText(/Sakhee/i)).not.toBeInTheDocument();
+      55 |         userEvent.selectOptions(select, "Sakhee");
+
+      at printWarning (node_modules/react-dom/cjs/react-dom.development.js:86:30)
+      at error (node_modules/react-dom/cjs/react-dom.development.js:60:7)
+      at warnOnInvalidKey (node_modules/react-dom/cjs/react-dom.development.js:15293:11)
+      at reconcileChildrenArray (node_modules/react-dom/cjs/react-dom.development.js:15330:21)
+      at reconcileChildFibers (node_modules/react-dom/cjs/react-dom.development.js:15821:16)
+      at reconcileChildren (node_modules/react-dom/cjs/react-dom.development.js:19174:28)
+      at updateHostComponent (node_modules/react-dom/cjs/react-dom.development.js:19924:3)
+      at beginWork (node_modules/react-dom/cjs/react-dom.development.js:21618:14)
+      at beginWork$1 (node_modules/react-dom/cjs/react-dom.development.js:27426:14)
+      at performUnitOfWork (node_modules/react-dom/cjs/react-dom.development.js:26560:12)
+      at workLoopSync (node_modules/react-dom/cjs/react-dom.development.js:26466:5)
+      at renderRootSync (node_modules/react-dom/cjs/react-dom.development.js:26434:7)
+      at performSyncWorkOnRoot (node_modules/react-dom/cjs/react-dom.development.js:26085:20)
+      at flushSyncCallbacks (node_modules/react-dom/cjs/react-dom.development.js:12042:22)
+      at flushSync (node_modules/react-dom/cjs/react-dom.development.js:26201:7)
+      at finishEventHandler (node_modules/react-dom/cjs/react-dom.development.js:3976:5)
+      at batchedUpdates (node_modules/react-dom/cjs/react-dom.development.js:3994:5)
       at dispatchEventForPluginEventSystem (node_modules/react-dom/cjs/react-dom.development.js:9287:3)
       at dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay (node_modules/react-dom/cjs/react-dom.development.js:6465:5)
       at dispatchEvent (node_modules/react-dom/cjs/react-dom.development.js:6457:5)
@@ -282,6 +570,22 @@ FAIL src/components/Users.test.tsx
             [36m</div>[39m
           [36m</div>[39m
           [36m<br />[39m
+          [36m<div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mFirst Custom List[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSecond Custom List[0m
+            [36m</button>[39m
+          [36m</div>[39m
           [36m<div[39m
             [33mid[39m=[32m"movie-list"[39m
           [36m>[39m
@@ -428,6 +732,22 @@ FAIL src/components/Users.test.tsx
             [36m</div>[39m
           [36m</div>[39m
           [36m<br />[39m
+          [36m<div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mFirst Custom List[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSecond Custom List[0m
+            [36m</button>[39m
+          [36m</div>[39m
           [36m<div[39m
             [33mid[39m=[32m"movie-list"[39m
           [36m>[39m
@@ -574,6 +894,22 @@ FAIL src/components/Users.test.tsx
             [36m</div>[39m
           [36m</div>[39m
           [36m<br />[39m
+          [36m<div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mFirst Custom List[0m
+            [36m</button>[39m
+          [36m</div>[39m
+          [36m<div>[39m
+            [36m<button[39m
+              [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+              [33mtype[39m=[32m"button"[39m
+            [36m>[39m
+              [0mSecond Custom List[0m
+            [36m</button>[39m
+          [36m</div>[39m
           [36m<div[39m
             [33mid[39m=[32m"movie-list"[39m
           [36m>[39m
@@ -3080,15 +3416,15 @@ FAIL src/components/SuperAddMovie.test.tsx
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                        
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------
-All files             |   20.15 |    13.52 |   19.31 |   18.99 |                                                          
+All files             |    22.7 |    15.69 |   20.68 |   21.63 |                                                          
  src                  |   33.33 |    43.75 |    62.5 |   33.33 |                                                          
   App.tsx             |   58.82 |    58.33 |   83.33 |   58.82 | 40,46,54,99-102                                          
   index.tsx           |       0 |      100 |     100 |       0 | 8-32                                                     
   reportWebVitals.ts  |       0 |        0 |       0 |       0 | 3-10                                                     
- src/components       |   19.06 |    10.38 |   16.78 |   17.76 |                                                          
+ src/components       |   21.82 |    12.82 |   18.24 |   20.63 |                                                          
   CreateList.tsx      |       0 |        0 |       0 |       0 | 12-100                                                   
-  CustomList1.tsx     |       0 |        0 |       0 |       0 | 11-91                                                    
-  CustomList2.tsx     |       0 |        0 |       0 |       0 | 13-85                                                    
+  CustomList1.tsx     |   22.22 |    16.66 |    9.09 |   23.07 | 14,22-58,78-91                                           
+  CustomList2.tsx     |   17.39 |    16.66 |      10 |   18.18 | 18-53,72-85                                              
   CustomMovieList.tsx |       0 |      100 |       0 |       0 | 10-33                                                    
   DragAndDrop.tsx     |   16.32 |       10 |   22.22 |   16.66 | 20-71,77-82,89-93,127-140                                
   DroppedMovie.tsx    |       0 |        0 |       0 |       0 |                                                          
@@ -3104,5 +3440,5 @@ All files             |   20.15 |    13.52 |   19.31 |   18.99 |
 Test Suites: 6 failed, 6 total
 Tests:       7 failed, 4 passed, 11 total
 Snapshots:   0 total
-Time:        7.241 s
+Time:        7.209 s
 Ran all test suites.
