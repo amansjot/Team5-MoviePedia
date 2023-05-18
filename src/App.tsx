@@ -57,31 +57,26 @@ function App() {
         }
     }
 
-    function createList(): JSX.Element {
+    // function createList(): JSX.Element {
 
-        if (selectedRole == "User") {
-            return (
-                <div>
-                    <Heading size="lg">Create Custom Lists</Heading>
-                    <br/>
-                    {/* <Flex>
-                        <Box w="50%">
-                            {/* <CustomList1 name={""}></CustomList1> */}
-                        </Box>
-                        <Box w="50%">
-                            {/* <CustomList2></CustomList2> */}
-                        </Box>
-                    </Flex> */}
-                    
-                    <CustomList1></CustomList1>
-                    <br/>
-                    <CustomList2></CustomList2>
-                    
-                </div>);
-        } else {
-            return (<></>);
-        }
-    }
+    //     if (selectedRole !== "Super" && selectedRole !== "Admin") {
+    //         return (
+    //             <div>
+    //                 <Heading size="lg">Create Custom Lists</Heading>
+    //                 <Flex>
+    //                     <Box w="50%">
+    //                         {/* <CustomList1 name={""}></CustomList1> */}
+    //                     </Box>
+    //                     <Box w="50%">
+    //                         {/* <CustomList2></CustomList2> */}
+    //                     </Box>
+    //                 </Flex>
+    //             </div>);
+    //     } else {
+    //         return (<></>);
+    //     }
+    // }
+
 
     function userList(): JSX.Element {
         if (selectedRole == "User") {
