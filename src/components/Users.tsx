@@ -13,6 +13,7 @@ import {
 
 import { CustomList1 } from "./CustomList1";
 import { CustomList2 } from "./CustomList2";
+import { DragAndDrop } from "./DragAndDrop";
 
 
 export function Users(): JSX.Element {
@@ -50,7 +51,14 @@ export function Users(): JSX.Element {
                     }) }
                 </Select>
             </Center><br/>
-            {selectedPerson && (<CustomList1 key={selectedPerson} name = {selectedPerson} />) && (<CustomList2 key={selectedPerson} name = {selectedPerson} />)}
+            {selectedPerson && 
+            (<CustomList1 key={selectedPerson} name = {selectedPerson} />) 
+            && 
+            (<CustomList2 key={selectedPerson} name = {selectedPerson} />) 
+            &&
+            (<DragAndDrop key={selectedPerson} name = {selectedPerson} />) 
+            
+            }
         </div>
 
     );

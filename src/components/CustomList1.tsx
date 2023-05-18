@@ -8,12 +8,19 @@ import { Heading,Image,Box} from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
 export function CustomList1({ name }: { name: string }): JSX.Element {
+    const [state, setState] = useState(" ");
+
+    const handleStateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setState(event.target.value);
+    };
+
     const [listName, setListName] =useState<string>("");
     const [movieList, setMovieList] = useState<Movie[]>([]);
     const [visible, setVisible]= useState<boolean>(false);
 
     function changeListName(event: React.ChangeEvent<HTMLInputElement>){
         setListName(event.target.value);
+        handleStateChange(event);
     }
 
     function changeHidden(){
@@ -53,7 +60,7 @@ export function CustomList1({ name }: { name: string }): JSX.Element {
 
     return(
         <div>
-            <div> {`This is ${name}'s component`}</div>;
+            {/* <div> {`This is ${name}'s First Custom List`}</div> */}
             <Button onClick={changeHidden}>First Custom List</Button>{visible &&
                  <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop}
                      onDragOver={handleDragOver}>
@@ -103,6 +110,6 @@ export function CustomList1({ name }: { name: string }): JSX.Element {
 
 }
 
-CustomList1.propTypes = {
-    name: PropTypes.string.isRequired,
-};
+// CustomList1.propTypes = {
+//     name: PropTypes.string.isRequired,
+// };

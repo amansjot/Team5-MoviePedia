@@ -78,13 +78,13 @@ function App() {
     // }
 
 
-    function userList(): JSX.Element {
-        if (selectedRole == "User") {
-            return (<DragAndDrop></DragAndDrop>);
-        } else {
-            return (<></>);
-        }
-    }
+    // function userList(): JSX.Element {
+    //     if (selectedRole == "User") {
+    //         return (<DragAndDrop></DragAndDrop>);
+    //     } else {
+    //         return (<></>);
+    //     }
+    // }
 
     return (
         <div className="App">
@@ -126,7 +126,7 @@ function App() {
                     </div>
                     <div>
                         {selectUser()}
-                        {userList()}
+                        {/* {userList()} */}
                         {/* {createList()} */}
                     </div>
                 </Box>
