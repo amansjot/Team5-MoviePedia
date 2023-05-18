@@ -57,6 +57,8 @@ export function SuperAddUser(): JSX.Element {
                 </Flex>
             </div>
             <br/><br/>
+            <Heading size="s">Current Users: {allUsers.length}</Heading>
+            <br/><br/>
             <Center mt="5" mb="8">
                 <Divider border="1px solid #333" my="auto" w="60%"></Divider>
             </Center>
