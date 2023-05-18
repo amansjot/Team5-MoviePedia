@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
-import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select, Divider } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
@@ -151,6 +151,11 @@ export function DragAndDrop(): JSX.Element {
                     </SimpleGrid>
                 </Box>
             </SimpleGrid>
+            <br/><br/>
+            <Center mt="3" mb="5">
+                <Divider border="1px solid #333" my="auto" w="60%"></Divider>
+            </Center>
+            <br/>
         </div>
     );
  
