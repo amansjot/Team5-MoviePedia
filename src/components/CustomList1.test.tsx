@@ -1,7 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { CustomList1 } from "./CustomList1";
-import { Button,  } from "@chakra-ui/react";
 
 /*
     test( ,()=>{
@@ -11,7 +10,7 @@ import { Button,  } from "@chakra-ui/react";
 /*
 describe("Custom List 1 Component tests", () => {
     beforeEach(() => {
-        render(<CustomList1 />);
+        render(<CustomList1/>);
     });
 
     test("The user list is not initially visible", ()=>{
@@ -30,13 +29,17 @@ describe("Custom List 1 Component tests", () => {
         expect(list).toBeInTheDocument;
     });
 
+
+    test("Testing to see if a movie is added to listt",()=>{
+        const listButton = screen.getByRole("button", {name: "First Custom List"});
+        listButton.click();
+        const list = screen.getByTestId("userList");
+        
+    });
 /*
     test( ,()=>{
 
     });
-
-    test( ,()=>{
-
-    });
 */
+
 //});
