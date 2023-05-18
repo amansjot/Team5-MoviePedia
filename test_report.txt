@@ -2499,12 +2499,12 @@ FAIL src/components/SuperAddMovie.test.tsx
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                        
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------
-All files             |   23.17 |    15.28 |   22.06 |    22.1 |                                                          
+All files             |    22.7 |    14.11 |   21.91 |   21.63 |                                                          
  src                  |   38.88 |       45 |      70 |   38.88 |                                                          
   App.tsx             |   60.86 |    56.25 |    87.5 |   60.86 | 40,46,54,82,90,104-107                                   
   index.tsx           |       0 |      100 |     100 |       0 | 8-32                                                     
   reportWebVitals.ts  |       0 |        0 |       0 |       0 | 3-10                                                     
- src/components       |   21.55 |    10.94 |   18.51 |   20.29 |                                                          
+ src/components       |   21.06 |       10 |   18.38 |   19.82 |                                                          
   CreateList.tsx      |       0 |        0 |       0 |       0 | 12-100                                                   
   CustomList1.tsx     |   17.39 |    16.66 |      10 |   18.18 | 15-50,69-82                                              
   CustomList2.tsx     |   17.39 |    16.66 |      10 |   18.18 | 16-51,70-83                                              
@@ -2515,7 +2515,7 @@ All files             |   23.17 |    15.28 |   22.06 |    22.1 |
   Movie.ts            |       0 |        0 |       0 |       0 |                                                          
   MovieCards.tsx      |   37.07 |       15 |   37.03 |   34.52 | 30,37-41,52-88,93-97,128-139,145-153,159,166-169,181,211 
   MoviesList.tsx      |     100 |      100 |     100 |     100 |                                                          
-  SuperAddMovie.tsx   |       0 |        0 |       0 |       0 | 15-228                                                   
+  SuperAddMovie.tsx   |       0 |        0 |       0 |       0 | 15-251                                                   
   SuperAddUser.tsx    |       0 |        0 |       0 |       0 | 18-56                                                    
   Users.tsx           |     100 |      100 |     100 |     100 |                                                          
   newCreateList.tsx   |       0 |        0 |       0 |       0 | 10-181                                                   
@@ -2523,5 +2523,5 @@ All files             |   23.17 |    15.28 |   22.06 |    22.1 |
 Test Suites: 6 failed, 6 total
 Tests:       7 failed, 4 passed, 11 total
 Snapshots:   0 total
-Time:        8.548 s
+Time:        8.51 s
 Ran all test suites.
