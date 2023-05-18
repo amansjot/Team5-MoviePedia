@@ -51,9 +51,9 @@ export function SuperAddUser(): JSX.Element {
                             onChange={set_new_user}
                         />
                     </FormControl>
-                    <Button mx="2" onClick={() => localStorage.setItem("users", (localStorage.getItem("users") || USERS.join(",")) + "," + new_user)}>Add</Button>
+                    <Button colorScheme="green" mx="2" onClick={() => localStorage.setItem("users", (localStorage.getItem("users") || USERS.join(",")) + "," + new_user)}>Add</Button>
 
-                    <Button onClick={() => localStorage.setItem("users", USERS.filter((e,i) => e!== new_user).join(","))}>Remove</Button>
+                    <Button colorScheme="red" onClick={() => localStorage.setItem("users", USERS.filter((e,i) => e!== new_user).join(","))}>Remove</Button>
                 </Flex>
             </div>
             <br/><br/>
