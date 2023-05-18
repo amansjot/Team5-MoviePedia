@@ -56,7 +56,7 @@ function App() {
             return (<></>);
         }
     }
-
+    /*
     // function createList(): JSX.Element {
 
     //     if (selectedRole !== "Super" && selectedRole !== "Admin") {
@@ -65,18 +65,18 @@ function App() {
     //                 <Heading size="lg">Create Custom Lists</Heading>
     //                 <Flex>
     //                     <Box w="50%">
-    //                         {/* <CustomList1 name={""}></CustomList1> */}
+    //                         {<CustomList1 name={""}></CustomList1> }
     //                     </Box>
     //                     <Box w="50%">
-    //                         {/* <CustomList2></CustomList2> */}
+    //                         { <CustomList2></CustomList2> }
     //                     </Box>
     //                 </Flex>
-    //             </div>);
-    //     } else {
-    //         return (<></>);
-    //     }
-    // }
-
+                 </div>);
+        } else {
+             return (<></>);
+        }
+    }
+    */
 
     // function userList(): JSX.Element {
     //     if (selectedRole == "User") {
@@ -118,8 +118,6 @@ function App() {
                     <MovieCards role={selectedRole}></MovieCards>
                 </Box>
                 <Box w="50%">
-                    
-
                     <div>
                         {superAddUser()}
                         {superAddMovie()}
