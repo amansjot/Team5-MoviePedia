@@ -6,7 +6,7 @@ import { Movie } from "./Movie";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 //import { Stack } from "@chakra-ui/layout";
 import { HTMLInputTypeAttribute} from "react";
-import { Button, Divider, IconButton } from "@chakra-ui/react";
+import { AlertDescription, Button, Divider, IconButton } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
 import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center } from "@chakra-ui/react";
 import { CheckIcon, CloseIcon, SearchIcon } from "@chakra-ui/icons";
@@ -135,6 +135,29 @@ export function SuperAddMovie(): JSX.Element {
         }
     }
 
+    function description(): JSX.Element {
+        const isEdited: boolean = name !== "Movie Title" && actors != "" && plot != "" && director != "" && genre != ""; 
+        if (localStorage.getItem("role") == "Admin" && !isEdited) {
+            return (<Container mb="6">
+                When the Super fills out all of the input fields, you<br/>
+                will be able to accept or reject the new movie.
+            </Container>);
+        } else if (localStorage.getItem("role") == "Super") {
+            if (isEdited) {
+                return (<Container mb="6">
+                All inputs are filled in! The Admin can now accept or reject this movie.
+                </Container>);
+            } else {
+                return (<Container mb="6">
+                Fill in the input fields below to see your new movie card update in<br/>
+                real-time. Once everything is filled in, the Admin can accept or reject it.
+                </Container>);
+            }
+        } else {
+            return (<></>);
+        }
+    }
+
     function movieInput(): JSX.Element {
         if (localStorage.getItem("role") == "Super") {
             return (<Stack spacing={1}>
@@ -229,6 +252,7 @@ export function SuperAddMovie(): JSX.Element {
         <Box>
             {/* style={{"fontFamily": "'Georgia', sans-serif"}} */}
             {heading()}
+            {description()}
             <div>
                 <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="auto" minHeight="375px" overflowY={"scroll"}>
                     <SimpleGrid h="auto" w="100%" spacing={2} templateColumns={{base: "repeat(3, 1fr)"}}>
