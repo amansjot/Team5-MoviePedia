@@ -204,7 +204,7 @@ export function MovieCards({
                 </Center>
             </Container>
 
-            <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
+            <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="1000px" overflowY={"scroll"}>
                 <SimpleGrid w="100%" spacing={2} templateColumns={{base: "repeat(3, 1fr)"}}>
                     {movieList.map((movie: Movie, index: number)=>(
                         <div key={null} draggable

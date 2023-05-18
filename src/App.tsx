@@ -31,6 +31,7 @@ import { Users } from "./components/Users";
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
     const [users, setUsers] = useState<string[]>(["Super", "Admin", "User"]);
+    // const [currUser, setCurrUser] = useState<string[]>(localStorage.getItem("users"));
 
     function selectUser(): JSX.Element{
         if (selectedRole == "User"){
@@ -58,18 +59,24 @@ function App() {
 
     function createList(): JSX.Element {
 
-        if (selectedRole !== "Super" && selectedRole !== "Admin") {
+        if (selectedRole == "User") {
             return (
                 <div>
                     <Heading size="lg">Create Custom Lists</Heading>
-                    <Flex>
+                    <br/>
+                    {/* <Flex>
                         <Box w="50%">
                             <CustomList1></CustomList1>
                         </Box>
                         <Box w="50%">
                             <CustomList2></CustomList2>
                         </Box>
-                    </Flex>
+                    </Flex> */}
+                    
+                    <CustomList1></CustomList1>
+                    <br/>
+                    <CustomList2></CustomList2>
+                    
                 </div>);
         } else {
             return (<></>);
