@@ -43,9 +43,15 @@ export function Users(): JSX.Element {
             <Center>
                 <Select bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} w="200px" onChange={(event) => selectUser(event)}>
                     {allUsers.map((user: string, key: number) => {
-                        return (
-                            <option value={user} key={key}>{user}</option>
-                        );
+                        if (localStorage.getItem("user") == user) {
+                            return (
+                                <option selected value={user} key={key}>{user}</option>
+                            );
+                        } else {
+                            return (
+                                <option value={user} key={key}>{user}</option>
+                            );
+                        }
                     }) }
                 </Select>
             </Center><br/>
