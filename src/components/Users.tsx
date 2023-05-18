@@ -11,6 +11,10 @@ import {
     Center,
 } from "@chakra-ui/react";
 
+import { CustomList1 } from "./CustomList1";
+import { CustomList2 } from "./CustomList2";
+import { DragAndDrop } from "./DragAndDrop";
+
 
 export function Users(): JSX.Element {
     const USERS = [
@@ -21,6 +25,8 @@ export function Users(): JSX.Element {
         "Priya"
     ];
 
+    const [selectedPerson, setSelectedPerson] = useState("");
+
 
     const userStr = localStorage.getItem("users") || USERS.join(",");
 
@@ -28,6 +34,8 @@ export function Users(): JSX.Element {
 
     function selectUser(event: React.ChangeEvent<HTMLSelectElement>){
         localStorage.setItem("user", event.target.value);
+        setSelectedPerson(event.target.value);
+
     }
 
 
@@ -43,6 +51,10 @@ export function Users(): JSX.Element {
                     }) }
                 </Select>
             </Center><br/>
+            {selectedPerson &&  (<CustomList1 key={selectedPerson} name = {selectedPerson} />) }
+            {selectedPerson && (<CustomList2 key={selectedPerson} name = {selectedPerson} />) } 
+            {selectedPerson && (<DragAndDrop key={selectedPerson} name = {selectedPerson} />) }
+            
         </div>
 
     );

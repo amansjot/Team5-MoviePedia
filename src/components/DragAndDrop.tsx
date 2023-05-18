@@ -5,12 +5,13 @@ import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, Sli
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
+import {Users} from "./Users";
 
 
 //add an aspect for giving a review once the movie is in the list 
 
 
-export function DragAndDrop(): JSX.Element {
+export function DragAndDrop({ name }: { name: string }): JSX.Element {
 
     const [movieList, setMovieList] = useState<Movie[]>([]);
     const [sort, setSort] = useState<string>("title1");
@@ -109,6 +110,7 @@ export function DragAndDrop(): JSX.Element {
     }
 
     return(
+        
         <div id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
             <Heading>

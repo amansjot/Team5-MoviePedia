@@ -5,8 +5,10 @@ import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, Sli
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
+import PropTypes from "prop-types";
 
-export function CustomList2(): JSX.Element {
+
+export function CustomList2({ name }: { name: string }): JSX.Element {
 
     const [listName, setListName] =useState<string>("");
     const [movieList, setMovieList] = useState<Movie[]>([]);
