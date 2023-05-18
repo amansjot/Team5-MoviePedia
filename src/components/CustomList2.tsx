@@ -5,8 +5,10 @@ import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, Sli
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
+import PropTypes from "prop-types";
 
-export function CustomList2(): JSX.Element {
+
+export function CustomList2({ name }: { name: string }): JSX.Element {
 
     const [listName, setListName] =useState<string>("");
     const [movieList, setMovieList] = useState<Movie[]>([]);
@@ -38,17 +40,31 @@ export function CustomList2(): JSX.Element {
         newMovieList.splice(index, 1);
         setMovieList(newMovieList);
     }
+    
+    function delAllItems(): JSX.Element {
+        if (localStorage.getItem("delete")) {
+            for (let i = movieList.length - 1; i >= 0; i--) {
+                if (movieList[i].name == localStorage.getItem("delete")) {
+                    movieList.splice(i, 1);
+                }
+            }
+            localStorage.removeItem("delete");
+        }
+        return (<></>);
+    }
 
     return(
         <div>
             <Button onClick={changeHidden}>Second Custom List</Button>{visible &&
-                 <div id="movie-list" onDrop={handleOnDrop}
+                 <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop}
                      onDragOver={handleDragOver}>
                      <Heading>
                          <Input width="80%" onChange={changeListName} size ="md" placeholder="Input New List Name"></Input>
                          <Text>{listName}</Text>
                      </Heading>
-
+                     
+                     {delAllItems()}
+                    
                      <SimpleGrid spacing={3} columns={1}>
                          <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">
                              <SimpleGrid style={{"height": "auto", "minHeight": "250px"}} w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   

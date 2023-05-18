@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
-import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select, Divider } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
+import {Users} from "./Users";
 
 
 //add an aspect for giving a review once the movie is in the list 
 
 
-export function DragAndDrop(): JSX.Element {
+export function DragAndDrop({ name }: { name: string }): JSX.Element {
 
     const [movieList, setMovieList] = useState<Movie[]>([]);
     const [sort, setSort] = useState<string>("title1");
@@ -104,11 +105,16 @@ export function DragAndDrop(): JSX.Element {
         }
     }
 
+    function getUser(): string {
+        return localStorage.getItem("user") || "User";
+    }
+
     return(
+        
         <div id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
             <Heading>
-                <Text size="md">User List</Text>
+                <Text size="md">{getUser()}&apos;s List</Text>
             </Heading>
             {delAllItems()}
             <br/>
@@ -147,6 +153,11 @@ export function DragAndDrop(): JSX.Element {
                     </SimpleGrid>
                 </Box>
             </SimpleGrid>
+            <br/><br/>
+            <Center mt="3" mb="5">
+                <Divider border="1px solid #333" my="auto" w="60%"></Divider>
+            </Center>
+            <br/>
         </div>
     );
  
