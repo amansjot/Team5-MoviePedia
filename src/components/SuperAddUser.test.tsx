@@ -28,7 +28,7 @@ describe("SuperAddUser Component tests", () => {
         const gain = screen.getByRole("button", { name: /Add/i });
         gain.click();
         expect(
-            screen.getByText(/Current Users:/i)
+            screen.getByText(/Last User: Ada Lovelace/i)
         ).toBeInTheDocument();
     });
     // test("Can choose one genre, then go to another", () => {
