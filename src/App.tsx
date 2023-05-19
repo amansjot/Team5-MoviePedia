@@ -26,11 +26,13 @@ goes under drag and drop
 import { SuperAddMovie } from "./components/SuperAddMovie";
 import { SuperAddUser } from "./components/SuperAddUser";
 import { Users } from "./components/Users";
+import { SuperEditMovie } from "./components/SuperEditMovie";
 
 
 function App() {
     const [selectedRole, setRole] = useState<string>(localStorage.getItem("role") || "User");
     const [users, setUsers] = useState<string[]>(["Super", "Admin", "User"]);
+    // const [currUser, setCurrUser] = useState<string[]>(localStorage.getItem("users"));
 
     function selectUser(): JSX.Element{
         if (selectedRole == "User"){
@@ -56,27 +58,41 @@ function App() {
         }
     }
 
-    function createList(): JSX.Element {
-        if (selectedRole !== "Super" && selectedRole !== "Admin") {
-            return (<CreateList></CreateList>);
-        }
-        if (selectedRole !== "Super" && selectedRole !== "Admin") {
-            return (
-                <div>
-                    <Heading size="lg">Create Custom Lists</Heading>
-                    <Flex>
-                        <Box w="50%">
-                            <CustomList1></CustomList1>
-                        </Box>
-                        <Box w="50%">
-                            <CustomList2></CustomList2>
-                        </Box>
-                    </Flex>
-                </div>);
+    function superEditMovie(): JSX.Element {
+        if (selectedRole == "Super") {
+            return (<SuperEditMovie></SuperEditMovie>);
         } else {
             return (<></>);
         }
     }
+
+    // function createList(): JSX.Element {
+    //     if (selectedRole !== "Super" && selectedRole !== "Admin") {
+    //         return (
+    //             <div>
+    //                 <Heading size="lg">Create Custom Lists</Heading>
+    //                 <Flex>
+    //                     <Box w="50%">
+    //                         {<CustomList1 name={""}></CustomList1> }
+    //                     </Box>
+    //                     <Box w="50%">
+    //                         { <CustomList2></CustomList2> }
+    //                     </Box>
+    //                 </Flex>
+    //             </div>);
+    //    } else {
+    //         return (<></>);
+    //    }
+    //}
+    
+
+    // function userList(): JSX.Element {
+    //     if (selectedRole == "User") {
+    //         return (<DragAndDrop></DragAndDrop>);
+    //     } else {
+    //         return (<></>);
+    //     }
+    // }
 
     return (
         <div className="App">
@@ -103,36 +119,28 @@ function App() {
                 </Stack>
             </HStack>
             <br/>
-            {selectUser()}
-            <Flex>
+            <Flex mt="5">
                 <Box w="50%">
-                    <Heading size="lg">Central Movie List</Heading>
+                    <Heading size="xl">Central Movie List</Heading>
                     <br/>
                     <MovieCards role={selectedRole}></MovieCards>
                 </Box>
                 <Box w="50%">
-                    
-                    <DragAndDrop></DragAndDrop>
-
-                    <Divider borderWidth="2px"></Divider>
+                    <div>
+                        {superAddUser()}
+                        {superEditMovie()}
+                        {superAddMovie()}
+                    </div>
+                    <div>
+                        {selectUser()}
+                        {/* {userList()} */}
+                        {/* {createList()} */}
+                    </div>
                 </Box>
             </Flex>
-            <Divider borderWidth="2px"></Divider>
-            <br/>
-            {createList()}
-            <br/>
-                
-            <div>
-                {/* {AdminList()} */}
-            </div>
-            <div>
-                {superAddMovie()}
-            </div>
-            <div>
-                {superAddUser()}
-            </div>
             <br/><br/>
-            <HStack p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
+            <div className="space"></div>
+            <HStack mt="5" p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
                 <Stack>
                     <div><b>MoviePedia 2023</b></div>
                     <div>

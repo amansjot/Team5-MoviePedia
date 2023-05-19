@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
-import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select, Divider, FormControl } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
+import {Users} from "./Users";
 
 
 //add an aspect for giving a review once the movie is in the list 
 
 
-export function DragAndDrop(): JSX.Element {
+export function DragAndDrop({ name }: { name: string }): JSX.Element {
 
     const [movieList, setMovieList] = useState<Movie[]>([]);
     const [sort, setSort] = useState<string>("title1");
@@ -86,7 +87,7 @@ export function DragAndDrop(): JSX.Element {
     function addSortField(): JSX.Element {
         if (localStorage.getItem("role") == "User") {
             return (
-                <Container>
+                <Container mb="-1">
                     <Center>
                         <Heading size="md">Sort by:&nbsp;&nbsp;</Heading>
                         <Select w="200px" bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => updateSort(event)}>
@@ -104,15 +105,51 @@ export function DragAndDrop(): JSX.Element {
         }
     }
 
+    function getUser(): string {
+        return localStorage.getItem("user") || "User";
+    }
+
+    const [userFilter, setUserFilter] = useState<string>("");
+
+    function userFilterContains(event: React.ChangeEvent<HTMLInputElement>){
+        setUserFilter(event.target.value);
+        if (event.target.value !=  "") {
+            const filteredList = [...movieList].filter((movie: Movie) => {
+                return movie.plot.includes(event.target.value);
+            });
+            setMovieList(filteredList);
+        } else{
+            setMovieList([...movieList]);
+            sortList(sort);
+        }
+    }
+
     return(
-        <div id="movie-list" onDrop={handleOnDrop}
+        
+        <div className="top-component" id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
             <Heading>
-                <Text size="md">User List</Text>
+                <Text size="md">{localStorage.getItem("user") || name}&apos;s List</Text>
             </Heading>
             {delAllItems()}
             <br/>
             {addSortField()}
+            <br/>
+            {/* Filter by Description Contains Feature  */}
+            <Container>
+                <Center mb ={0}>
+                    <Heading size="md"> Description Contains: </Heading>
+                    <FormControl>
+                        <Input
+                            bg="white" borderColor={"black"} _hover={{ borderColor: "black" }}
+                            placeholder="(ex: bride, spacecraft, love)"
+                            type="description_contains"
+                            value={userFilter}
+                            onChange={userFilterContains}
+                        />
+                    </FormControl>
+                </Center>
+            </Container>
             <br/>
             <SimpleGrid spacing={3} columns={1}>
                 <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">
@@ -154,6 +191,11 @@ export function DragAndDrop(): JSX.Element {
                     </SimpleGrid>
                 </Box>
             </SimpleGrid>
+            <br/><br/>
+            <Center mt="3" mb="5">
+                <Divider border="1px solid #333" my="auto" w="60%"></Divider>
+            </Center>
+            <br/>
         </div>
     );
  

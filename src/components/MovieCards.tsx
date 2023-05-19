@@ -3,9 +3,10 @@ import { Movie } from "./Movie";
 import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center, Select, CloseButton, FormControl, FormLabel, Input } from "@chakra-ui/react";
 import { moviesList } from "./MoviesList";
 import { Button } from "@chakra-ui/react";
-import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
+import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, IconButton, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
 import "../DragDropList.css";
 import {Genre} from "./Genre";
+import { EditIcon } from "@chakra-ui/icons";
 
 export function getMovies(movies: Movie[]): Movie[] {
     const movieCopy = movies.map((movieData: Movie): Movie => ({...movieData}));
@@ -24,14 +25,37 @@ export function MovieCards({
 }): JSX.Element {
 
     // const [moviesList, setMoviesList] = useState<Movie[]>(moviesList);
+    const [movieList, setMovieList] = useState<Movie[]>(getMovies(moviesList));
+    const [sort, setSort] = useState<string>("title1");
     
+    // if (localStorage.getItem("edited")) {
+    //     if (localStorage.getItem("edited") == "true") {
+    //         const editidx = parseInt(localStorage.getItem("editIndex") || "-1");
+    //         let newMovieList = [...movieList];
+    //         newMovieList[editidx] = JSON.parse(localStorage.getItem("editing") || "{}");
+    //         setMovieList(newMovieList);
+    //         localStorage.setItem("edited", "done");
+    //     }
+    //     // alert(newMovieList[editidx].name);
+    //     // alert(movieList[editidx].name);
+    //     // localStorage.removeItem("edited");
+    // }
+
+    if (localStorage.getItem("edited")) {
+        const editidx = parseInt(localStorage.getItem("editIndex") || "-1");
+        
+        const newMovie: Movie = JSON.parse(localStorage.getItem("newMovie") || "{}");
+        let newMovieList: Movie[] = [...movieList];
+        newMovieList[editidx] = JSON.parse(localStorage.getItem("editing") || "{}");
+        const newNewMovieList: Movie[] = [...newMovieList];
+        setMovieList(newNewMovieList);
+
+        localStorage.removeItem("edited");
+    }
 
     function changeDrag(event: React.DragEvent, widgetType: Movie) {
         event.dataTransfer.setData("widgetType", JSON.stringify(widgetType));
     }
-
-    const [movieList, setMovieList] = useState<Movie[]>(getMovies(moviesList));
-    const [sort, setSort] = useState<string>("title1");
 
     if (localStorage.getItem("newMovie")) {
         const newMovie: Movie = JSON.parse(localStorage.getItem("newMovie") || "");
@@ -162,11 +186,25 @@ export function MovieCards({
         }
     }
 
+    function editButton(index: number): JSX.Element {
+        if (localStorage.getItem("role") == "Super") {
+            return (<IconButton aria-label='Edit Movie' bg="none" size="sm" icon={<EditIcon />} position="absolute" top="0" left="0" onClick={() => editItem(index)}/>);
+        } else {
+            return (<></>);
+        }
+    }
+
     function deleteItem(index: number) {
         localStorage.setItem("delete", movieList[index].name);
         const newMovieList: Movie[] = [...movieList];
         newMovieList.splice(index, 1);
         setMovieList(newMovieList);
+    }
+
+    function editItem(index: number) {
+        // alert(JSON.stringify(movieList[index]));
+        localStorage.setItem("editing", JSON.stringify(movieList[index]));
+        localStorage.setItem("editIndex", index.toString());
     }
 
     return(
@@ -175,9 +213,8 @@ export function MovieCards({
 
             {/* Filter by Genre feature */}
             <Container>
-                <Center mb={5}>
+                {/* <Center mb={5}>
                     <Heading size="md">Filter by Genre:&nbsp;&nbsp;</Heading>
-                    (unfinished)&nbsp;
                     <Select w="200px" bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => filterGenre(event)}>
                         { genreList.map((genre: string, key: number) => {
                             return (
@@ -185,7 +222,7 @@ export function MovieCards({
                             );
                         }) }
                     </Select>
-                </Center>
+                </Center> */}
             </Container>
 
             {/* Filter by Description Contains Feature  */}
@@ -194,6 +231,7 @@ export function MovieCards({
                     <Heading size="md"> Description Contains: </Heading>
                     <FormControl>
                         <Input
+                            bg="white" borderColor={"black"} _hover={{ borderColor: "black" }}
                             placeholder="(ex: bride, spacecraft, love)"
                             type="description_contains"
                             value={second_filter}
@@ -203,7 +241,7 @@ export function MovieCards({
                 </Center>
             </Container>
 
-            <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
+            <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="1000px" overflowY={"scroll"}>
                 <SimpleGrid w="100%" spacing={2} templateColumns={{base: "repeat(3, 1fr)"}}>
                     {movieList.map((movie: Movie, index: number)=>(
                         <div key={null} draggable
@@ -211,6 +249,7 @@ export function MovieCards({
                             <Card align="center" height="390px" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={movie.name}>
                                 <CardHeader key={movie.name}>
                                     {closeButton(index)}
+                                    {editButton(index)}
                                     <Heading size="md">
                                         <Text><span>{movie.name}</span></Text>
                                     </Heading>

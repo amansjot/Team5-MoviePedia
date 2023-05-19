@@ -6,21 +6,29 @@ import { Movie } from "./Movie";
 import { Input, InputGroup,InputLeftAddon } from "@chakra-ui/input";
 //import { Stack } from "@chakra-ui/layout";
 import { HTMLInputTypeAttribute} from "react";
-
+import { AlertDescription, Button, Divider, IconButton } from "@chakra-ui/react";
 import { Popover, PopoverBody,PopoverTrigger, PopoverArrow, PopoverCloseButton,PopoverContent} from "@chakra-ui/react";
 import { SimpleGrid, Card, CardBody,Text,CardHeader, Image, Box, Heading, Flex, Spacer, CardFooter, Stack, HStack, Container, RadioGroup, Radio, Center } from "@chakra-ui/react";
 import { CheckIcon, CloseIcon, SearchIcon } from "@chakra-ui/icons";
  
-export function SuperAddMovie(): JSX.Element {
-    const [name, setName] = React.useState("Movie Title");
-    const [poster, setPoster] = React.useState("https://placehold.co/130x200");
-    const [year, setYear] = useState<number>(2023);
-    const [actors, setActors] = useState<string>("");
-    const [plot, setPlot] = React.useState("");
-    const [director, setDirector] = React.useState("");
-    const [genre, setGenre] = useState<string>("");
+export function SuperEditMovie(): JSX.Element {
+
+    const editingStr = localStorage.getItem("editing") || "{}";
+    let editingObj = JSON.parse(editingStr);    
+
+    const [name, setName] = React.useState(editingObj.name);
+    const [poster, setPoster] = React.useState(editingObj.poster || "https://placehold.co/130x200");
+    const [year, setYear] = useState<number>(editingObj.year);
+    const [actors, setActors] = useState<string>((editingObj.actors || []).join(","));
+    const [plot, setPlot] = React.useState(editingObj.plot);
+    const [director, setDirector] = React.useState(editingObj.director);
+    const [genre, setGenre] = useState<string>((editingObj.genre || []).join(","));
 
     function nameChange (event: React.ChangeEvent<HTMLInputElement>){
+        const editingStr = localStorage.getItem("editing") || "{}";
+        let editingObj = JSON.parse(editingStr);
+        editingObj["name"] = event.target.value;
+        localStorage.setItem("editing", JSON.stringify(editingObj));
         setName(event.target.value);
     }
 
@@ -28,27 +36,51 @@ export function SuperAddMovie(): JSX.Element {
         if (!event.target.value) {
             setPoster("https://placehold.co/130x200");
         } else {
+            const editingStr = localStorage.getItem("editing") || "{}";
+            let editingObj = JSON.parse(editingStr);
+            editingObj["poster"] = event.target.value;
+            localStorage.setItem("editing", JSON.stringify(editingObj));
             setPoster(event.target.value);
         }
     }
 
     function yearChange (event: React.ChangeEvent<HTMLInputElement>){
+        const editingStr = localStorage.getItem("editing") || "{}";
+        let editingObj = JSON.parse(editingStr);
+        editingObj["year"] = event.target.value;
+        localStorage.setItem("editing", JSON.stringify(editingObj));
         setYear(parseInt(event.target.value));
     }
 
     function actorsChange (event: React.ChangeEvent<HTMLInputElement>){
+        const editingStr = localStorage.getItem("editing") || "{}";
+        let editingObj = JSON.parse(editingStr);
+        editingObj["actors"] = event.target.value.split(",");
+        localStorage.setItem("editing", JSON.stringify(editingObj));
         setActors(event.target.value);
     }
 
     function plotChange (event: React.ChangeEvent<HTMLInputElement>){
+        const editingStr = localStorage.getItem("editing") || "{}";
+        let editingObj = JSON.parse(editingStr);
+        editingObj["plot"] = event.target.value;
+        localStorage.setItem("editing", JSON.stringify(editingObj));
         setPlot(event.target.value);
     }
 
     function directorChange (event: React.ChangeEvent<HTMLInputElement>){
+        const editingStr = localStorage.getItem("editing") || "{}";
+        let editingObj = JSON.parse(editingStr);
+        editingObj["director"] = event.target.value;
+        localStorage.setItem("editing", JSON.stringify(editingObj));
         setDirector(event.target.value);
     }
 
     function genreChange (event: React.ChangeEvent<HTMLInputElement>){
+        const editingStr = localStorage.getItem("editing") || "{}";
+        let editingObj = JSON.parse(editingStr);
+        editingObj["genre"] = event.target.value.split(",");
+        localStorage.setItem("editing", JSON.stringify(editingObj));
         setGenre(event.target.value);
     }
 
@@ -64,7 +96,7 @@ export function SuperAddMovie(): JSX.Element {
             rating: 0
         };
         return addMovie;
-    }   
+    }
  
     function updateMovies (movies: Movie[]): Movie[] {
         const movieCopy = [...movies];
@@ -78,70 +110,88 @@ export function SuperAddMovie(): JSX.Element {
         const listOfItems = copy.join(", ");
         return listOfItems;
     }
-    
-    function heading(): JSX.Element {
-        if (localStorage.getItem("role") == "Super") {
-            return (<Heading size ="xl" mb="4">Add a New Movie</Heading>);
-        } else if (localStorage.getItem("role") == "Admin") {
-            return (<Heading size ="xl" mb="4">Review New Movie</Heading>);
-        } else {
-            return (<></>);
-        }
-    }
 
-    function description(): JSX.Element {
-        const isEdited: boolean = name !== "Movie Title" && actors != "" && plot != "" && director != "" && genre != ""; 
-        if (localStorage.getItem("role") == "Admin" && !isEdited) {
-            return (<Container mb="6">
-                When the Super fills out all of the input fields, you<br/>
-                will be able to accept or reject the new movie.
-            </Container>);
-        } else if (localStorage.getItem("role") == "Super") {
-            if (isEdited) {
-                return (<Container mb="6">
-                All inputs are filled in! The Admin can now accept or reject this movie.
-                </Container>);
-            } else {
-                return (<Container mb="6">
-                Fill in the input fields below to see your new movie card update in<br/>
-                real-time. Once everything is filled in, the Admin can accept or reject it.
-                </Container>);
-            }
-        } else {
-            return (<></>);
-        }
-    }
+    //const newList = updateMovies(movie);
+
+    /** 
+    <div>
+                <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="100vh" overflowY={"scroll"}>
+                    <SimpleGrid h="4000px" w="100%" spacing={2} templateColumns={{base: "repeat(4, 1fr)"}}>
+                        {movie.map((Movie)=>(
+                            <Card align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={3} direction={{base: "row", sm:"column"}} variant="elevated" key={Movie.name}>
+                                <CardHeader key={Movie.name}>
+                                    <Heading size="md">
+                                        <Text><span>{Movie.name}</span></Text>
+                                    </Heading>
+                                    <Text><i>{Movie.year}<br/>{Movie.director}</i></Text>
+                                </CardHeader>
+                                <CardBody mt={-5}>
+                                    <Image width={120} src={Movie.poster} alt={Movie.name}></Image>
+                                    <div></div>
+                                </CardBody>
+                                <Popover>
+                                    <PopoverTrigger>
+                                        <Button>Show More</Button>
+                                    </PopoverTrigger>
+                                    <PopoverContent w="40">
+                                        <PopoverArrow />
+                                        <PopoverCloseButton/>
+                                        <PopoverBody>
+                                            <Text></Text>
+    
+                                            <Text fontSize="xs">    
+                                                {Movie.plot}      
+                                                <br/><br/>
+                                                <span>Actors: {expandArray(Movie.actors)}</span>
+                                                <br/>
+                                                <span>Genre: {expandArray(Movie.genre)}</span>
+                                            </Text>
+                                        </PopoverBody>
+                                    </PopoverContent>
+                                </Popover>
+                            </Card>
+                        ))}
+                    </SimpleGrid>
+                </Container>
+            </div>
+    */
+    //<Heading h="2vh" size="lg" style={{"fontFamily": "'Georgia', sans-serif"}}>Locations Providing Free Products</Heading>
+
 
     function movieInput(): JSX.Element {
+        const editingStr = localStorage.getItem("editing") || "{}";
+        const editing = JSON.parse(editingStr);
+        
         if (localStorage.getItem("role") == "Super") {
+            // localStorage.removeItem("editing");
             return (<Stack spacing={1}>
                 <InputGroup px="10">
                     <InputLeftAddon>Movie Name</InputLeftAddon>
-                    <Input onChange={nameChange} variant="filled" placeholder="Insert Movie Name"></Input>
+                    <Input onChange={nameChange} data-val={name} value={editing.name ? editing.name : ""} variant="filled" placeholder="Insert Movie Name"></Input>
                     <Spacer px="2"></Spacer>
 
                     <InputLeftAddon>Year</InputLeftAddon>
-                    <Input onChange={yearChange} variant="filled" placeholder="Insert Year Published"></Input>
+                    <Input onChange={yearChange} value={editing.year ? editing.year : ""} variant="filled" placeholder="Insert Year Published"></Input>
                 </InputGroup>
                 <InputGroup px="10" pt="2">
                     <InputLeftAddon>Poster</InputLeftAddon>
-                    <Input onChange={posterChange} variant="filled" placeholder="Insert Poster URL (ex. https://____.png)"></Input>
+                    <Input onChange={posterChange} value={editing.poster ? editing.poster : ""} variant="filled" placeholder="Insert Poster URL (ex. https://____.png)"></Input>
                 </InputGroup>
                 <InputGroup px="10" pt="2">
                     <InputLeftAddon>Plot</InputLeftAddon>
-                    <Input onChange={plotChange} variant="filled" placeholder="Insert Plot"></Input>
+                    <Input onChange={plotChange} value={editing.plot ? editing.plot : ""} variant="filled" placeholder="Insert Plot"></Input>
                 </InputGroup>
                 <InputGroup px="10" pt="2">
                     <InputLeftAddon>Actors</InputLeftAddon>
-                    <Input onChange={actorsChange} variant="filled" placeholder="Insert Actors (comma-separated)"></Input>
+                    <Input onChange={actorsChange} value={editing.actors ? editing.actors : ""} variant="filled" placeholder="Insert Actors (comma-separated)"></Input>
                 </InputGroup>
                 <InputGroup px="10" pt="2">
                     <InputLeftAddon>Director</InputLeftAddon>
-                    <Input onChange={directorChange} variant="filled" placeholder="Insert Director"></Input>
+                    <Input onChange={directorChange} value={editing.director ? editing.director : ""} variant="filled" placeholder="Insert Director"></Input>
                     <Spacer px="2"></Spacer>
 
                     <InputLeftAddon>Genre</InputLeftAddon>
-                    <Input onChange={genreChange} variant="filled" placeholder="Insert Genre"></Input>
+                    <Input onChange={genreChange} value={editing.genre ? editing.genre : ""} variant="filled" placeholder="Insert Genre"></Input>
                 </InputGroup>
             </Stack>);
         } else {
@@ -175,6 +225,10 @@ export function SuperAddMovie(): JSX.Element {
         setGenre("");
     }
 
+    // function explainEdited(): JSX.Element {
+    //     if (localStorage.getItem("role") == "Admin" && isEdited)
+    // }
+
     function reviewNewMovie(): JSX.Element {
         const isEdited: boolean = name !== "Movie Title" && actors != "" && plot != "" && director != "" && genre != ""; 
         if (localStorage.getItem("role") == "Admin" && isEdited) {
@@ -198,11 +252,17 @@ export function SuperAddMovie(): JSX.Element {
         }
     }
 
+    function saveEdit() {
+        const editedObj = JSON.parse(localStorage.getItem("editing") || "{}");
+        localStorage.setItem("edited", "true");
+    }
+
     return(
-        <Box data-testId={"edit-movie-box"}>
+        <Box>
             {/* style={{"fontFamily": "'Georgia', sans-serif"}} */}
-            {heading()}
-            {description()}
+            <Heading size ="xl" mb="2">Edit Movie</Heading>
+
+
             <div>
                 <Container border={"2px solid black"} borderRadius={"20px"} bg="white" p={5} height="auto" w="350px" minHeight="370px" overflowY={"scroll"}>
                     <SimpleGrid h="auto" w="200px" m="0 auto" spacing={2} templateColumns={{base: "repeat(3, 2fr)"}}>
@@ -242,10 +302,18 @@ export function SuperAddMovie(): JSX.Element {
                     </SimpleGrid>
                 </Container>
             </div>
+
+
             <Spacer></Spacer>
             <br/>
-
+            <Button colorScheme='green' onClick={saveEdit}>Save Edits</Button>
+            <br/><br/>
             {movieInput()}
+            <br/><br/>
+            <Center mt="3" mb="5">
+                <Divider border="1px solid #333" my="auto" w="60%"></Divider>
+            </Center>
+            <br/>
         </Box>
     );
 }

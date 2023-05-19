@@ -1,18 +1,34 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
-import { moviesList } from "./MoviesList";
+//import { moviesList } from "./MoviesList";
 import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select, Button } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
-import "../DragDropList.css";
+import "../CustomList1.css";
 import { Heading,Image,Box} from "@chakra-ui/react";
+import PropTypes from "prop-types";
+import { useEffect } from "react";
+/*
+interface CustomListProps {
+    name: string;
+    userList: Movie[];
+}
+*/
+//{ name}: { name: string}
 
-export function CustomList1(): JSX.Element {
+export function CustomList1({ name}: { name: string}): JSX.Element {
+    const [state, setState] = useState(" ");
+
+    const handleStateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        setState(event.target.value);
+    };
+
     const [listName, setListName] =useState<string>("");
     const [movieList, setMovieList] = useState<Movie[]>([]);
     const [visible, setVisible]= useState<boolean>(false);
 
     function changeListName(event: React.ChangeEvent<HTMLInputElement>){
         setListName(event.target.value);
+        handleStateChange(event);
     }
 
     function changeHidden(){
@@ -31,22 +47,34 @@ export function CustomList1(): JSX.Element {
         event.preventDefault();
     }
 
-
     function deleteItem(index: number) {
         const newMovieList: Movie[] = [...movieList];
         newMovieList.splice(index, 1);
         setMovieList(newMovieList);
     }
 
+    function delAllItems(): JSX.Element {
+        if (localStorage.getItem("delete")) {
+            for (let i = movieList.length - 1; i >= 0; i--) {
+                if (movieList[i].name == localStorage.getItem("delete")) {
+                    movieList.splice(i, 1);
+                }
+            }
+            localStorage.removeItem("delete");
+        }
+        return (<></>);
+    }
     return(
-        <div>
-            <Button onClick={changeHidden}>First Custom List</Button>{visible &&
-                 <div id="movie-list" onDrop={handleOnDrop}
-                     onDragOver={handleDragOver}>
+        <div className="custom1-component">
+            {/* <div> {`This is ${name}'s First Custom List`}</div> */}
+            <Button data-testid={"button"} onClick={changeHidden}>First Custom List</Button>{visible &&
+                 <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop} onDragOver={handleDragOver}>
                      <Heading>
                          <Input width="80%" onChange={changeListName} size ="md" placeholder="Input New List Name"></Input>
                          <Text>{listName}</Text>
                      </Heading>
+                     
+                     {delAllItems()}
                      <SimpleGrid spacing={3} columns={1}>
                          <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">
                              <SimpleGrid style={{"height": "auto", "minHeight": "250px"}} w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   
@@ -76,6 +104,7 @@ export function CustomList1(): JSX.Element {
                                              </Slider>
                                          </CardBody>
                                      </Card>
+                            
                                  ))}
                              </SimpleGrid>
                          </Box>
@@ -85,3 +114,7 @@ export function CustomList1(): JSX.Element {
     );
 
 }
+
+// CustomList1.propTypes = {
+//     name: PropTypes.string.isRequired,
+// };

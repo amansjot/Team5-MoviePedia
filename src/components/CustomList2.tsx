@@ -3,10 +3,12 @@ import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
 import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select, Button } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
-import "../DragDropList.css";
+import "../CustomList2.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
+import PropTypes from "prop-types";
 
-export function CustomList2(): JSX.Element {
+
+export function CustomList2({ name }: { name: string }): JSX.Element {
 
     const [listName, setListName] =useState<string>("");
     const [movieList, setMovieList] = useState<Movie[]>([]);
@@ -38,22 +40,37 @@ export function CustomList2(): JSX.Element {
         newMovieList.splice(index, 1);
         setMovieList(newMovieList);
     }
+    
+    function delAllItems(): JSX.Element {
+        if (localStorage.getItem("delete")) {
+            for (let i = movieList.length - 1; i >= 0; i--) {
+                if (movieList[i].name == localStorage.getItem("delete")) {
+                    movieList.splice(i, 1);
+                }
+            }
+            localStorage.removeItem("delete");
+        }
+        return (<></>);
+    }
 
     return(
-        <div>
-            <Button onClick={changeHidden}>Second Custom List</Button>{visible &&
-                 <div id="movie-list" onDrop={handleOnDrop}
+        <div className="custom2-component">
+            <Button data-testid={"button"} onClick={changeHidden}>Second Custom List</Button>{visible &&
+
+                 <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop}
                      onDragOver={handleDragOver}>
                      <Heading>
                          <Input width="80%" onChange={changeListName} size ="md" placeholder="Input New List Name"></Input>
                          <Text>{listName}</Text>
                      </Heading>
-
+                     
+                     {delAllItems()}
+                    
                      <SimpleGrid spacing={3} columns={1}>
                          <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">
                              <SimpleGrid style={{"height": "auto", "minHeight": "250px"}} w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   
                                  {movieList.map((movie: Movie, index: number): JSX.Element => (
-                                     <Card height="300px" align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={5} maxW="sm" direction={{base: "row", sm:"column"}} overflow="hidden" variant="elevated" key={movie.name}>
+                                     <Card data-testid={"movieCard"} height="300px" align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={5} maxW="sm" direction={{base: "row", sm:"column"}} overflow="hidden" variant="elevated" key={movie.name}>
                                          <CardHeader key={movie.name}>
                                              <CloseButton position="absolute" top="0" right="0" onClick={() => deleteItem(index)}/>
                                              <Heading size="sm">
