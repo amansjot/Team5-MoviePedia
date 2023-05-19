@@ -17,7 +17,7 @@ describe("SuperAddUser Component tests", () => {
             <SuperAddUser/>
         );
         expect(
-            screen.getByText(/Last User:/i)
+            screen.getByText(/Confirm New User:/i)
         ).toBeInTheDocument();
     });
     test("There are two buttons", () => {
@@ -36,7 +36,7 @@ describe("SuperAddUser Component tests", () => {
         const gain = screen.getByRole("button", { name: /Add/i });
         gain.click();
         expect(
-            screen.getByText(/Last User: Ada Lovelace/i)
+            screen.getByText(/Confirm New User: Ada Lovelace/i)
         ).toBeInTheDocument();
     });
     test("Editing the textbox removes a user", () => {
@@ -51,7 +51,7 @@ describe("SuperAddUser Component tests", () => {
         const lose = screen.getByRole("button", { name: /Remove/i });
         gain.click();
         expect(
-            screen.getByText(/Last User:/i)
+            screen.getByText(/Confirm New User:/i)
         ).toBeInTheDocument();
     });
 });
