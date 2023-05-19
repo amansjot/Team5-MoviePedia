@@ -40,7 +40,7 @@ describe("Genre Component tests", () => {
         expect(screen.queryByText(/All/i)).not.toBeInTheDocument();
         userEvent.selectOptions(select, "Animation");
         expect(screen.getByText(/Animation/i)).toBeInTheDocument();
-        expect(screen.queryByText(/All/i)).not.toBeInTheDocument();
+        expect(screen.queryAllByText(/All/i)).not.toBeInTheDocument();
     });
     test("Can go from one genre back to All", () => {
         render(

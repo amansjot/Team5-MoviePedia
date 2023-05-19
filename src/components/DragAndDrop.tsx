@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
-import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select, Divider } from "@chakra-ui/react";
+import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select, Divider, FormControl } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
 import "../DragDropList.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
@@ -87,7 +87,7 @@ export function DragAndDrop({ name }: { name: string }): JSX.Element {
     function addSortField(): JSX.Element {
         if (localStorage.getItem("role") == "User") {
             return (
-                <Container>
+                <Container mb="-1">
                     <Center>
                         <Heading size="md">Sort by:&nbsp;&nbsp;</Heading>
                         <Select w="200px" bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => updateSort(event)}>
@@ -109,6 +109,21 @@ export function DragAndDrop({ name }: { name: string }): JSX.Element {
         return localStorage.getItem("user") || "User";
     }
 
+    const [userFilter, setUserFilter] = useState<string>("");
+
+    function userFilterContains(event: React.ChangeEvent<HTMLInputElement>){
+        setUserFilter(event.target.value);
+        if (event.target.value !=  "") {
+            const filteredList = [...movieList].filter((movie: Movie) => {
+                return movie.plot.includes(event.target.value);
+            });
+            setMovieList(filteredList);
+        } else{
+            setMovieList([...movieList]);
+            sortList(sort);
+        }
+    }
+
     return(
         
         <div className="top-component" id="movie-list" onDrop={handleOnDrop}
@@ -119,6 +134,22 @@ export function DragAndDrop({ name }: { name: string }): JSX.Element {
             {delAllItems()}
             <br/>
             {addSortField()}
+            <br/>
+            {/* Filter by Description Contains Feature  */}
+            <Container>
+                <Center mb ={0}>
+                    <Heading size="md"> Description Contains: </Heading>
+                    <FormControl>
+                        <Input
+                            bg="white" borderColor={"black"} _hover={{ borderColor: "black" }}
+                            placeholder="(ex: bride, spacecraft, love)"
+                            type="description_contains"
+                            value={userFilter}
+                            onChange={userFilterContains}
+                        />
+                    </FormControl>
+                </Center>
+            </Container>
             <br/>
             <SimpleGrid spacing={3} columns={1}>
                 <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">

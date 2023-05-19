@@ -10,7 +10,6 @@ import {
     Select,
     Center,
 } from "@chakra-ui/react";
-
 import { CustomList1 } from "./CustomList1";
 import { CustomList2 } from "./CustomList2";
 import { DragAndDrop } from "./DragAndDrop";

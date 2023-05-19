@@ -6,8 +6,16 @@ import { SimpleGrid } from "@chakra-ui/react";
 import "../CustomList1.css";
 import { Heading,Image,Box} from "@chakra-ui/react";
 import PropTypes from "prop-types";
+import { useEffect } from "react";
+/*
+interface CustomListProps {
+    name: string;
+    userList: Movie[];
+}
+*/
+//{ name}: { name: string}
 
-export function CustomList1({ name }: { name: string }): JSX.Element {
+export function CustomList1({ name}: { name: string}): JSX.Element {
     const [state, setState] = useState(" ");
 
     const handleStateChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -39,7 +47,6 @@ export function CustomList1({ name }: { name: string }): JSX.Element {
         event.preventDefault();
     }
 
-
     function deleteItem(index: number) {
         const newMovieList: Movie[] = [...movieList];
         newMovieList.splice(index, 1);
@@ -57,20 +64,17 @@ export function CustomList1({ name }: { name: string }): JSX.Element {
         }
         return (<></>);
     }
-
     return(
         <div className="custom1-component">
             {/* <div> {`This is ${name}'s First Custom List`}</div> */}
             <Button onClick={changeHidden}>First Custom List</Button>{visible &&
-                 <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop}
-                     onDragOver={handleDragOver}>
+                 <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop} onDragOver={handleDragOver}>
                      <Heading>
                          <Input width="80%" onChange={changeListName} size ="md" placeholder="Input New List Name"></Input>
                          <Text>{listName}</Text>
                      </Heading>
                      
                      {delAllItems()}
-                     
                      <SimpleGrid spacing={3} columns={1}>
                          <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">
                              <SimpleGrid style={{"height": "auto", "minHeight": "250px"}} w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   
@@ -100,6 +104,7 @@ export function CustomList1({ name }: { name: string }): JSX.Element {
                                              </Slider>
                                          </CardBody>
                                      </Card>
+                            
                                  ))}
                              </SimpleGrid>
                          </Box>
