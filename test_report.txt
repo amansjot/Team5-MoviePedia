@@ -1874,6 +1874,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mFirst Custom List[0m
@@ -1884,6 +1885,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mSecond Custom List[0m
@@ -2071,6 +2073,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mFirst Custom List[0m
@@ -2081,6 +2084,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mFirst Custom List[0m
@@ -2091,6 +2095,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mSecond Custom List[0m
@@ -2278,6 +2283,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mFirst Custom List[0m
@@ -2288,6 +2294,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mFirst Custom List[0m
@@ -2298,6 +2305,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mSecond Custom List[0m
@@ -2485,6 +2493,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mFirst Custom List[0m
@@ -2495,6 +2504,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mFirst Custom List[0m
@@ -2505,6 +2515,7 @@ FAIL src/components/Users.test.tsx
             [36m>[39m
               [36m<button[39m
                 [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+                [33mdata-testid[39m=[32m"button"[39m
                 [33mtype[39m=[32m"button"[39m
               [36m>[39m
                 [0mSecond Custom List[0m
@@ -5447,41 +5458,6 @@ PASS src/components/SuperAddUser.test.tsx
       at keyboardImplementation (node_modules/@testing-library/user-event/dist/keyboard/keyboardImplementation.js:81:12)
       at keyboardImplementation (node_modules/@testing-library/user-event/dist/keyboard/keyboardImplementation.js:81:12)
 
-FAIL src/components/CustomList1.test.tsx
-  ● Custom List 1 Component tests › The user list is not initially visible
-
-    TestingLibraryElementError: Unable to find an element by: [data-testid="userList"]
-
-    Ignored nodes: comments, script, style
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"custom1-component"[39m
-        [36m>[39m
-          [36m<button[39m
-            [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-            [33mtype[39m=[32m"button"[39m
-          [36m>[39m
-            [0mFirst Custom List[0m
-          [36m</button>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      23 |
-      24 |     test("The user list is not initially visible", ()=>{
-    > 25 |         const list = screen.getByTestId("userList");
-         |                             ^
-      26 |         expect(list).notToBeInTheDocument();
-      27 |     });
-      28 |     test("There is a custom list button",()=>{
-
-      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
-      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
-      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
-      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/components/CustomList1.test.tsx:25:29)
-
 FAIL src/components/CustomList2.test.tsx
   ● Custom List 2 Component tests › The user list is not initially visible
 
@@ -5495,6 +5471,7 @@ FAIL src/components/CustomList2.test.tsx
         [36m>[39m
           [36m<button[39m
             [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+            [33mdata-testid[39m=[32m"button"[39m
             [33mtype[39m=[32m"button"[39m
           [36m>[39m
             [0mSecond Custom List[0m
@@ -5503,19 +5480,19 @@ FAIL src/components/CustomList2.test.tsx
       [36m</div>[39m
     [36m</body>[39m
 
-      23 |
-      24 |     test("The user list is not initially visible", ()=>{
-    > 25 |         const list = screen.getByTestId("userList");
+      24 |
+      25 |     test("The user list is not initially visible", ()=>{
+    > 26 |         const list = screen.getByTestId("userList");
          |                             ^
-      26 |         expect(list).toBeNull();
-      27 |     });
-      28 |     test("There is a custom list button",()=>{
+      27 |         expect(list).toBeNull();
+      28 |     });
+      29 |     test("There is a custom list button",()=>{
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/components/CustomList2.test.tsx:25:29)
+      at Object.<anonymous> (src/components/CustomList2.test.tsx:26:29)
 
   ● Custom List 2 Component tests › There is a custom list button
 
@@ -5528,6 +5505,7 @@ FAIL src/components/CustomList2.test.tsx
       Name "Second Custom List":
       [36m<button[39m
         [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+        [33mdata-testid[39m=[32m"button"[39m
         [33mtype[39m=[32m"button"[39m
       [36m/>[39m
 
@@ -5541,6 +5519,7 @@ FAIL src/components/CustomList2.test.tsx
         [36m>[39m
           [36m<button[39m
             [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+            [33mdata-testid[39m=[32m"button"[39m
             [33mtype[39m=[32m"button"[39m
           [36m>[39m
             [0mSecond Custom List[0m
@@ -5549,81 +5528,23 @@ FAIL src/components/CustomList2.test.tsx
       [36m</div>[39m
     [36m</body>[39m
 
-      27 |     });
-      28 |     test("There is a custom list button",()=>{
-    > 29 |         const listButton = screen.getByRole("button", {name: "First Custom List"});
+      28 |     });
+      29 |     test("There is a custom list button",()=>{
+    > 30 |         const listButton = screen.getByRole("button", {name: "First Custom List"});
          |                                   ^
-      30 |         expect(listButton).toBeInTheDocument();
-      31 |     });
-      32 |
+      31 |         expect(listButton).toBeInTheDocument();
+      32 |     });
+      33 |
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
       at getByRole (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/components/CustomList2.test.tsx:29:35)
-
-  ● Custom List 2 Component tests › Testing to see if button reveals the list
-
-    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name "First Custom List"
-
-    Here are the accessible roles:
-
-      button:
-
-      Name "Second Custom List":
-      [36m<button[39m
-        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
-
-    Ignored nodes: comments, script, style
-    [36m<body>[39m
-      [36m<div>[39m
-        [36m<div[39m
-          [33mclass[39m=[32m"custom2-component"[39m
-        [36m>[39m
-          [36m<button[39m
-            [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-            [33mtype[39m=[32m"button"[39m
-          [36m>[39m
-            [0mSecond Custom List[0m
-          [36m</button>[39m
-        [36m</div>[39m
-      [36m</div>[39m
-    [36m</body>[39m
-
-      32 |
-      33 |     test("Testing to see if button reveals the list",()=>{
-    > 34 |         const listButton = screen.getByRole("button", {name: "First Custom List"});
-         |                                   ^
-      35 |         fireEvent.click(listButton);
-      36 |         const list = screen.getByTestId("userList");
-      37 |         expect(list).toBeInTheDocument;
-
-      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
-      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
-      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
-      at getByRole (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/components/CustomList2.test.tsx:34:35)
+      at Object.<anonymous> (src/components/CustomList2.test.tsx:30:35)
 
   ● Custom List 2 Component tests › Testing to see if a movie is added to listt
 
-    TestingLibraryElementError: Unable to find an accessible element with the role "button" and name "First Custom List"
-
-    Here are the accessible roles:
-
-      button:
-
-      Name "Second Custom List":
-      [36m<button[39m
-        [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
-        [33mtype[39m=[32m"button"[39m
-      [36m/>[39m
-
-      --------------------------------------------------
+    TestingLibraryElementError: Unable to find an element by: [data-testid="movieCard"]
 
     Ignored nodes: comments, script, style
     [36m<body>[39m
@@ -5633,27 +5554,155 @@ FAIL src/components/CustomList2.test.tsx
         [36m>[39m
           [36m<button[39m
             [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+            [33mdata-testid[39m=[32m"button"[39m
             [33mtype[39m=[32m"button"[39m
           [36m>[39m
             [0mSecond Custom List[0m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mdata-testid[39m=[32m"userList"[39m
+            [33mid[39m=[32m"movie-list"[39m
+          [36m>[39m
+            [36m<h2[39m
+              [33mclass[39m=[32m"chakra-heading css-0"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mclass[39m=[32m"chakra-input css-1x97c6v"[39m
+                [33mplaceholder[39m=[32m"Input New List Name"[39m
+              [36m/>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"chakra-text css-0"[39m
+              [36m/>[39m
+            [36m</h2>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"css-yz5b2t"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-izdxe9"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"css-1tpos6v"[39m
+                  [33mstyle[39m=[32m"height: auto; min-height: 250px;"[39m
+                [36m/>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      43 |         fireEvent.click(listButton);
+      44 |         const list = screen.getByTestId("userList");
+    > 45 |         const movieCard= screen.getByTestId("movieCard");
+         |                                 ^
+      46 |         fireEvent.drop(movieCard);
+      47 |         expect(movieCard).toBeInTheDocument();
+      48 |     });
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/CustomList2.test.tsx:45:33)
+
+FAIL src/components/CustomList1.test.tsx
+  ● Custom List 1 Component tests › The user list is not initially visible
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="userList"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"custom1-component"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+            [33mdata-testid[39m=[32m"button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mFirst Custom List[0m
           [36m</button>[39m
         [36m</div>[39m
       [36m</div>[39m
     [36m</body>[39m
 
-      40 |
-      41 |     test("Testing to see if a movie is added to listt",()=>{
-    > 42 |         const listButton = screen.getByRole("button", {name: "First Custom List"});
-         |                                   ^
-      43 |         fireEvent.click(listButton);
-      44 |         const list = screen.getByTestId("userList");
-      45 |         
+      24 |
+      25 |     test("The user list is not initially visible", ()=>{
+    > 26 |         const list = screen.getByTestId("userList");
+         |                             ^
+      27 |         expect(list).notToBeInTheDocument();
+      28 |     });
+      29 |     test("There is a custom list button",()=>{
 
       at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
       at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
-      at getByRole (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
-      at Object.<anonymous> (src/components/CustomList2.test.tsx:42:35)
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/CustomList1.test.tsx:26:29)
+
+  ● Custom List 1 Component tests › Testing to see if a movie is added to listt
+
+    TestingLibraryElementError: Unable to find an element by: [data-testid="movieCard"]
+
+    Ignored nodes: comments, script, style
+    [36m<body>[39m
+      [36m<div>[39m
+        [36m<div[39m
+          [33mclass[39m=[32m"custom1-component"[39m
+        [36m>[39m
+          [36m<button[39m
+            [33mclass[39m=[32m"chakra-button css-4xx2wk"[39m
+            [33mdata-testid[39m=[32m"button"[39m
+            [33mtype[39m=[32m"button"[39m
+          [36m>[39m
+            [0mFirst Custom List[0m
+          [36m</button>[39m
+          [36m<div[39m
+            [33mdata-testid[39m=[32m"userList"[39m
+            [33mid[39m=[32m"movie-list"[39m
+          [36m>[39m
+            [36m<h2[39m
+              [33mclass[39m=[32m"chakra-heading css-0"[39m
+            [36m>[39m
+              [36m<input[39m
+                [33mclass[39m=[32m"chakra-input css-1x97c6v"[39m
+                [33mplaceholder[39m=[32m"Input New List Name"[39m
+              [36m/>[39m
+              [36m<p[39m
+                [33mclass[39m=[32m"chakra-text css-0"[39m
+              [36m/>[39m
+            [36m</h2>[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"css-yz5b2t"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-izdxe9"[39m
+              [36m>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"css-1tpos6v"[39m
+                  [33mstyle[39m=[32m"height: auto; min-height: 250px;"[39m
+                [36m/>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+          [36m</div>[39m
+        [36m</div>[39m
+      [36m</div>[39m
+    [36m</body>[39m
+
+      44 |         fireEvent.click( listButton);
+      45 |         const list = screen.getByTestId("userList");
+    > 46 |         const movieCard= screen.getByTestId("movieCard");
+         |                                 ^
+      47 |         fireEvent.drop(movieCard);
+      48 |         expect(movieCard).toBeInTheDocument();
+      49 |     });
+
+      at Object.getElementError (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/config.js:37:19)
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:76:38
+      at node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:52:17
+      at getByTestId (node_modules/@testing-library/react/node_modules/@testing-library/dom/dist/query-helpers.js:95:19)
+      at Object.<anonymous> (src/components/CustomList1.test.tsx:46:33)
 
 PASS src/App.test.tsx
   ● Console
@@ -6490,14 +6539,14 @@ PASS src/App.test.tsx
           at ChakraComponent (/home/----------------------|---------|----------|---------|---------|----------------------------------------------------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                              
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------------
-All files             |   27.38 |    19.34 |   27.74 |   26.39 |                                                                
+All files             |      28 |    20.16 |   29.03 |   27.03 |                                                                
  src                  |   36.36 |    44.44 |   66.66 |   36.36 |                                                                
   App.tsx             |      60 |    57.14 |   85.71 |      60 | 41,47,55,63,107-110                                            
   index.tsx           |       0 |      100 |     100 |       0 | 8-32                                                           
   reportWebVitals.ts  |       0 |        0 |       0 |       0 | 3-10                                                           
- src/components       |   26.72 |    17.33 |   25.34 |   25.63 |                                                                
+ src/components       |   27.39 |    18.22 |   26.71 |   26.32 |                                                                
   CustomList1.tsx     |   33.33 |       50 |   27.27 |   34.61 | 22,30-31,39-53,58-63,82-95                                     
-  CustomList2.tsx     |   17.39 |    16.66 |      10 |   18.18 | 18-53,72-85                                                    
+  CustomList2.tsx     |   30.43 |       50 |      30 |   31.81 | 22-41,46-51,73-86                                              
   CustomMovieList.tsx |       0 |      100 |       0 |       0 | 10-33                                                          
   DragAndDrop.tsx     |   14.03 |    11.76 |      15 |   14.28 | 20-71,77-82,89-93,109,115-123,158-171                          
   DroppedMovie.tsx    |       0 |        0 |       0 |       0 |                                                                
@@ -7879,5 +7928,5 @@ runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dis
 Test Suites: 6 failed, 2 passed, 8 total
 Tests:       17 failed, 12 passed, 29 total
 Snapshots:   0 total
-Time:        12.63 s
+Time:        10.636 s
 Ran all test suites.
