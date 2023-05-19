@@ -55,7 +55,7 @@ export function CustomList2({ name }: { name: string }): JSX.Element {
 
     return(
         <div>
-            <Button onClick={changeHidden}>Second Custom List</Button>{visible &&
+            <Button data-testid={"button"} onClick={changeHidden}>Second Custom List</Button>{visible &&
                  <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop}
                      onDragOver={handleDragOver}>
                      <Heading>
@@ -69,7 +69,7 @@ export function CustomList2({ name }: { name: string }): JSX.Element {
                          <Box borderWidth="3px" borderRadius="lg" bg="gray.400" p={10} w="95%" h="100%">
                              <SimpleGrid style={{"height": "auto", "minHeight": "250px"}} w="600px" p="4"  spacing = {5} templateColumns={{base: "repeat(3, 1fr)"}}>   
                                  {movieList.map((movie: Movie, index: number): JSX.Element => (
-                                     <Card height="300px" align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={5} maxW="sm" direction={{base: "row", sm:"column"}} overflow="hidden" variant="elevated" key={movie.name}>
+                                     <Card data-testid={"movieCard"} height="300px" align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={5} maxW="sm" direction={{base: "row", sm:"column"}} overflow="hidden" variant="elevated" key={movie.name}>
                                          <CardHeader key={movie.name}>
                                              <CloseButton position="absolute" top="0" right="0" onClick={() => deleteItem(index)}/>
                                              <Heading size="sm">
