@@ -30,3 +30,10 @@
     padding: 50px;
     text-align: left;
 }
+
+.top-component{
+    position: absolute;
+    top:280px;
+    background-color: #c4ddf2;
+}
+
