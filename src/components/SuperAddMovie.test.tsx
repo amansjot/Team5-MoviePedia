@@ -1,78 +1,67 @@
 import React from "react";
-import { render, screen, fireEvent } from "@testing-library/react";
-import { SuperAddMovie } from "./SuperAddMovie";
+
+import{Users} from "./Users";
 import userEvent from "@testing-library/user-event";
-/*
-    test( ,()=>{
-        render();
-    
-    });
-*/
-describe("Genre Component tests", () => {
-    test("Testing to see is Super role select is there" ,()=>{
-        render(
-            <SuperAddMovie/>
-        );
-        expect(screen.getByRole("combobox")).toBeInTheDocument();
+import { render, fireEvent, screen } from "@testing-library/react";
+import { SuperAddMovie } from "./SuperAddMovie";
+
+describe("Adding Movies Component tests", () => {
+    test("should update movie name when input value changes", () => {
+        const { getByPlaceholderText } = render(<SuperAddMovie />);
+        const nameInput = getByPlaceholderText("Insert Movie Name");
+
+        fireEvent.change(nameInput, { target: { value: "New Movie" } });
+
+        expect(nameInput).toBe("New Movie");
     });
 
-    test("There is a box for add movie",()=>{
-        render(<SuperAddMovie/>);
-        const newMovieBox = screen.getByRole("container");
-        expect(newMovieBox).toBeInTheDocument();
-    });
-    test("Testing to see if the user inputs are there",()=>{
-        render(
-            <SuperAddMovie/>
-        );
-        const newMovieBox = screen.getByRole("container");
-        expect(newMovieBox).toBeInTheDocument();
-        expect(screen.getByText(/Movie Name/i)).toBeInTheDocument();
-        expect(screen.getByText(/Year/i)).toBeInTheDocument();
-        expect(screen.getByText(/Poster/i)).toBeInTheDocument();
-        expect(screen.getByText(/Plot/i)).toBeInTheDocument();
-        expect(screen.getByText(/Actors/i)).toBeInTheDocument();
-        expect(screen.getByText(/Director/i)).toBeInTheDocument();
-        expect(screen.getByText(/Genre/i)).toBeInTheDocument();
-    });
-    test("Testing to see is user input boxes appear",()=>{
-        render(<SuperAddMovie/>);
-        const newMovieBox = screen.getByRole("container");
-        expect(newMovieBox).toBeInTheDocument();
-        expect(screen.getByText(/Movie Name/i)).toBeInTheDocument();
-        expect(screen.getByText(/Year/i)).toBeInTheDocument();
-        expect(screen.getByText(/Poster/i)).toBeInTheDocument();
-        expect(screen.getByText(/Plot/i)).toBeInTheDocument();
-        expect(screen.getByText(/Actors/i)).toBeInTheDocument();
-        expect(screen.getByText(/Director/i)).toBeInTheDocument();
-        expect(screen.getByText(/Genre/i)).toBeInTheDocument();
+    test("should update poster when input value changes", () => {
+        const { getByPlaceholderText } = render(<SuperAddMovie />);
+        const posterInput = getByPlaceholderText("Insert Poster");
     
+        fireEvent.change(posterInput, { target: { value: "https://example.com/poster.jpg" } });
+    
+        expect(posterInput).toBe("https://example.com/poster.jpg");
+    });
+    
+    test("renders component with default values", () => {
+        render(<SuperAddMovie />);
+        
+        // Assert that the component renders with default values
+        expect(screen.getByText("Add a New Movie")).toBeInTheDocument();
+        expect(screen.getByPlaceholderText("Insert Movie Name")).toBeInTheDocument();
+        expect(screen.getByPlaceholderText("Insert Poster")).toBeInTheDocument();
+        expect(screen.getByPlaceholderText("Insert Year Published")).toBeInTheDocument();
+        // Add more assertions for other input fields
     });
 
-    test("Testing movie box input" ,()=>{
-        render(<SuperAddMovie/>);
-        const newMovieBox = screen.getByRole("container");
-        expect(newMovieBox).toBeInTheDocument();
-        const movieInput = screen.getByRole("textbox");
-        userEvent.type(movieInput, "The Lego Movie");
-        expect(screen.getByText(/The Lego Movie/i)).toBeInTheDocument();
-        const yearInput= screen.getByRole("textbox");
-        userEvent.type(yearInput, "2014");
-        expect(screen.getByText(/2014 /i)).toBeInTheDocument();
-        const posterInput = screen.getByRole("textbox");
-        userEvent.type(posterInput, "poster.img");
-        expect(screen.getByText(/poster.img /i)).toBeInTheDocument();
-        const plotInput = screen.getByRole("textbox");
-        userEvent.type(plotInput, "A lego man goes through a journey");
-        expect(screen.getByText(/A lego man goes through a journey/i)).toBeInTheDocument();
-        const actorInput = screen.getByRole("textbox");
-        userEvent.type(actorInput, "Will Ferrell, Chris Pratt");
-        expect(screen.getByText(/Will Ferrell, Chris Pratt /i)).toBeInTheDocument();
-        const directorInput = screen.getByRole("textbox");
-        userEvent.type(directorInput, "Dan Lin");
-        expect(screen.getByText(/ Dan Lin/i)).toBeInTheDocument();
-        const genreInput = screen.getByRole("textbox");
-        userEvent.type(genreInput, "Comedy, Action");
-        expect(screen.getByText(/Comedy, Action /i)).toBeInTheDocument();
+    test("should update year when input value changes", () => {
+        const { getByPlaceholderText } = render(<SuperAddMovie />);
+        const yearInput = getByPlaceholderText("Insert Year Published");
+    
+        fireEvent.change(yearInput, { target: { value: "2022" } });
+    
+        expect(yearInput).toBe("2022");
     });
+    
+    test("should return a movie object with the provided data", () => {
+        const movie = addMovie("Movie Name", "https://example.com/poster.jpg", 2023, ["Actor 1", "Actor 2"], "Plot", "Director", ["Genre 1", "Genre 2"], 0);
+    
+        expect(movie).toEqual({
+            name: "Movie Name",
+            poster: "https://example.com/poster.jpg",
+            year: 2023,
+            actors: ["Actor 1", "Actor 2"],
+            plot: "Plot",
+            director: "Director",
+            genre: ["Genre 1", "Genre 2"],
+            rating: 0,
+        });
+    });
+
 });
+
+
+function addMovie(arg0: string, arg1: string, arg2: number, arg3: string[], arg4: string, arg5: string, arg6: string[], arg7: number) {
+    throw new Error("Function not implemented.");
+}
