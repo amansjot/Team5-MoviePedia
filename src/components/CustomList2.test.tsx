@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen, fireEvent } from "@testing-library/react";
 import { CustomList2 } from "./CustomList2";
 
 /*
@@ -32,7 +32,7 @@ describe("Custom List 2 Component tests", () => {
 
     test("Testing to see if button reveals the list",()=>{
         const listButton = screen.getByRole("button", {name: "First Custom List"});
-        listButton.click();
+        fireEvent.click(listButton);
         const list = screen.getByTestId("userList");
         expect(list).toBeInTheDocument;
     });
@@ -40,7 +40,7 @@ describe("Custom List 2 Component tests", () => {
 
     test("Testing to see if a movie is added to listt",()=>{
         const listButton = screen.getByRole("button", {name: "First Custom List"});
-        listButton.click();
+        fireEvent.click(listButton);
         const list = screen.getByTestId("userList");
         
     });

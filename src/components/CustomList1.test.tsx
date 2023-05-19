@@ -1,5 +1,5 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
+import { render, screen,fireEvent } from "@testing-library/react";
 import { CustomList1 } from "./CustomList1";
 
 /*
@@ -23,7 +23,7 @@ describe("Custom List 1 Component tests", () => {
 
     test("The user list is not initially visible", ()=>{
         const list = screen.getByTestId("userList");
-        expect(!list).toBeInTheDocument();
+        expect(list).notToBeInTheDocument();
     });
     test("There is a custom list button",()=>{
         const listButton = screen.getByRole("button", {name: "First Custom List"});
@@ -32,7 +32,7 @@ describe("Custom List 1 Component tests", () => {
 
     test("Testing to see if button reveals the list",()=>{
         const listButton = screen.getByRole("button", {name: "First Custom List"});
-        listButton.click();
+        fireEvent.click(listButton);
         const list = screen.getByTestId("userList");
         expect(list).toBeInTheDocument;
     });
@@ -40,7 +40,7 @@ describe("Custom List 1 Component tests", () => {
 
     test("Testing to see if a movie is added to listt",()=>{
         const listButton = screen.getByRole("button", {name: "First Custom List"});
-        listButton.click();
+        fireEvent.click( listButton);
         const list = screen.getByTestId("userList");
         
     });
