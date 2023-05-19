@@ -56,9 +56,7 @@ export function SuperAddUser(): JSX.Element {
                     <Button colorScheme="red" onClick={() => localStorage.setItem("users", USERS.filter((e,i) => e!== new_user).join(","))}>Remove</Button>
                 </Flex>
             </div>
-            <br/><br/>
-            <Heading size="s">Current Users: {allUsers.length}</Heading>
-            <br/><br/>
+            <Heading size="s">Last User: {new_user}</Heading>
             <Center mt="5" mb="8">
                 <Divider border="1px solid #333" my="auto" w="60%"></Divider>
             </Center>
