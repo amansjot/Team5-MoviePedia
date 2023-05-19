@@ -213,9 +213,8 @@ export function MovieCards({
 
             {/* Filter by Genre feature */}
             <Container>
-                <Center mb={5}>
+                {/* <Center mb={5}>
                     <Heading size="md">Filter by Genre:&nbsp;&nbsp;</Heading>
-                    (unfinished)&nbsp;
                     <Select w="200px" bg="white" borderColor={"black"} _hover={{ borderColor: "black" }} onChange={(event) => filterGenre(event)}>
                         { genreList.map((genre: string, key: number) => {
                             return (
@@ -223,7 +222,7 @@ export function MovieCards({
                             );
                         }) }
                     </Select>
-                </Center>
+                </Center> */}
             </Container>
 
             {/* Filter by Description Contains Feature  */}

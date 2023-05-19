@@ -1,8 +1,9 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
+
 import { SuperAddUser } from "./SuperAddUser";
 import userEvent from "@testing-library/user-event";
-
+        
 describe("SuperAddUser Component tests", () => {
     test("There is a text box", () => {
         render(
