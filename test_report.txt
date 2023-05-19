@@ -959,6 +959,32 @@ FAIL src/components/Users.test.tsx
             [36m<br />[39m
             [36m<br />[39m
             [36m<div[39m
+              [33mclass[39m=[32m"chakra-container css-0"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-1re37wo"[39m
+              [36m>[39m
+                [36m<h2[39m
+                  [33mclass[39m=[32m"chakra-heading css-0"[39m
+                [36m>[39m
+                  [0m Description Contains: [0m
+                [36m</h2>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-form-control css-0"[39m
+                  [33mrole[39m=[32m"group"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"chakra-input css-1901mcg"[39m
+                    [33mid[39m=[32m"field-:r2:"[39m
+                    [33mplaceholder[39m=[32m"(ex: bride, spacecraft, love)"[39m
+                    [33mtype[39m=[32m"description_contains"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<br />[39m
+            [36m<div[39m
               [33mclass[39m=[32m"css-yz5b2t"[39m
             [36m>[39m
               [36m<div[39m
@@ -1004,6 +1030,32 @@ FAIL src/components/Users.test.tsx
               [36m</p>[39m
             [36m</h2>[39m
             [36m<br />[39m
+            [36m<br />[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"chakra-container css-0"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-1re37wo"[39m
+              [36m>[39m
+                [36m<h2[39m
+                  [33mclass[39m=[32m"chakra-heading css-0"[39m
+                [36m>[39m
+                  [0m Description Contains: [0m
+                [36m</h2>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-form-control css-0"[39m
+                  [33mrole[39m=[32m"group"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"chakra-input css-1901mcg"[39m
+                    [33mid[39m=[32m"field-:r3:"[39m
+                    [33mplaceholder[39m=[32m"(ex: bride, spacecraft, love)"[39m
+                    [33mtype[39m=[32m"description_contains"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
             [36m<br />[39m
             [36m<div[39m
               [33mclass[39m=[32m"css-yz5b2t"[39m
@@ -1176,6 +1228,32 @@ FAIL src/components/Users.test.tsx
             [36m<br />[39m
             [36m<br />[39m
             [36m<div[39m
+              [33mclass[39m=[32m"chakra-container css-0"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-1re37wo"[39m
+              [36m>[39m
+                [36m<h2[39m
+                  [33mclass[39m=[32m"chakra-heading css-0"[39m
+                [36m>[39m
+                  [0m Description Contains: [0m
+                [36m</h2>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-form-control css-0"[39m
+                  [33mrole[39m=[32m"group"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"chakra-input css-1901mcg"[39m
+                    [33mid[39m=[32m"field-:r4:"[39m
+                    [33mplaceholder[39m=[32m"(ex: bride, spacecraft, love)"[39m
+                    [33mtype[39m=[32m"description_contains"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<br />[39m
+            [36m<div[39m
               [33mclass[39m=[32m"css-yz5b2t"[39m
             [36m>[39m
               [36m<div[39m
@@ -1221,6 +1299,32 @@ FAIL src/components/Users.test.tsx
               [36m</p>[39m
             [36m</h2>[39m
             [36m<br />[39m
+            [36m<br />[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"chakra-container css-0"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-1re37wo"[39m
+              [36m>[39m
+                [36m<h2[39m
+                  [33mclass[39m=[32m"chakra-heading css-0"[39m
+                [36m>[39m
+                  [0m Description Contains: [0m
+                [36m</h2>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-form-control css-0"[39m
+                  [33mrole[39m=[32m"group"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"chakra-input css-1901mcg"[39m
+                    [33mid[39m=[32m"field-:r5:"[39m
+                    [33mplaceholder[39m=[32m"(ex: bride, spacecraft, love)"[39m
+                    [33mtype[39m=[32m"description_contains"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
             [36m<br />[39m
             [36m<div[39m
               [33mclass[39m=[32m"css-yz5b2t"[39m
@@ -1393,6 +1497,32 @@ FAIL src/components/Users.test.tsx
             [36m<br />[39m
             [36m<br />[39m
             [36m<div[39m
+              [33mclass[39m=[32m"chakra-container css-0"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-1re37wo"[39m
+              [36m>[39m
+                [36m<h2[39m
+                  [33mclass[39m=[32m"chakra-heading css-0"[39m
+                [36m>[39m
+                  [0m Description Contains: [0m
+                [36m</h2>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-form-control css-0"[39m
+                  [33mrole[39m=[32m"group"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"chakra-input css-1901mcg"[39m
+                    [33mid[39m=[32m"field-:r6:"[39m
+                    [33mplaceholder[39m=[32m"(ex: bride, spacecraft, love)"[39m
+                    [33mtype[39m=[32m"description_contains"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
+            [36m<br />[39m
+            [36m<div[39m
               [33mclass[39m=[32m"css-yz5b2t"[39m
             [36m>[39m
               [36m<div[39m
@@ -1438,6 +1568,32 @@ FAIL src/components/Users.test.tsx
               [36m</p>[39m
             [36m</h2>[39m
             [36m<br />[39m
+            [36m<br />[39m
+            [36m<div[39m
+              [33mclass[39m=[32m"chakra-container css-0"[39m
+            [36m>[39m
+              [36m<div[39m
+                [33mclass[39m=[32m"css-1re37wo"[39m
+              [36m>[39m
+                [36m<h2[39m
+                  [33mclass[39m=[32m"chakra-heading css-0"[39m
+                [36m>[39m
+                  [0m Description Contains: [0m
+                [36m</h2>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-form-control css-0"[39m
+                  [33mrole[39m=[32m"group"[39m
+                [36m>[39m
+                  [36m<input[39m
+                    [33mclass[39m=[32m"chakra-input css-1901mcg"[39m
+                    [33mid[39m=[32m"field-:r7:"[39m
+                    [33mplaceholder[39m=[32m"(ex: bride, spacecraft, love)"[39m
+                    [33mtype[39m=[32m"description_contains"[39m
+                    [33mvalue[39m=[32m""[39m
+                  [36m/>[39m
+                [36m</div>[39m
+              [36m</div>[39m
+            [36m</div>[39m
             [36m<br />[39m
             [36m<div[39m
               [33mclass[39m=[32m"css-yz5b2t"[39m
@@ -6643,6 +6799,9 @@ FAIL src/App.test.tsx
               [36m>[39m
                 [36m<div[39m
                   [33mclass[39m=[32m"chakra-container css-0"[39m
+                [36m/>[39m
+                [36m<div[39m
+                  [33mclass[39m=[32m"chakra-container css-0"[39m
                 [36m>[39m
                   [36m<div[39m
                     [33mclass[39m=[32m"css-1e88rvj"[39m
@@ -6650,14 +6809,10 @@ FAIL src/App.test.tsx
                     [36m<h2[39m
                       [33mclass[39m=[32m"chakra-heading css-0"[39m
                     [36m>[39m
-                      [0mFilter by Genre:  [0m
+                      [0m Description Contains: [0m
                     [36m</h2>[39m
-                    [0m(unfinished) [0m
                     [36m<div[39m
-                      [33mclass[39m=[32m"chakra-select__wrapper css-vaqiau"[39m
-                    [36m>[39m
-                      [36m<select[39m
-              ...
+                      [33mclass[39m=[32m"chakra-form-control css-0"[39...
 
        5 | test("renders learn react link", () => {
        6 |     render(<App />);
@@ -6695,33 +6850,33 @@ FAIL src/components/SuperAddMovie.test.tsx
           at Array.map (<anonymous>)
       at Emittery.emit (node_modules/emittery/index.js:258:23)
 
-----------------------|---------|----------|---------|---------|--------------------------------------------------------------------
-File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                                  
-----------------------|---------|----------|---------|---------|--------------------------------------------------------------------
-All files             |   20.85 |    14.52 |   21.21 |      20 |                                                                    
- src                  |   36.36 |    44.44 |   66.66 |   36.36 |                                                                    
-  App.tsx             |      60 |    57.14 |   85.71 |      60 | 41,47,55,63,107-110                                                
-  index.tsx           |       0 |      100 |     100 |       0 | 8-32                                                               
-  reportWebVitals.ts  |       0 |        0 |       0 |       0 | 3-10                                                               
- src/components       |   19.73 |     12.1 |   18.58 |   18.77 |                                                                    
-  CreateList.tsx      |       0 |        0 |       0 |       0 | 12-100                                                             
-  CustomList1.tsx     |   22.22 |    16.66 |    9.09 |   23.07 | 14,22-58,78-91                                                     
-  CustomList2.tsx     |   17.39 |    16.66 |      10 |   18.18 | 18-53,72-85                                                        
-  CustomMovieList.tsx |       0 |      100 |       0 |       0 | 10-33                                                              
-  DragAndDrop.tsx     |   16.32 |    13.33 |   22.22 |   16.66 | 20-71,77-82,89-93,127-140                                          
-  DroppedMovie.tsx    |       0 |        0 |       0 |       0 |                                                                    
-  Genre.tsx           |     100 |       50 |     100 |     100 | 22                                                                 
-  Movie.ts            |       0 |        0 |       0 |       0 |                                                                    
-  MovieCards.tsx      |   34.95 |       16 |   36.66 |   32.98 | 45-57,61-65,76-112,117-121,152-163,169-177,183,191,198-207,219,249 
-  MoviesList.tsx      |     100 |      100 |     100 |     100 |                                                                    
-  SuperAddMovie.tsx   |       0 |        0 |       0 |       0 | 15-251                                                             
-  SuperAddUser.tsx    |   66.66 |      100 |      50 |      75 | 34,56                                                              
-  SuperEditMovie.tsx  |       0 |        0 |       0 |       0 | 16-260                                                             
-  Users.tsx           |     100 |      100 |     100 |     100 |                                                                    
-  newCreateList.tsx   |       0 |        0 |       0 |       0 | 10-181                                                             
-----------------------|---------|----------|---------|---------|--------------------------------------------------------------------
+----------------------|---------|----------|---------|---------|----------------------------------------------------------------
+File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                              
+----------------------|---------|----------|---------|---------|----------------------------------------------------------------
+All files             |    20.6 |     14.4 |    20.6 |   19.75 |                                                                
+ src                  |   36.36 |    44.44 |   66.66 |   36.36 |                                                                
+  App.tsx             |      60 |    57.14 |   85.71 |      60 | 41,47,55,63,107-110                                            
+  index.tsx           |       0 |      100 |     100 |       0 | 8-32                                                           
+  reportWebVitals.ts  |       0 |        0 |       0 |       0 | 3-10                                                           
+ src/components       |   19.48 |       12 |   17.94 |   18.52 |                                                                
+  CreateList.tsx      |       0 |        0 |       0 |       0 | 12-100                                                         
+  CustomList1.tsx     |   22.22 |    16.66 |    9.09 |   23.07 | 14,22-58,78-91                                                 
+  CustomList2.tsx     |   17.39 |    16.66 |      10 |   18.18 | 18-53,72-85                                                    
+  CustomMovieList.tsx |       0 |      100 |       0 |       0 | 10-33                                                          
+  DragAndDrop.tsx     |   15.78 |     12.5 |      20 |   16.07 | 20-71,77-82,89-93,115-123,158-171                              
+  DroppedMovie.tsx    |       0 |        0 |       0 |       0 |                                                                
+  Genre.tsx           |     100 |       50 |     100 |     100 | 22                                                             
+  Movie.ts            |       0 |        0 |       0 |       0 |                                                                
+  MovieCards.tsx      |   34.65 |       16 |   35.71 |   32.63 | 45-57,61-65,76-112,117-121,152-163,169-177,183,191,198-207,248 
+  MoviesList.tsx      |     100 |      100 |     100 |     100 |                                                                
+  SuperAddMovie.tsx   |       0 |        0 |       0 |       0 | 15-251                                                         
+  SuperAddUser.tsx    |   66.66 |      100 |      50 |      75 | 34,56                                                          
+  SuperEditMovie.tsx  |       0 |        0 |       0 |       0 | 16-260                                                         
+  Users.tsx           |     100 |      100 |     100 |     100 |                                                                
+  newCreateList.tsx   |       0 |        0 |       0 |       0 | 10-181                                                         
+----------------------|---------|----------|---------|---------|----------------------------------------------------------------
 Test Suites: 6 failed, 1 passed, 7 total
 Tests:       7 failed, 9 passed, 16 total
 Snapshots:   0 total
-Time:        9.715 s
+Time:        8.844 s
 Ran all test suites.
