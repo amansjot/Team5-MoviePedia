@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import { CustomList1 } from "./CustomList1";
+import { CustomList2 } from "./CustomList2";
 
 /*
     test( ,()=>{
@@ -16,14 +16,14 @@ const USERS = [
     "Priya"
 ];
 
-describe("Custom List 1 Component tests", () => {
+describe("Custom List 2 Component tests", () => {
     beforeEach(() => {
-        render(<CustomList1 name={USERS[0]}/>);
+        render(<CustomList2 name={USERS[0]}/>);
     });
 
     test("The user list is not initially visible", ()=>{
         const list = screen.getByTestId("userList");
-        expect(!list).toBeInTheDocument();
+        expect(list).toBeNull();
     });
     test("There is a custom list button",()=>{
         const listButton = screen.getByRole("button", {name: "First Custom List"});
