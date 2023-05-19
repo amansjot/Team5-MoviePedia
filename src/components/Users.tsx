@@ -13,28 +13,33 @@ import {
 import { CustomList1 } from "./CustomList1";
 import { CustomList2 } from "./CustomList2";
 import { DragAndDrop } from "./DragAndDrop";
-
+import "../CustomList1.css";
 
 export function Users(): JSX.Element {
     const USERS = [
-        "Sakhee",
-        "Aman",
-        "Heni",
-        "Julia",
-        "Priya"
+        { name: "Sakhee", visible: false},
+        { name: "Aman", visible: false},
+        { name: "Heni", visible: false},
+        { name: "Julia", visible: false},
+        { name: "Priya", visible: false},
     ];
 
-    const [selectedPerson, setSelectedPerson] = useState<string>(USERS[0]);
+    const [selectedPerson, setSelectedPerson] = useState(USERS[0].name);
 
-    const userStr = localStorage.getItem("users") || USERS.join(",");
+    const userStr = localStorage.getItem("users") || USERS.map(a=>a.name).join(",");
 
     const allUsers = userStr.split(",");
+    
+    const [visible, setVisible] = useState<boolean>(false);
+
 
     function selectUser(event: React.ChangeEvent<HTMLSelectElement>){
         localStorage.setItem("user", event.target.value);
         setSelectedPerson(event.target.value);
-
+        USERS[USERS.findIndex(x=> x.name===event.target.value)].visible;
+        setVisible(true);
     }
+
 
     return (
         <div>
@@ -54,9 +59,12 @@ export function Users(): JSX.Element {
                     }) }
                 </Select>
             </Center><br/>
+
             {selectedPerson && (<DragAndDrop key={selectedPerson} name = {selectedPerson} />) }
-            {selectedPerson &&  (<CustomList1 key={selectedPerson} name = {selectedPerson}/>) }
-            {selectedPerson && (<CustomList2 key={selectedPerson} name = {selectedPerson} />) }     
+            <div className="otherLists">
+                {selectedPerson &&  (<CustomList1 key={selectedPerson} name = {selectedPerson} />) }
+                {selectedPerson && (<CustomList2 key={selectedPerson} name = {selectedPerson} />) }     
+            </div>
         </div>
     );
 }

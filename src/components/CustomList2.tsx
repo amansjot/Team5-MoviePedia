@@ -3,7 +3,7 @@ import { Movie } from "./Movie";
 import { moviesList } from "./MoviesList";
 import { Card, CardHeader, CardBody, Text, Input, Slider, SliderFilledTrack, SliderThumb, SliderTrack, SliderMark, Container, CloseButton, Center, filter, Select, Button } from "@chakra-ui/react";
 import { SimpleGrid } from "@chakra-ui/react";
-import "../DragDropList.css";
+import "../CustomList2.css";
 import { Heading,Image,Box } from "@chakra-ui/react";
 import PropTypes from "prop-types";
 
@@ -54,8 +54,9 @@ export function CustomList2({ name }: { name: string }): JSX.Element {
     }
 
     return(
-        <div>
+        <div className="custom2-component">
             <Button data-testid={"button"} onClick={changeHidden}>Second Custom List</Button>{visible &&
+
                  <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop}
                      onDragOver={handleDragOver}>
                      <Heading>

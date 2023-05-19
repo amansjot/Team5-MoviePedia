@@ -139,6 +139,7 @@ function App() {
                 </Box>
             </Flex>
             <br/><br/>
+            <div className="space"></div>
             <HStack mt="5" p={10} bg="blue.100" borderTop="2px solid black" justify="space-around">
                 <Stack>
                     <div><b>MoviePedia 2023</b></div>
