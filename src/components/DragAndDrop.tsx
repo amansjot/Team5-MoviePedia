@@ -126,10 +126,10 @@ export function DragAndDrop({ name }: { name: string }): JSX.Element {
 
     return(
         
-        <div id="movie-list" onDrop={handleOnDrop}
+        <div className="top-component" id="movie-list" onDrop={handleOnDrop}
             onDragOver={handleDragOver}>
             <Heading>
-                <Text size="md">{getUser()}&apos;s List</Text>
+                <Text size="md">{localStorage.getItem("user") || name}&apos;s List</Text>
             </Heading>
             {delAllItems()}
             <br/>
