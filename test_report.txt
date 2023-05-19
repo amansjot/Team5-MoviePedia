@@ -7928,5 +7928,5 @@ runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dis
 Test Suites: 6 failed, 2 passed, 8 total
 Tests:       17 failed, 12 passed, 29 total
 Snapshots:   0 total
-Time:        10.677 s
+Time:        10.454 s
 Ran all test suites.
