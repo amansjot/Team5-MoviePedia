@@ -120,6 +120,13 @@ export function DragAndDrop(): JSX.Element {
                         {movieList.map((movie: Movie, index: number): JSX.Element => (
                             <Card height="300px" align="center" backgroundColor="gray.300" border="1px solid #aaa" pb={5} maxW="sm" direction={{base: "row", sm:"column"}} overflow="hidden" variant="elevated" key={movie.name}>
                                 <CardHeader key={movie.name}>
+                                    <CloseButton position="relative" top="100" right="100" onClick={() => deleteItem(index)}/>
+                                    <Heading size="lg">
+                                        <Text><span>{movie.name} ({movie.year})</span></Text>
+                                    </Heading>
+                                    <Text><i>{movie.director}</i></Text>
+                                </CardHeader>
+                                <CardHeader key={movie.name}>
                                     <CloseButton position="absolute" top="0" right="0" onClick={() => deleteItem(index)}/>
                                     <Heading size="sm">
                                         <Text><span>{movie.name} ({movie.year})</span></Text>
