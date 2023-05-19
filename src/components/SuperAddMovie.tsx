@@ -249,7 +249,7 @@ export function SuperAddMovie(): JSX.Element {
     }
 
     return(
-        <Box>
+        <Box data-testId={"edit-movie-box"}>
             {/* style={{"fontFamily": "'Georgia', sans-serif"}} */}
             {heading()}
             {description()}
