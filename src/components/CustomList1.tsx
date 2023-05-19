@@ -67,7 +67,7 @@ export function CustomList1({ name}: { name: string}): JSX.Element {
     return(
         <div className="custom1-component">
             {/* <div> {`This is ${name}'s First Custom List`}</div> */}
-            <Button onClick={changeHidden}>First Custom List</Button>{visible &&
+            <Button data-testid={"button"} onClick={changeHidden}>First Custom List</Button>{visible &&
                  <div data-testid={"userList"} id="movie-list" onDrop={handleOnDrop} onDragOver={handleDragOver}>
                      <Heading>
                          <Input width="80%" onChange={changeListName} size ="md" placeholder="Input New List Name"></Input>
