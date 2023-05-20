@@ -6539,9 +6539,9 @@ PASS src/App.test.tsx
           at ChakraComponent (/home/----------------------|---------|----------|---------|---------|----------------------------------------------------------------
 File                  | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                                              
 ----------------------|---------|----------|---------|---------|----------------------------------------------------------------
-All files             |      28 |    20.16 |   29.03 |   27.03 |                                                                
- src                  |   36.36 |    44.44 |   66.66 |   36.36 |                                                                
-  App.tsx             |      60 |    57.14 |   85.71 |      60 | 41,47,55,63,107-110                                            
+All files             |      28 |    20.81 |   29.03 |   27.03 |                                                                
+ src                  |   36.36 |       50 |   66.66 |   36.36 |                                                                
+  App.tsx             |      60 |     62.5 |   85.71 |      60 | 41,47,55,63,107-110                                            
   index.tsx           |       0 |      100 |     100 |       0 | 8-32                                                           
   reportWebVitals.ts  |       0 |        0 |       0 |       0 | 3-10                                                           
  src/components       |   27.39 |    18.22 |   26.71 |   26.32 |                                                                
@@ -7928,5 +7928,5 @@ runner/work/Team5-MoviePedia/Team5-MoviePedia/node_modules/@chakra-ui/system/dis
 Test Suites: 6 failed, 2 passed, 8 total
 Tests:       17 failed, 12 passed, 29 total
 Snapshots:   0 total
-Time:        10.454 s
+Time:        10.738 s
 Ran all test suites.
