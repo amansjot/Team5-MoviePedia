@@ -59,7 +59,7 @@ function App() {
     }
 
     function superEditMovie(): JSX.Element {
-        if (selectedRole == "Super") {
+        if (selectedRole == "Super" || selectedRole == "Admin") {
             return (<SuperEditMovie></SuperEditMovie>);
         } else {
             return (<></>);
